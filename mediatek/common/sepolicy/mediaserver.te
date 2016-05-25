@@ -137,6 +137,7 @@ allow mediaserver FM50AF_device:chr_file { read write ioctl open };
 allow mediaserver AD5820AF_device:chr_file { read write ioctl open };
 allow mediaserver DW9714AF_device:chr_file { read write ioctl open };
 allow mediaserver DW9814AF_device:chr_file { read write ioctl open };
+allow mediaserver DW9810AF_device:chr_file { read write ioctl open };
 allow mediaserver AK7345AF_device:chr_file { read write ioctl open };
 allow mediaserver DW9714A_device:chr_file { read write ioctl open };
 allow mediaserver LC898122AF_device:chr_file { read write ioctl open };

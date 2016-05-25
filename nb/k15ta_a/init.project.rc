@@ -57,6 +57,8 @@ on post-fs-data
 
     chmod 0660 /dev/DW9714AF
     chown system camera /dev/DW9714AF
+    chmod 0660 /dev/DW9810AF
+    chown system camera /dev/DW9810AF
 
     chmod 0660 /dev/LC898212AF
     chown system camera /dev/LC898212AF

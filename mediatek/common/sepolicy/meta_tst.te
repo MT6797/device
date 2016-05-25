@@ -59,6 +59,7 @@ allow meta_tst FM50AF_device:chr_file { read write ioctl open };
 allow meta_tst AD5820AF_device:chr_file { read write ioctl open };
 allow meta_tst DW9714AF_device:chr_file { read write ioctl open };
 allow meta_tst DW9714A_device:chr_file { read write ioctl open };
+allow meta_tst DW9810AF_device:chr_file { read write ioctl open };
 allow meta_tst LC898122AF_device:chr_file { read write ioctl open };
 allow meta_tst LC898212AF_device:chr_file { read write ioctl open };
 allow meta_tst BU6429AF_device:chr_file { read write ioctl open };

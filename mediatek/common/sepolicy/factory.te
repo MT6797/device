@@ -30,6 +30,7 @@ file_type_auto_trans(factory, system_data_file, factory_data_file)
 allow factory FM50AF_device:chr_file { read write ioctl open };
 allow factory AD5820AF_device:chr_file { read write ioctl open };
 allow factory DW9714AF_device:chr_file { read write ioctl open };
+allow factory DW9810AF_device:chr_file { read write ioctl open };
 allow factory DW9714A_device:chr_file { read write ioctl open };
 allow factory LC898122AF_device:chr_file { read write ioctl open };
 allow factory LC898212AF_device:chr_file { read write ioctl open };
