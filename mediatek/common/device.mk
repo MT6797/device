@@ -2285,6 +2285,11 @@ ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     endif
 endif
 
+ifeq ($(strip $(ADUPS_FOTA_SUPPORT)), yes)
+PRODUCT_PACKAGES += AdupsFota \
+                    AdupsFotaReboot
+endif
+
 PRODUCT_PACKAGES += fingerprintd
 ifeq ($(strip $(NB_FP_ET310_SUPPORT)),yes)
 PRODUCT_PACKAGES +=etsd \
