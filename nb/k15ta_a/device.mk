@@ -220,6 +220,6 @@ $(call inherit-product, build/target/product/verity.mk)
 # Turn on DEXPREOPT
 ifeq ($(TARGET_BUILD_VARIANT),user)
 WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
+DONT_DEXPREOPT_PREBUILTS := false
 endif
 

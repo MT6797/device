@@ -387,8 +387,11 @@ endif
 
 # GMS interface
 ifdef BUILD_GMS
-ifeq ($(strip $(BUILD_GMS)), yes)
-$(call inherit-product-if-exists, vendor/google/products/gms.mk)
+	ifeq ($(strip $(BUILD_GMS)), yes)
+#$(call inherit-product-if-exists, vendor/google/products/gms.mk)
+   	GMS_PROJECT :=$(subst full_,,$(TARGET_PRODUCT))
+  	$(call inherit-product-if-exists, vendor/google/products/$(GMS_PROJECT)/gms.mk)
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
       ro.com.google.clientidbase=alps-$(TARGET_PRODUCT)-{country} \
