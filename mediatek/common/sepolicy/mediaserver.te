@@ -466,3 +466,7 @@ allow mediaserver camera_dpe_device:chr_file { read write ioctl open };
 # Operation : Migration
 # Purpose : OpenDSP: read/write ipi message to tinysys
 allow mediaserver audio_ipi_device:chr_file { read write ioctl open };
+
+#add by liliang.bao begin
+allow mediaserver custom_file:file r_file_perms;
+#add by liliang.bao end
