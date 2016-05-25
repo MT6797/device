@@ -160,6 +160,7 @@ type ctl_emcsmdlogger_prop, property_type;
 type ctl_eemcs_fsd_prop, property_type;
 type ctl_istd8303_prop, property_type;
 type ctl_st480_prop, property_type;
+type ctl_memsicd3416x_prop, property_type;
 #=============allow statusd==============
 type net_cdma_mdmstat, property_type;
 type cdma_prop, property_type;
