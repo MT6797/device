@@ -519,3 +519,6 @@
 
 #fat on nand image
 /fat(/.*)?  u:object_r:fon_image_data_file:s0
+# aka.jiang add for fingerprint ET3XX 20160308
+/system/bin/etsd  u:object_r:etsd_exec:s0
+/dev/esfp0 	  u:object_r:etsd_data_file:s0

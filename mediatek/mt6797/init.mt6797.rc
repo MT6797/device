@@ -1775,6 +1775,13 @@ on property:service.mbim.enable=0
 on property:service.mbim.enable=1
     start mbimd
 
+service etsd /system/bin/etsd
+    class late_start
+    user system
+service fingerprintd /system/bin/fingerprintd
+    class late_start
+    user system
+
 service wechatproxy /system/bin/wechatproxy
     user root
     disabled

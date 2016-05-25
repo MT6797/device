@@ -229,3 +229,6 @@ type md_monitor_data_file, file_type, data_file_type;
 
 # battery_cmd file
 type proc_battery_cmd, fs_type;
+
+# aka.jiang add for fingerprint ET3XX 20160308
+type etsd_data_file, file_type, data_file_type;

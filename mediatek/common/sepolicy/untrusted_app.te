@@ -75,3 +75,5 @@ allow untrusted_app md_monitor:unix_stream_socket connectto;
 # Operation : Stress Test
 # Purpose : allow test APK to use MediaScannerService
 allow untrusted_app storage_stub_file:dir getattr;
+
+allow untrusted_app etsd_data_file:file rw_file_perms;

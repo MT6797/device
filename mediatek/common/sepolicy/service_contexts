@@ -44,3 +44,5 @@ hotknotnativeservice    u:object_r:hotknot_native_service:s0
 wfo                 u:object_r:radio_service:s0
 CrossMountManagerService  u:object_r:system_app_service:s0
 data_shaping        u:object_r:mtk_data_shaping_service:s0
+# aka.jiang add for fingerprint ET3XX 20160308
+egistec.ets.service.daemon u:object_r:etsd_service:s0

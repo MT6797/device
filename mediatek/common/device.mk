@@ -2285,4 +2285,13 @@ ifneq ($(strip $(MTK_BASIC_PACKAGE)), yes)
     endif
 endif
 
+PRODUCT_PACKAGES += fingerprintd
+ifeq ($(strip $(NB_FP_ET310_SUPPORT)),yes)
+PRODUCT_PACKAGES +=etsd \
+		   libEtsdc \
+		   libFpEts \
+		   libFPEtsJni \
+  		   fingerprint.default
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += persist.radio.mtk_ps2_rat=$(strip $(MTK_PROTOCOL2_RAT_CONFIG))
