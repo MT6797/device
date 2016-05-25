@@ -1627,14 +1627,14 @@ ifeq (OP09_SPEC0212_SEGDEFAULT,$(OPTR_SPEC_SEG_DEF))
   PRODUCT_PROPERTY_OVERRIDES += ro.config.pppoe_enable=1
 endif
 # for 3rd party app
-ifeq ($(strip $(OPTR_SPEC_SEG_DEF)),NONE)
-  ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
-    ifneq ($(strip $(MTK_A1_FEATURE)), yes)
-      PRODUCT_PACKAGES += TouchPal
-      PRODUCT_PACKAGES += YahooNewsWidget
-    endif
-  endif
-endif
+#ifeq ($(strip $(OPTR_SPEC_SEG_DEF)),NONE)
+#  ifneq ($(strip $(MTK_BSP_PACKAGE)), yes)
+#    ifneq ($(strip $(MTK_A1_FEATURE)), yes)
+#      PRODUCT_PACKAGES += TouchPal
+#      PRODUCT_PACKAGES += YahooNewsWidget
+#    endif
+#  endif
+#endif
 
 #For 3rd party NLP provider
 PRODUCT_PACKAGES += Baidu_Location
