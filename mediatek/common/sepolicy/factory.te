@@ -186,6 +186,8 @@ allow factory gps_data_file:dir { read search };
 allow factory shell_exec:file execute_no_trans;
 allow factory storage_file:lnk_file read;
 
+allow factory factory:capability chown;
+
 #Date: WK15.48
 #Purpose: capture for factory mode
 allow factory devmap_device:chr_file { read ioctl open };
