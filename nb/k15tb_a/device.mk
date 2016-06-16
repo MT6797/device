@@ -208,6 +208,13 @@ ifeq ($(strip $(OPTR_SPEC_SEG_DEF)),NONE)
     PRODUCT_PACKAGES += DangerDash
 endif
 
+
+ifneq ($(MTK_AUDIO_TUNING_TOOL_VERSION),)
+  ifneq ($(strip $(MTK_AUDIO_TUNING_TOOL_VERSION)),V1)
+    # adjust mtk codec lineout gain during speaker playback
+    MTK_AUDIO_PARAM_DIR_LIST += device/nb/k15tb_a/audio_param/
+  endif
+endif
 # inherit 6752 platform
 $(call inherit-product, device/mediatek/mt6797/device.mk)
 
