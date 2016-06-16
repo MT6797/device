@@ -1454,7 +1454,7 @@ endif
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
 WITH_DEXPREOPT := true
-DONT_DEXPREOPT_PREBUILTS := true
+DONT_DEXPREOPT_PREBUILTS := false
 endif
 
 PRODUCT_PACKAGES += wechatproxy
