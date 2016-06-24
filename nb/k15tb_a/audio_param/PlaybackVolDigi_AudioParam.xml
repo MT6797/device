@@ -79,7 +79,7 @@
       <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
     <ParamUnit param_id="1">
-      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-19,-16,-13,-10,-8,-6,-4"/>
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-19,-16,-13,-11,-9,-7,-5"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>
