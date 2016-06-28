@@ -1,0 +1,1123 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758243
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M---NB6797_6C_M---NB6797_6C_M, SW Version: MOLY.LR11.W1539.MD.CMCC.MP.V19.2---MOLY.LR11.W1539.MD.MP.V27---SIXTH.CBP.MD.MP3.V36N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02704549
+Severity:
+  
+Description: 
+  remove redundant parameters when adding TO header of subscribe -- mp-m0.mp9N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02738636
+Severity:
+  Major
+Description: 
+  [IMS Interface][version#0x4F][AP] IMS variable length alignN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713427
+Severity:
+  Major
+Description: 
+  [1][ViLTE][2nd wave]InCallUI EPC patchesN/A
+
+Associated Files: 
+  packages/apps/InCallUI/src/com/android/incallui/AnswerPresenter.java
+  packages/apps/InCallUI/src/com/android/incallui/CallButtonFragment.java
+  packages/apps/InCallUI/src/com/android/incallui/CallButtonPresenter.java
+  packages/apps/InCallUI/src/com/android/incallui/CircularRevealFragment.java
+  packages/apps/InCallUI/src/com/android/incallui/InCallServiceImpl.java
+  packages/apps/InCallUI/src/com/mediatek/incallui/videocall/VideoFeatures.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02715161
+Severity:
+  
+Description: 
+  [SIMMNGR] SIM data cahche V2.0 patch back to m0.mp9N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmal/arm/libmal.so
+  vendor/nb/libs/mt6797_64/libmal/include/simmngr_interface.h
+  vendor/nb/libs/mt6797_64/libmal/libmal.so
+  vendor/nb/libs/mt6797_64/libmal_datamngr/arm/libmal_datamngr.so
+  vendor/nb/libs/mt6797_64/libmal_datamngr/libmal_datamngr.so
+  vendor/nb/libs/mt6797_64/libmal_rilproxy/arm/libmal_rilproxy.so
+  vendor/nb/libs/mt6797_64/libmal_rilproxy/libmal_rilproxy.so
+  vendor/nb/libs/mt6797_64/libmal_simmngr/arm/libmal_simmngr.so
+  vendor/nb/libs/mt6797_64/libmal_simmngr/libmal_simmngr.so
+  vendor/nb/libs/mt6797_64/libmdfx/arm/libmdfx.so
+  vendor/nb/libs/mt6797_64/libmdfx/include/entity/mdmngr.h
+  vendor/nb/libs/mt6797_64/libmdfx/include/entity/simmngr/simmngr_def.h
+  vendor/nb/libs/mt6797_64/libmdfx/include/entity/simmngr/simmngr_struct.h
+  vendor/nb/libs/mt6797_64/libmdfx/include/sys_info.h
+  vendor/nb/libs/mt6797_64/libmdfx/libmdfx.so
+  vendor/nb/libs/mt6797_64/volte_imsm/arm/volte_imsm.so
+  vendor/nb/libs/mt6797_64/volte_imsm/volte_imsm.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02750410
+Severity:
+  
+Description: 
+  [VoLTE][UT] IMCB UT fixes for IMS interface version#0x4FN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS00835666
+Severity:
+  
+Description: 
+  [Need Patch] [Build Error] [Build system] Modem check and install for ALPS
+  [[問題標題]]
+  CMCC终端外场自动化测试APK的“基本参数”界面显示不全
+  
+  [[問題現象]]
+  CMCC终端外场自动化测试APK的“基本参数”界面大部分参数显示空白
+  
+  [[問題影響]]
+  CMCC终端外场自动化测试APK的“基本参数”界面显示不全
+  
+  [[問題復現步驟]]
+  CMCC终端外场自动化测试APK的“基本参数”界面
+  
+  [[建議驗證模塊]]
+  手机/sys***/etc/fi***ware下存在em_filter*.bin
+  
+  [[Title for Customer]]
+  CMCC FT auto test APK's "Basic" screen missing some detail values
+  
+  [[Problem Description]]
+  CMCC FT auto test APK's "Basic" screen missing some detail values
+  
+  [[Impa***]]
+  CMCC FT auto test APK's "Basic" screen missing some detail values
+  
+  [[Reproduced Steps]]
+  CMCC FT auto test APK's "Basic" screen missing some detail values
+  
+  [[Modules to be verified after taking p***h]]
+  em_filter*.bin should be existing in phone's /sys***/etc/fi***wareN/A
+
+Associated Files: 
+  device/mediatek/build/build/tools/mtk_modem.pm
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02714197
+Severity:
+  Critical
+Description: 
+  [SQC0][PPL][MT6757][Olympus][M1]suoding command can't end call
+  [[問題標題]]
+  对于支持CDMA的proje***，手机防盗功能不能使用
+  [[問題現象]]
+  通过CDMA网络拨打电话过程中，给手机发送短信#suoding#，电话不会挂断
+  [[問題影響]]
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響)
+  ***A测试
+  [[問題復現步驟]]
+  (請填寫於此行下方，並清楚填寫)
+  1、手机插入***卡，正常开机，打开手机防盗功能（设置->安全->手机防盗）
+  2、拨打任意电话
+  3、用手机防盗里设置的手机号码，给测试机发送短信#suoding#
+  [[建議驗證模塊]]
+  手机防盗
+  [[注意: 請勿刪除此行]]
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  For CDMA proje***, mobile anti-theft fun***ion can't work properly
+  [[Problem Description]]
+  Make a call with CDMA network, send a SMS whose content is "#suoding#" to the phone, the call won't be disconne***ed.
+  [[Impa***]]
+  ***A test
+  [[Reproduced Steps]]
+  1. Insert CDMA card, power on the phone, enabl*** anti-theft fun***ion(Settings->Security->Mobile anti-theft)
+  2. Make a call
+  3. Send a SMS whose content is "#suoding#" with the emergency conta*** number to the tested phone
+  [[Modules to be verified after taking p***h]]
+  Mobile anti-theft fun***ion
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  frameworks/opt/telephony/src/java/com/android/internal/telephony/gsm/GsmCallTrackerHelper.java
+  packages/services/Telephony/src/com/android/services/telephony/TelephonyConnectionServiceUtil.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02745717
+Severity:
+  
+Description: 
+  【CM880】【通话】【客户问题】【VoLTE】【H3C】配合机为电话会议合并方，测试机通话页面不显示电话会议4个字N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02496928
+Severity:
+  
+Description: 
+  [MP Feature Patch Back][M0][VoLTE][Volunteer Patch] New audio codec EVS control plane implementN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02684484
+Severity:
+  Critical
+Description: 
+  [VILTE][FDD][TMO]call dropN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmal_datamngr/arm/libmal_datamngr.so
+  vendor/nb/libs/mt6797_64/libmal_datamngr/libmal_datamngr.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02717057
+Severity:
+  Critical
+Description: 
+  [imcb][vilte-source][MP9]vilte patch backN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02711754
+Severity:
+  Major
+Description: 
+  [ViLTE][MA][RTP] patch back fpb to mp branchN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/MATest/Android.mk
+  vendor/nb/libs/mt6797_64/MATest/MATest
+  vendor/nb/libs/mt6797_64/libcomutils/arm/libcomutils.so
+  vendor/nb/libs/mt6797_64/libcomutils/libcomutils.so
+  vendor/nb/libs/mt6797_64/libimsma/arm/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma_rtp/Android.mk
+  vendor/nb/libs/mt6797_64/libimsma_rtp/arm/libimsma_rtp.so
+  vendor/nb/libs/mt6797_64/libimsma_rtp/libimsma_rtp.so
+  vendor/nb/libs/mt6797_64/libimsma_socketwrapper/arm/libimsma_socketwrapper.so
+  vendor/nb/libs/mt6797_64/libimsma_socketwrapper/libimsma_socketwrapper.so
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/libsink/arm/libsink.so
+  vendor/nb/libs/mt6797_64/libsink/libsink.so
+  vendor/nb/libs/mt6797_64/libsource/arm/libsource.so
+  vendor/nb/libs/mt6797_64/libsource/libsource.so
+  vendor/nb/libs/mt6797_64/sink/sink
+  vendor/nb/libs/mt6797_64/source/source
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02604717
+Severity:
+  Minor
+Description: 
+  [Anritsu PCT Joint Test] 19.3.2N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02558972
+Severity:
+  
+Description: 
+  [MDM]check in volte msg support impacted
+  [[問題標題]] 
+  增加移动外场自动化测试Volte case support 
+  
+  [[問題現象]] 
+  增加支持自动外场自动化测试volte case
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  不check in无法支持移动外场自动化测试Volte case
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  启动自动化测试之后，无法正确运行volte case
+  
+  [[建議驗證模塊]] 
+  移动自动化外场测试volte case部分
+  [[Title for Customer]] 
+  add CMCC FT auto test tool volte case support 
+  [[Problem Description]] 
+  add CMCC FT auto test tool volte case support 
+  [[Impa***]] 
+  If not check in, the CMCC FT auto test case volte part cann't run no***ally
+  [[Reproduced Steps]] 
+  start FT auto test case, volte case can't run no***ally
+  [[Modules to be verified after taking p***h]] 
+  start FT auto test case, run volte case
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/operator/OP01/SPEC0200/SEGC/optr_apk_config.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02733138
+Severity:
+  
+Description: 
+  [KOLEOSIIM-932]【应用】【用户体验】通话界面：配合机发起视频请求后（只显示对方视频）测试机弹窗有误N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02698912
+Severity:
+  Major
+Description: 
+  [VILTE][RJIL][FDD]ANR,1682,-1361051648,99,/data/core/,1,system_app_anr,com.mediatek.imsN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/services/Ims/src/com/mediatek/ims/ImsCallSessionProxy.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02689730
+Severity:
+  Critical
+Description: 
+  [VILTE][RJIL][FDD]Externel (EE),0,0,99,/data/core/,1,modem,md1: [ASSERT] file:ltecsr.c line:1037N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02505414
+Severity:
+  
+Description: 
+  TAS的工程模式的需求N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/apps/EngineerMode/src/com/mediatek/engineermode/eminfo/ComponentDetailActivity.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02703986
+Severity:
+  
+Description: 
+  [IMS][M80] 未开通会议，合并通话中无法挂断电话N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02721653
+Severity:
+  Critical
+Description: 
+  [imcb][non-vilte-Interface][MP9] vilte patch backN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02739558
+Severity:
+  Critical
+Description: 
+  [WW FT][MT6755][Jade-M][Vodafone][Czech][WFC][SQC Excluded]Switch ON UE when WifiCalling Preference set as 'Wifi only'. And Wifi Calling set 'OFF'. Modem radio is not turned ON.
+  [[問題標題]]
+  修正WIFI-only mode開機時radio異常現象
+  
+  [[問題現象]] 
+  開機時僅判斷設定為WIFI-only mode就不開radio
+  
+  [[問題影響]]
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響)
+  只判斷WIFI-only mode，在沒有開WIFI calling的情況下也不會開radio，
+  USER並不預期會發生這種行為，因為並沒有要使用WIFI calling。
+  但這狀態下開機後因為radio沒開會造成User無法打call、上網等行為。
+  
+  
+  [[問題復現步驟]]
+  (請填寫於此行下方，並清楚填寫)
+  1. 設定WIFI-only mode並且不啟用WIFI callin***. 重開機
+  
+  [[建議驗證模塊]]
+  Power-on
+  
+  [[注意: 請勿刪除此行]]
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  Fix radio issue at WIFI-only mode after rebooting
+  
+  [[Problem Description]]
+  Radio off at WIFI-only mode after rebooting
+  
+  [[Impa***]]
+  *** user doesn't enable WIFI calling, device will not turn radio on at WIFI-only mode after rebooting.
+  This behavior leads to telephony related fun***ionality abno***al. For example,
+  user can't make a call, send message, or conne*** to ***ernet.
+  
+  [[Reproduced Steps]]
+  1. Disable WIFI calling and set WIFI-only mode
+  2. Reboot
+  
+  [[Modules to be verified after taking p***h]]
+  Power-on
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  frameworks/opt/telephony/src/java/com/mediatek/internal/telephony/RadioManager.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02704932
+Severity:
+  
+Description: 
+  [MP Feature Patch Back][ViLTE][Everest] TMO common : VT serviceN/A
+
+Associated Files: 
+  frameworks/opt/telephony/src/java/com/mediatek/internal/telephony/gsm/GsmVTProvider.java
+  vendor/mediatek/proprietary/packages/services/Ims/src/com/mediatek/ims/internal/ImsVTProvider.java
+  vendor/nb/libs/mt6797_64/MATest/Android.mk
+  vendor/nb/libs/mt6797_64/MATest/MATest
+  vendor/nb/libs/mt6797_64/libimsma/arm/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma_rtp/Android.mk
+  vendor/nb/libs/mt6797_64/libimsma_rtp/arm/libimsma_rtp.so
+  vendor/nb/libs/mt6797_64/libimsma_rtp/libimsma_rtp.so
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/libmtk_vt_swip/arm/libmtk_vt_swip.so
+  vendor/nb/libs/mt6797_64/libsink/arm/libsink.so
+  vendor/nb/libs/mt6797_64/libsink/libsink.so
+  vendor/nb/libs/mt6797_64/sink/sink
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02723098
+Severity:
+  Critical
+Description: 
+  [TOP]修改eLNA setting值后,wifi吞吐量测试时wifi必断线
+  [[問題標題]]
+  修改eLNA setting值后,wifi吞吐量测试时wifi必断线
+  
+  [[問題現象]]
+  修改eLNA setting值后,wifi吞吐量测试时wifi必断线
+  
+  [[問題影響]]
+  修改eLNA setting值后,wifi吞吐量测试时wifi必断线
+  
+  [[問題復現步驟]]
+  修改eLNA setting值后wifi吞吐量测试时wifi必断线
+  
+  [[建議驗證模塊]]
+  None
+  
+  [[注意: 請勿刪除此行]]
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  modified the setting of eLNA, and test the throughput, wifi will disconne***.
+  
+  [[Problem Description]]
+  modified the setting of eLNA, and test the throughput, wifi will disconne***.
+  
+  [[Impa***]]
+  modified the setting of eLNA, and test the throughput, wifi will disconne***.
+  
+  [[Reproduced Steps]]
+  modified the setting of eLNA, and test the throughput, wifi will disconne***.
+  
+  [[Modules to be verified after taking p***h]]
+  None
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/firmware/WIFI_RAM_CODE_6797
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02653066
+Severity:
+  Blocker
+Description: 
+  [Blocking][WW FT][MT6735][Denali-M][Vodafone][Czech][WFC][SQC Excluded]No WFC registrationN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/epdg_wod/epdg_wod
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02748886
+Severity:
+  Minor
+Description: 
+  [ALPS][Coverity Scanned Code Defect] 138853: Expression with no effectN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02739973
+Severity:
+  Crash
+Description: 
+  [Verify on 3.16][JadeMinus-M][MP1] Assistant phone NE /system/bin/vtservice
+  [[問題標題]] 
+  手机在收到VT来电的时候发生NE
+  [[問題現象]] 
+  手机在收到VT来电的时候发生NE
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  手机在收到VT来电的时候发生NE
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1.手机A，B，C插入VoLTE卡，驻在VoLTE网络
+  2.手机A给手机B拨打VT通话，B接通电话
+  3.维持一段时间B挂断电话，同时手机C给手机A拨打VT电话
+  4.A挂断C的视频来电
+  5.重复步骤1~4
+  
+  [[建議驗證模塊]] 
+  VT
+  [[Title for Customer]] 
+  Exception happen when receive incoming video call.
+  [[Problem Description]] 
+  Exception happen when receive incoming video call.
+  [[Impa***]] 
+  Exception happen when receive incoming video call.
+  [[Reproduced Steps]] 
+  1.Phone A,B,C with volte simcard inserted and in volte network
+  2.A male a video call to B, B accept the video call.
+  3.Wait f*** while, B hangup the video call. C make a video call to A at the
+  same time.
+  4.A reje*** the incoming video call of C.
+  5.Repeat 1 ~ 4.
+  
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/services/Ims/src/com/mediatek/ims/internal/ImsVTProvider.java
+  vendor/mediatek/proprietary/packages/services/Ims/src/com/mediatek/ims/internal/ImsVTProviderUtil.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02721645
+Severity:
+  Critical
+Description: 
+  [imcb][non-vilte-source][MP9]vilte patch backN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02715397
+Severity:
+  Major
+Description: 
+  ViLTE H.265 DevelopmentN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/MATest/Android.mk
+  vendor/nb/libs/mt6797_64/MATest/MATest
+  vendor/nb/libs/mt6797_64/libcomutils/arm/libcomutils.so
+  vendor/nb/libs/mt6797_64/libcomutils/libcomutils.so
+  vendor/nb/libs/mt6797_64/libhevcenc_hw/Android.mk
+  vendor/nb/libs/mt6797_64/libhevcenc_hw/arm/libhevcenc_hw.a
+  vendor/nb/libs/mt6797_64/libhevcenc_hw/libhevcenc_hw.a
+  vendor/nb/libs/mt6797_64/libimsma/arm/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma/libimsma.so
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/libsink/arm/libsink.so
+  vendor/nb/libs/mt6797_64/libsink/libsink.so
+  vendor/nb/libs/mt6797_64/libsource/arm/libsource.so
+  vendor/nb/libs/mt6797_64/libsource/libsource.so
+  vendor/nb/libs/mt6797_64/libvcodec_cap/Android.mk
+  vendor/nb/libs/mt6797_64/libvcodec_cap/arm/libvcodec_cap.so
+  vendor/nb/libs/mt6797_64/libvcodec_cap/libvcodec_cap.so
+  vendor/nb/libs/mt6797_64/libvcodecdrv/arm/libvcodecdrv.so
+  vendor/nb/libs/mt6797_64/libvcodecdrv/libvcodecdrv.so
+  vendor/nb/libs/mt6797_64/mfv_ut/mfv_ut
+  vendor/nb/libs/mt6797_64/sink/sink
+  vendor/nb/libs/mt6797_64/source/source
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713447
+Severity:
+  Major
+Description: 
+  [4][ViLTE][2nd wave]InCallUI EPC patchesN/A
+
+Associated Files: 
+  packages/apps/InCallUI/src/com/android/incallui/Call.java
+  packages/apps/InCallUI/src/com/android/incallui/InCallVideoCallCallback.java
+  packages/apps/InCallUI/src/com/mediatek/incallui/videocall/VideoSessionController.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02562722
+Severity:
+  Critical
+Description: 
+  [security issue]Potential security issues in MTK kernel driver
+  [[問題標題]]
+  潛在Security Vulnerabilities in Kernel Drivers.
+  
+  [[問題現象]]
+  手機可能死機, 或是讓惡意程式擴張權限
+  
+  [[問題影響]]
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響)
+  惡意程式可能由此潛在漏洞造成手機死機, 或是擴張其權限.
+  
+  [[問題復現步驟]]
+  (請填寫於此行下方，並清楚填寫)
+  傳送非法參數給有問題的drivers((e.g. display driver under /drivers/misc/mediatek/videox/mt6735/primary_display.c)
+  或是透過trinity 之類的fuzzy tools.
+  
+  [[建議驗證模塊]]
+  輸入非法參數
+  
+  [[Title for Customer]]
+  Potential Security Vulnerabilities in Drivers.
+  
+  [[Problem Description]]
+  The device may crash due to no enough parameter sanitizations.
+  
+  [[Impa***]]
+  The device may crash, o***alware may gain privilege by exploiting the vulnerability.
+  
+  [[Reproduced Steps]]
+  Send invalid parameters to kernel drivers by ***ng fuzzy tools like trinity o***anual user space program.
+  
+  [[Modules to be verified after taking p***h]]
+  ***ng testing program with ***ended invalid parameters to drivers. (e.g. display driver under /drivers/misc/mediatek/videox/mt6735/primary_display.c)
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/gps/gps.c
+  kernel-3.18/drivers/misc/mediatek/hwmon/hwmsen/hwmsen_dev.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02661364
+Severity:
+  
+Description: 
+  [M80][modem]呼叫卡2时卡1呼出电话，正在挂断界面不自动消失N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/ril/gsm/mtk-ril/ril_cc.c
+  vendor/mediatek/proprietary/hardware/ril/gsm/mtk-ril/ril_oem.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713431
+Severity:
+  Major
+Description: 
+  [2][ViLTE][2nd wave]InCallUI EPC patchesN/A
+
+Associated Files: 
+  packages/apps/InCallUI/res/layout-land/call_card_fragment.xml
+  packages/apps/InCallUI/res/values-land/dimens.xml
+  packages/apps/InCallUI/src/com/android/incallui/CallCardFragment.java
+  packages/apps/InCallUI/src/com/android/incallui/CallCardPresenter.java
+  packages/apps/InCallUI/src/com/android/incallui/CallUtils.java
+  packages/apps/InCallUI/src/com/android/incallui/VideoCallPresenter.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02708936
+Severity:
+  
+Description: 
+  [G42M][RJIO][IOT][VoLTE] Device does not send proper reason header in  CANCEL and BYE request
+  [[問題標題]] 
+  RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005需求
+  [[問題現象]] 
+  RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005需求未完成
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005需求未完成
+  只影響SIP header內容 未影響通話進行
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  打call,傳SMS
+  [[建議驗證模塊]] 
+  volte
+  [[Title for Customer]] 
+  RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005 requirement
+  [[Problem Description]] 
+  RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005 requirement
+  [[Impa***]] 
+  incomplete RJIO_IOT_GEN_REQ_001 & RJIO_IOT_VoLTE_REQ_005 requirement
+  [[Reproduced Steps]] 
+  make call, send sms
+  [[Modules to be verified after taking p***h]] 
+  volte
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02706941
+Severity:
+  Major
+Description: 
+  [ViLTE] [Call UA] SQC patch back to EverestN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02676545
+Severity:
+  
+Description: 
+  [Gionee Modem][MT6755][WBL7517]【工厂】卡1移动VOLTE,卡2移动4G,数据在卡2，开启关闭飞行模，搜网成功后将数据切换到卡1，双卡一直显示搜网，7分钟不恢复【单机1次】N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/ril/gsm/mtk-ril/ril_oem.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729835
+Severity:
+  Major
+Description: 
+  [MP Feature Patch Back] add VDF NL SettingN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/epdg_wod/epdg_wod
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02693914
+Severity:
+  Major
+Description: 
+  [MP Feature Patch Back]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02705200
+Severity:
+  
+Description: 
+  [M80][modem]双volte卡，切换主副卡后一张卡提示无效的IMEI，无法注网（出现一次）
+  [[問題標題]] 
+  双volte卡切卡后，卡1无法驻网
+  
+  [[問題現象]] 
+  双volte卡，卡1主卡，注册在ims网络，sim switch从卡1切到卡2后，卡1无法驻网，状态栏显示为无效的IMEI
+  
+  [[問題影響]] 
+  切卡后不驻网
+  
+  [[問題復現步驟]] 
+  1.双volte卡，卡1主卡，注册在ims网络
+  2.切换卡2为主卡
+  
+  [[建議驗證模塊]] 
+  simswitch modeswitch
+  
+  [[Title for Customer]] 
+  sim 1 cannot register network after sim switch
+  
+  [[Problem Description]] 
+  Both sim cards register in ims. Sim 1 cannot register network after sim switch from Sim1 to Sim2.
+  
+  [[Impa***]] 
+  sim 1 cannot register network after sim switch
+  
+  [[Reproduced Steps]] 
+  1.Register both sim cards in ims. Data is on Sim1.
+  2.sim switch from Sim1 to Sim2
+  
+  [[Modules to be verified after taking p***h]] 
+  simswitch modeswitch
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/arm/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/arm/mtk-ril-prop-md2.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/mtk-ril-prop-md2.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02724916
+Severity:
+  
+Description: 
+  3G联通卡无法注册网络N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/arm/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/arm/mtk-ril-prop-md2.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/mtk-ril-prop-md2.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713442
+Severity:
+  Major
+Description: 
+  [3][ViLTE][2nd wave]InCallUI EPC patchesN/A
+
+Associated Files: 
+  packages/apps/InCallUI/res_ext/values-ar/strings.xml
+  packages/apps/InCallUI/res_ext/values-bg/strings.xml
+  packages/apps/InCallUI/res_ext/values-bn/strings.xml
+  packages/apps/InCallUI/res_ext/values-ca/strings.xml
+  packages/apps/InCallUI/res_ext/values-cs/strings.xml
+  packages/apps/InCallUI/res_ext/values-da/strings.xml
+  packages/apps/InCallUI/res_ext/values-de-rAT/strings.xml
+  packages/apps/InCallUI/res_ext/values-de/strings.xml
+  packages/apps/InCallUI/res_ext/values-el/strings.xml
+  packages/apps/InCallUI/res_ext/values-en-rGB/strings.xml
+  packages/apps/InCallUI/res_ext/values-en-rUS/strings.xml
+  packages/apps/InCallUI/res_ext/values-es-rUS/strings.xml
+  packages/apps/InCallUI/res_ext/values-es/strings.xml
+  packages/apps/InCallUI/res_ext/values-et-rEE/strings.xml
+  packages/apps/InCallUI/res_ext/values-fa/strings.xml
+  packages/apps/InCallUI/res_ext/values-fi/strings.xml
+  packages/apps/InCallUI/res_ext/values-fr/strings.xml
+  packages/apps/InCallUI/res_ext/values-hi/strings.xml
+  packages/apps/InCallUI/res_ext/values-hr/strings.xml
+  packages/apps/InCallUI/res_ext/values-hu/strings.xml
+  packages/apps/InCallUI/res_ext/values-hy-rAM/strings.xml
+  packages/apps/InCallUI/res_ext/values-in/strings.xml
+  packages/apps/InCallUI/res_ext/values-it/strings.xml
+  packages/apps/InCallUI/res_ext/values-iw/strings.xml
+  packages/apps/InCallUI/res_ext/values-ja/strings.xml
+  packages/apps/InCallUI/res_ext/values-kk/strings.xml
+  packages/apps/InCallUI/res_ext/values-km-rKH/strings.xml
+  packages/apps/InCallUI/res_ext/values-ko/strings.xml
+  packages/apps/InCallUI/res_ext/values-lt/strings.xml
+  packages/apps/InCallUI/res_ext/values-lv/strings.xml
+  packages/apps/InCallUI/res_ext/values-ms/strings.xml
+  packages/apps/InCallUI/res_ext/values-my-rMM/strings.xml
+  packages/apps/InCallUI/res_ext/values-my-rZG/strings.xml
+  packages/apps/InCallUI/res_ext/values-nb/strings.xml
+  packages/apps/InCallUI/res_ext/values-nl/strings.xml
+  packages/apps/InCallUI/res_ext/values-pl/strings.xml
+  packages/apps/InCallUI/res_ext/values-pt-rPT/strings.xml
+  packages/apps/InCallUI/res_ext/values-pt/strings.xml
+  packages/apps/InCallUI/res_ext/values-ro/strings.xml
+  packages/apps/InCallUI/res_ext/values-ru/strings.xml
+  packages/apps/InCallUI/res_ext/values-sk/strings.xml
+  packages/apps/InCallUI/res_ext/values-sl/strings.xml
+  packages/apps/InCallUI/res_ext/values-sr/strings.xml
+  packages/apps/InCallUI/res_ext/values-sv/strings.xml
+  packages/apps/InCallUI/res_ext/values-th/strings.xml
+  packages/apps/InCallUI/res_ext/values-tl/strings.xml
+  packages/apps/InCallUI/res_ext/values-tr/strings.xml
+  packages/apps/InCallUI/res_ext/values-uk/strings.xml
+  packages/apps/InCallUI/res_ext/values-ur/strings.xml
+  packages/apps/InCallUI/res_ext/values-vi/strings.xml
+  packages/apps/InCallUI/res_ext/values-zh-rCN/strings.xml
+  packages/apps/InCallUI/res_ext/values-zh-rHK/strings.xml
+  packages/apps/InCallUI/res_ext/values-zh-rTW/strings.xml
+  packages/apps/InCallUI/res_ext/values/strings.xml
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699515
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[問題影響]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2428]Update: Remote Code Execution Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/aac/libAACdec/src/aacdec_drc.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699720
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2476][CVE-2016-2477][CVE-2016-2478][CVE-2016-2479][CVE-2016-2480][CVE-2016-2481][CVE-2016-2482][CVE-2016-2483][CVE-2016-2484][CVE-2016-2485][CVE-2016-2486][CVE-2016-2487]Elevation of Privilege Vulnerability in Mediaserver
+  [[問題標題]]
+  [CVE-2016-2476][CVE-2016-2477][CVE-2016-2478][CVE-2016-2479][CVE-2016-2480][CVE-2016-2481][CVE-2016-2482][CVE-2016-2483][CVE-2016-2484][CVE-2016-2485][CVE-2016-2486][CVE-2016-2487]Elevation of Privilege Vulnerability in Mediaserver
+  [[問題現象]]
+  [CVE-2016-2476][CVE-2016-2477][CVE-2016-2478][CVE-2016-2479][CVE-2016-2480][CVE-2016-2481][CVE-2016-2482][CVE-2016-2483][CVE-2016-2484][CVE-2016-2485][CVE-2016-2486][CVE-2016-2487]Elevation of Privilege Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [CVE-2016-2476][CVE-2016-2477][CVE-2016-2478][CVE-2016-2479][CVE-2016-2480][CVE-2016-2481][CVE-2016-2482][CVE-2016-2483][CVE-2016-2484][CVE-2016-2485][CVE-2016-2486][CVE-2016-2487]Elevation of Privilege Vulnerability in Mediaserver
+  [[Problem Description]]
+  [CVE-2016-2476][CVE-2016-2477][CVE-2016-2478][CVE-2016-2479][CVE-2016-2480][CVE-2016-2481][CVE-2016-2482][CVE-2016-2483][CVE-2016-2484][CVE-2016-2485][CVE-2016-2486][CVE-2016-2487]Elevation of Privilege Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/av/media/libstagefright/ACodec.cpp
+  frameworks/av/media/libstagefright/codecs/aacdec/SoftAAC2.cpp
+  frameworks/av/media/libstagefright/codecs/aacenc/SoftAACEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp
+  frameworks/av/media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp
+  frameworks/av/media/libstagefright/codecs/amrnb/enc/SoftAMRNBEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/amrwbenc/SoftAMRWBEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/avcdec/SoftAVCDec.cpp
+  frameworks/av/media/libstagefright/codecs/avcdec/SoftAVCDec.h
+  frameworks/av/media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp
+  frameworks/av/media/libstagefright/codecs/flac/enc/SoftFlacEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/g711/dec/SoftG711.cpp
+  frameworks/av/media/libstagefright/codecs/gsm/dec/SoftGSM.cpp
+  frameworks/av/media/libstagefright/codecs/hevcdec/SoftHEVC.cpp
+  frameworks/av/media/libstagefright/codecs/hevcdec/SoftHEVC.h
+  frameworks/av/media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp
+  frameworks/av/media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp
+  frameworks/av/media/libstagefright/codecs/mp3dec/SoftMP3.cpp
+  frameworks/av/media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp
+  frameworks/av/media/libstagefright/codecs/mpeg2dec/SoftMPEG2.h
+  frameworks/av/media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/SoftAVC.cpp
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/SoftAVC.h
+  frameworks/av/media/libstagefright/codecs/opus/dec/SoftOpus.cpp
+  frameworks/av/media/libstagefright/codecs/raw/SoftRaw.cpp
+  frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp
+  frameworks/av/media/libstagefright/include/SoftOMXComponent.h
+  frameworks/av/media/libstagefright/omx/SimpleSoftOMXComponent.cpp
+  frameworks/av/media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02717066
+Severity:
+  Critical
+Description: 
+  [imcb][vilte-Interface][MP9] vilte patch backN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02675679
+Severity:
+  Critical
+Description: 
+  [Jade/Everest]vcore pwm 震盪
+  [[問題標題]]
+  當手機長時間使用下，開新開機時會有機率性重啟或當機 
+  [[問題現象]]
+  手機重啟或當機 
+  [[問題影響]]
+  手機重啟或當機 
+  [[問題復現步驟]] 
+   手機開機
+  [[建議驗證模塊]]
+  重覆開機測試
+  
+  [[Title for Customer]]
+  Phone sys*** may reboot or crash when you re-boot up the phone after ***ng *** period of time.
+  
+  [[Problem Description]]
+  Phone sys*** reboot or crash 
+  
+  [[Impa***]]
+  Phone sys*** reboot or crash
+  
+  [[Reproduced Steps]]
+  Turn on the phone
+  
+  [[Modules to be verified after taking p***h]]
+  Repeat turning on/off  the phone  
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/mmc/host/mediatek/mt6797/sd.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02690398
+Severity:
+  Major
+Description: 
+  [VILTE][FDD][TMO]in conference call, shouldn't have upgrade itemN/A
+
+Associated Files: 
+  packages/services/Telephony/src/com/android/services/telephony/ImsConference.java
+

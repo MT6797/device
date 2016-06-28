@@ -1,0 +1,787 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729099
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M, SW Version: alps-mp-m0.mp9-V1.78.1N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+  vendor/nb/libs/mt6797_64/hwcomposer.mt6797.1.5.0/Android.mk
+  vendor/nb/libs/mt6797_64/lib3a/Android.mk
+  vendor/nb/libs/mt6797_64/lib3a_sample/Android.mk
+  vendor/nb/libs/mt6797_64/libHdrCoreNeon/Android.mk
+  vendor/nb/libs/mt6797_64/libJpgDecDrv_plat/Android.mk
+  vendor/nb/libs/mt6797_64/libJpgDecPipe/Android.mk
+  vendor/nb/libs/mt6797_64/libJpgEncDrv_plat/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMARMAsmParser_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMARMAsmPrinter_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMARMCodeGen_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMARMDesc_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMARMInfo_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMAsmParser_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMBitReader_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMBitWriter_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMCore_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMDebugInfo_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMExecutionEngine_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMIRReader_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMJIT_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMMCJIT_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMMC_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMObject_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMProfileData_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMSupport_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libLLVMipo_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libOpenCLIcd/Android.mk
+  vendor/nb/libs/mt6797_64/libRSCpuRef_mtk/Android.mk
+  vendor/nb/libs/mt6797_64/libSwJpgCodec/Android.mk
+  vendor/nb/libs/mt6797_64/libautoramasw/Android.mk
+  vendor/nb/libs/mt6797_64/libbss/Android.mk
+  vendor/nb/libs/mt6797_64/libc_malloc_debug_mtk/Android.mk
+  vendor/nb/libs/mt6797_64/libclangAST_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libclangAnalysis_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libclangCodeGen_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libclangEdit_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libclangParse_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libclangSema_mali/Android.mk
+  vendor/nb/libs/mt6797_64/libcomutils/Android.mk
+  vendor/nb/libs/mt6797_64/libcorecpuwarp/Android.mk
+  vendor/nb/libs/mt6797_64/libcorefefm/Android.mk
+  vendor/nb/libs/mt6797_64/libcoremotion/Android.mk
+  vendor/nb/libs/mt6797_64/libcorerwb/Android.mk
+  vendor/nb/libs/mt6797_64/libcorewarp/Android.mk
+  vendor/nb/libs/mt6797_64/libdrmctaplugin/Android.mk
+  vendor/nb/libs/mt6797_64/libdrmmtkplugin/Android.mk
+  vendor/nb/libs/mt6797_64/libdrmmtkutil/Android.mk
+  vendor/nb/libs/mt6797_64/libdrmmtkutil/arm/libdrmmtkutil.a
+  vendor/nb/libs/mt6797_64/libdrmmtkutil/libdrmmtkutil.a
+  vendor/nb/libs/mt6797_64/libeisplus/Android.mk
+  vendor/nb/libs/mt6797_64/libepos/Android.mk
+  vendor/nb/libs/mt6797_64/libfacebeauty/Android.mk
+  vendor/nb/libs/mt6797_64/libfv3d/Android.mk
+  vendor/nb/libs/mt6797_64/libgd/Android.mk
+  vendor/nb/libs/mt6797_64/libged/Android.mk
+  vendor/nb/libs/mt6797_64/libgf/Android.mk
+  vendor/nb/libs/mt6797_64/libgma/Android.mk
+  vendor/nb/libs/mt6797_64/libgyro/Android.mk
+  vendor/nb/libs/mt6797_64/libhdr/Android.mk
+  vendor/nb/libs/mt6797_64/libhotknot_GT1XX/Android.mk
+  vendor/nb/libs/mt6797_64/libimsma_rtp/Android.mk
+  vendor/nb/libs/mt6797_64/libimsma_socketwrapper/Android.mk
+  vendor/nb/libs/mt6797_64/liblsctrans/Android.mk
+  vendor/nb/libs/mt6797_64/libmal/Android.mk
+  vendor/nb/libs/mt6797_64/libmal_datamngr/Android.mk
+  vendor/nb/libs/mt6797_64/libmal_epdga/Android.mk
+  vendor/nb/libs/mt6797_64/libmal_mdmngr/Android.mk
+  vendor/nb/libs/mt6797_64/libmal_rilproxy/Android.mk
+  vendor/nb/libs/mt6797_64/libmemoryDumpEncoder/Android.mk
+  vendor/nb/libs/mt6797_64/libmmprofile/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk-art/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk-artd/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_drvb/Android.mk
+  vendor/nb/libs/mt6797_64/libmtk_drvb_base/Android.mk
+  vendor/nb/libs/mt6797_64/libmtkjpeg/Android.mk
+  vendor/nb/libs/mt6797_64/libnativecheck-jni/Android.mk
+  vendor/nb/libs/mt6797_64/libnr/Android.mk
+  vendor/nb/libs/mt6797_64/libnrsw/Android.mk
+  vendor/nb/libs/mt6797_64/libnvram/Android.mk
+  vendor/nb/libs/mt6797_64/libnvramagentclient/Android.mk
+  vendor/nb/libs/mt6797_64/libot/Android.mk
+  vendor/nb/libs/mt6797_64/libpng_filter/Android.mk
+  vendor/nb/libs/mt6797_64/libskia_opt/Android.mk
+  vendor/nb/libs/mt6797_64/libtsfsw/Android.mk
+  vendor/nb/libs/mt6797_64/libutilfiltering/Android.mk
+  vendor/nb/libs/mt6797_64/libutilmath/Android.mk
+  vendor/nb/libs/mt6797_64/libutilsystem/Android.mk
+  vendor/nb/libs/mt6797_64/libutiltransform/Android.mk
+  vendor/nb/libs/mt6797_64/libutiltransformneon/Android.mk
+  vendor/nb/libs/mt6797_64/libvcodecdrv/Android.mk
+  vendor/nb/libs/mt6797_64/libvfbsw/Android.mk
+  vendor/nb/libs/mt6797_64/volte_imsm/Android.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699981
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2495]Remote Denial of Service Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2495]Remote Denial of Service Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2495]Remote Denial of Service Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  
+  Notice: Following info***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2495]Remote Denial of Service Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2495]Remote Denial of Service Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/av/include/media/stagefright/DataSource.h
+  frameworks/av/media/libstagefright/MPEG4Extractor.cpp
+  frameworks/av/media/libstagefright/SampleTable.cpp
+  frameworks/av/media/libstagefright/include/SampleTable.h
+  vendor/nb/libs/mt6797_64/libsink/Android.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699894
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2494]Elevation of Privilege Vulnerability in SD Card Emulation Layer
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2494]Elevation of Privilege Vulnerability in SD Card Emulation Layer
+  [[問題現象]]
+  导致sd 访问路径溢出 有安全隐患
+  
+  [[問題影響]]
+  手机的安全
+  
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  
+  Notice: Following info***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2494]Elevation of Privilege Vulnerability in SD Card Emulation Layer
+  [[Problem Description]]
+  Fix overflow in path building for sdcard
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  system/core/sdcard/sdcard.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699953
+Severity:
+  
+Description: 
+  [VoLTE][SRVCC Optimize] CS re-transmission CC_CONNECT after SRVCC alps-mp-m0.mp9N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02562298
+Severity:
+  
+Description: 
+  【P655A30】【图库】查看全景自拍照片时，报错退出N/A
+
+Associated Files: 
+  external/skia/src/images/SkImageDecoder_libjpeg.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02662324
+Severity:
+  Critical
+Description: 
+  [Jade][M0][CMCC][ViLTE][仪表联调][R&S][5.1.5 fail][alps-mp-m0.mp9] 183 Session In Progress - Audio - AS bandwidth parameter has incorrect value with 37, expected value is : 49N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699390
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2463]Remote Code Execution Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2463]Remote Code Execution Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2463]Remote Code Execution Vulnerability in Mediaserver
+  系統可能遭受惡意攻擊
+  
+  [[問題影響]]
+  惡意程式可能藉由這個漏洞影響系統
+  
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  測試 ***S media package
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2463]Remote Code Execution Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2463]Remote Code Execution Vulnerability in Mediaserver
+  The sys*** can possibly be attacked by malware
+  [[Impa***]]
+  A remote code execution vulnerability in Mediaserver could enable an attacker ***ng a specially crafted file to cause memory corruption during media file and data processing. 
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  Test ***S media packageN/A
+
+Associated Files: 
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/inc/H264SwDecApi.h
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/DecTestBench.c
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/EvaluationTestBench.c
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/H264SwDecApi.c
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/TestBenchMultipleInstance.c
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/h264bsd_decoder.c
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/h264bsd_util.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02691793
+Severity:
+  
+Description: 
+  [IMS Interface][version#0x4E][AP] IMS not received 200 ok ack CC Retry CC_CONNECT after SRVCC successN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699513
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2464]Remote Code Execution Vulnerabilities in libwebm
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2464]Remote Code Execution Vulnerabilities in libwebm
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2464]Remote Code Execution Vulnerabilities in libwebm
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2464]Remote Code Execution Vulnerabilities in libwebm
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2464]Remote Code Execution Vulnerabilities in libwebm
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/libvpx/libwebm/mkvparser.cpp
+  external/libvpx/libwebm/mkvparser.hpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02616186
+Severity:
+  
+Description: 
+  [MEIZU M80][WLAN] M80 key update时出现断线N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/include/mgmt/privacy.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/privacy.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/nic_rx.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02624246
+Severity:
+  Major
+Description: 
+  android调用重启偶现直接关机-debug infoN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/power/mt6797/pmic.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696798
+Severity:
+  Critical
+Description: 
+  [EUI]【X6_013S 三方】【用户试用】玩QQ新秦时明月时，进入石林或家园后滑动屏幕，游戏发生花屏现象
+  [[問題標題]]
+  遊戲花屏
+  
+  [[問題現象]]
+  遊戲花屏
+  
+  [[問題影響]]
+  顯示異常，無法正常進行遊戲
+  
+  [[問題復現步驟]]
+  玩QQ新秦時明月，進入遊戲第一章第二關，遊戲發生花屏現象
+  
+  
+  [[建議驗證模塊]]
+  Game DOU
+  
+  [[注意: 請勿刪除此行]]
+  
+  Notice: Following info***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  game artifa***s
+  
+  [[Problem Description]]
+  game artifa***s
+  
+  [[Impa***]]
+  cannot play no***ally due to artefe*** screen or UI
+  
+  [[Reproduced Steps]]
+  Open com.sparklykey.qinsmoon.leshi. The artifa*** can be found at the level 1-2.
+  
+  [[Modules to be verified after taking p***h]]
+  Game DOU
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libGLES_mali/arm/libGLES_mali.so
+  vendor/nb/libs/mt6797_64/libGLES_mali/libGLES_mali.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02703654
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][ANDROID-28269112]Change Security Patch Level in Settings
+  [[問題標題]]
+  [Google Security P***h][AN***D-28269112]Change Security P***h Level in Settings
+  [[問題現象]]
+  [Google Security P***h][AN***D-28269112]Change Security P***h Level in Settings
+  [[問題影響]]
+  [Google Security P***h][AN***D-28269112]Change Security P***h Level in Settings
+  没有合入，security level不对。
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][AN***D-28269112]Change Security P***h Level in Settings
+  [[Problem Description]]
+  [Google Security P***h][AN***D-28269112]Change Security P***h Level in Settings
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  build/core/version_defaults.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713738
+Severity:
+  Critical
+Description: 
+  [CTS Verifier 6.0_r6]BYOD Managed Provisioning#Camera support cross profile video capture(without extra output path)-Fail(5/5)
+  [[問題標題]]
+  
+  [[問題現象]]
+  ***S 测试发现如果不传录像保存的路径，那录制的视频***S播放不了
+  [[問題影響]]
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響)
+  三方ap 用camera 录像，如果不传保存路径那么camera录制结束三方ap可能不能播放视频
+  [[問題復現步驟]]
+  (請填寫於此行下方，並清楚填寫)
+  ***S 6.0_r6
+  Camera support cross profile video capture(without extra output path)
+  [[建議驗證模塊]]
+  三方ap 用camera 录像
+  [[注意: 請勿刪除此行]]
+  
+  Notice: Following info***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  ***S 6.0_r6 Camera support cross profile video capture(without extra output path)-Fail
+  [[Problem Description]]
+  after ***S 6.0_r6 Camera support cross profile video capture(without extra output path) video can't play
+  [[Impa***]]
+  third ap use camera record and if don't give camera uri maybe can't play the video.
+  [[Reproduced Steps]]
+  run ***S 6.0_r6  Camera support cross profile video capture(without extra output path)
+  [[Modules to be verified after taking p***h]]
+  third ap use camera to recording.
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/apps/Camera/src/com/mediatek/camera/mode/VideoModeHelper.java
+  vendor/mediatek/proprietary/packages/apps/Camera/src/com/mediatek/camera/v2/mode/normal/CaptureMode.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02570989
+Severity:
+  Critical
+Description: 
+  [Everest][M] KE @ cpuhp_timer_func when monkey test (1/10)
+  [[問題標題]]
+  系統記憶體不足，造成CPU hot-plug 花太多時間，導致KE。
+  
+  [[問題現象]]
+  CPU hot-plug callbacks會進行記憶體分配，期間若有嚴重的low memory，
+  可能會導致花費較長的時間，進而主動觸發KE，造成手機重啟。
+  
+  [[問題影響]]
+  頻繁且重度使用手機的情況下，可能遭遇手機重啟
+  
+  [[問題復現步驟]]
+  1. 預載大量的APK，並將之一一啟動
+  2. 開啟相機
+  3. 頻繁且重度使用手機，使手機溫度升高，以觸發CPU hot-plug flow
+  
+  [[建議驗證模塊]]
+  Monkey test
+  
+  [[Title for Customer]]
+  When sys*** is under severe low memory, it will consume too much time during CPU hot-plug and then led to KE.
+  
+  [[Problem Description]]
+  CPU hot-plug callbacks will do memory allocation, when severe low memory occurs ***he period,
+  it may take *** time to finish them.
+  And then triggering KE, which will lead ***hone reboot.
+  
+  [[Impa***]]
+  Phone might reboot when it w***ed frequently and heavily.
+  
+  [[Reproduced Steps]]
+  1. Install a large number of APPs, and launch them one by one.
+  2. Launch camera
+  3. Use the phone frequently and heavily to let it be under high ***perature for the triggering of CPU hot-plug flow.
+  
+  [[Modules to be verified after taking p***h]]
+  Monkey testN/A
+
+Associated Files: 
+  kernel-3.18/drivers/staging/android/lowmemorykiller.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02700256
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2496]Elevation of Privilege Vulnerability in Framework UI
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2496]Elevation of Privilege Vulnerability in Framework UI
+  [[問題現象]]
+  
+  [Google Security P***h][CVE-2016-2496]Elevation of Privilege Vulnerability in Framework UI
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2496]Elevation of Privilege Vulnerability in Framework UI
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2496]Elevation of Privilege Vulnerability in Framework UI
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/core/java/android/view/MotionEvent.java
+  frameworks/native/include/input/Input.h
+  frameworks/native/services/inputflinger/InputDispatcher.cpp
+  frameworks/native/services/inputflinger/InputDispatcher.h
+  frameworks/native/services/inputflinger/InputWindow.cpp
+  frameworks/native/services/inputflinger/InputWindow.h
+  packages/apps/PackageInstaller/res/layout/grant_permissions.xml
+  packages/apps/PackageInstaller/src/com/android/packageinstaller/permission/ui/SecureButtonView.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02689743
+Severity:
+  Critical
+Description: 
+  [AC0031] [WIFI] WIFI间歇性 不能扫描AP -IMEI 860778039936273
+  [[問題標題]] 
+  解决过多相同ssid导致扫描结果不能上报的问题
+  [[問題現象]] 
+  扫描列表里面只显示少量ssid
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  影响连线
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  在相同一个ssid特别多的场景下多扫描几次，并且只连此ssid
+  [[建議驗證模塊]] 
+  扫描连线
+  [[Title for Customer]] 
+  Solve the issue of few AP in scan setting list,because of there are too many same ssid AP.
+  [[Problem Description]] 
+  There are few AP in scan setting list
+  [[Impa***]] 
+  Conne*** to AP
+  [[Reproduced Steps]] 
+  Do some scan ***he environment with many same ssid,and only conncet to this ssid.
+  [[Modules to be verified after taking p***h]] 
+  Scan and conne***
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/include/mgmt/scan.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/scan.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02676974
+Severity:
+  
+Description: 
+  Fix call UA get profile function error input parameterN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02703597
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2499]Information Disclosure Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2499]Info***ation Disclosure Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2499]Info***ation Disclosure Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2499]Info***ation Disclosure Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2499]Info***ation Disclosure Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/av/media/libstagefright/AudioSource.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02583109
+Severity:
+  Critical
+Description: 
+  [MT6755][Jade M6][UK][Remote][VDF][WFC][SQC Excluded] Traces missing from NTlogN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/arm/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/Android.mk
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/arm/mtk-ril-prop-md2.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/mtk-ril-prop-md2.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02700282
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/core/java/android/content/IntentFilter.java
+  frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02691506
+Severity:
+  
+Description: 
+  插入卡1移动4G、卡2电信，只识别单卡电信卡并置灰无服务N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/arm/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md1/mtk-ril-prop-md1.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/Android.mk
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/arm/mtk-ril-prop-md2.a
+  vendor/nb/libs/mt6797_64/mtk-ril-prop-md2/mtk-ril-prop-md2.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02679803
+Severity:
+  Critical
+Description: 
+  [Everest][M][SPU]Kernel (KE),0,0,99,/data/core/,0,,KE at cnmTimerDoTimeOutCheck+0xf4/0x1ecN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/common/debug.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/include/debug.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/scan.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/nic_rx.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02703615
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2500]Information Disclosure Vulnerability in Activity Manager
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2500]Info***ation Disclosure Vulnerability in A***ivity Manager
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2500]Info***ation Disclosure Vulnerability in A***ivity Manager
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2500]Info***ation Disclosure Vulnerability in A***ivity Manager
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2500]Info***ation Disclosure Vulnerability in A***ivity Manager
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/services/core/java/com/android/server/am/ActivityManagerService.java
+  frameworks/base/services/core/java/com/android/server/am/ProcessRecord.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02596277
+Severity:
+  Critical
+Description: 
+  In mediatek drivers there is a SIOCSIWSCAN command, in which case copy_from_user() didn't check the essid_len from user input.It may result in memory overflow.
+  [[問題標題]]
+  地址访问缺少合法检查可能导致系统重启
+  
+  [[問題現象]]
+  系统可能会重启
+  
+  [[問題影響]]
+  系统可能会重启
+  
+  [[問題復現步驟]]
+  使用特殊的iw command进行scan操作可能会让系统重启
+  
+  [[建議驗證模塊]]
+  WiFi 
+  
+  [[Title for Customer]]
+  Sys*** might reboot
+  
+  [[Problem Description]]
+  Sys*** might reboot
+  
+  [[Impa***]]
+  Sys*** might reboot
+  
+  [[Reproduced Steps]]
+  1. self-made application fill wrong essid len in iwrequest stru***ure
+  2. trigger scan *** this special tool
+  
+  [[Modules to be verified after taking p***h]]
+  WiFiN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/combo/linux/wmt_chrdev_wifi.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_wext.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_wext_priv.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/include/gl_os.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/include/gl_p2p_os.h
+

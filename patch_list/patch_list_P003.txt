@@ -1,0 +1,250 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729406
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M, SW Version: alps-mp-m0.mp9-V1.78.1N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02720036
+Severity:
+  
+Description: 
+  [M95]-[MT6797]+[MT6631]蓝牙非信令下打非调制波，发现频偏250khz左右
+  [[問題標題]] 
+  藍牙非信令下打非調制波，發現頻偏250khz左右
+  
+  [[問題現象]] 
+  藍牙非信令下打非調制波，發現頻偏250khz左右
+  
+  [[問題影響]] 
+  藍牙非信令下打非調制波，發現頻偏250khz左右
+  可能影響實驗室認證
+  
+  [[問題復現步驟]] 
+  使用Data tester 設定打出直流非調制波
+  
+  [[建議驗證模塊]] 
+  非調制波頻率確認
+  
+  [[Title for Customer]] 
+  Signal frequency incorre*** when DUT is set to single D***on mode.
+  [[Problem Description]] 
+  Signal frequency incorre*** when DUT is set to single D***on mode.
+  [[Impa***]] 
+  Signal frequency incorre*** when DUT is set to single D***on mode.
+  It might affe*** LAB certification.
+  [[Reproduced Steps]] 
+  ***ng data tester to transmit non-signaling D***one.
+  [[Modules to be verified after taking p***h]] 
+  Check frequency and fun***ion in non-signalling transmission mode.
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02685150
+Severity:
+  Major
+Description: 
+  [MT6795 IOT][Hummingbird][GATT]run test case bt_gattc_02.axf bt_gattc_11.axf fail
+  [[問題標題]]
+  ble ***ology error 导致Gatt conne***失败
+  [[問題現象]]
+  ble ***ology error 导致Gatt conne***失败
+  [[問題影響]]
+  在有DUT做peripheral的场景下，会发生ble ***ology error 导致的Gatt conne***失败
+  [[問題復現步驟]]
+  1. DUT使用multi-***并conne***able
+  2.DUT触发gatt dire*** conne***
+  3. remote device init连线，并连线成功
+  4.断线后，DUT再次触发gatt dire*** conne***
+  [[建議驗證模塊]]
+  BLE
+  [[Title for Customer]]
+  DUT initiate gatt conne***ion fail
+  [[Problem Description]]
+  DUT will initiate dire*** conne***ion if DUT has been periperal
+  [[Impa***]]
+  DUT will initiate dire*** conne***ion if DUT has been periperal
+  [[Reproduced Steps]]
+  1. D***t gatt conne***able multi-***
+  2. DUT initiate dire*** conne***ion
+  3. Remote device create conne***ion to DUT and link conne***ed successfully
+  4. disconne*** and  try to  initiate dire*** conne***ion from DUT again
+  [[Modules to be verified after taking p***h]]
+  BLEN/A
+
+Associated Files: 
+  system/bt/stack/l2cap/l2c_ble.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02674913
+Severity:
+  
+Description: 
+  [MT6735][K6P][KT] Kernel Crash happened during PLT (Product Lifecycle Test)
+  [[問題標題]] 
+  在使用Wi-Fi的过程中手机可能会重启
+  
+  [[問題現象]] 
+  在使用Wi-Fi的过程中手机可能会重启
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  在使用Wi-Fi的过程中手机可能会重启
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  打开WiFi并使用WiFi上网 
+  [[建議驗證模塊]] 
+  Wi-Fi
+  [[Title for Customer]] 
+  Device might KE during ***ng WiFi
+  [[Problem Description]] 
+  Device might KE during ***ng WiFi
+  [[Impa***]] 
+  Device might KE during ***ng WiFi
+  [[Reproduced Steps]] 
+  1. Turn on WiFi
+  2. Surf on ***ernet *** Wi-Fi
+  
+  [[Modules to be verified after taking p***h]] 
+  WiFi
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/nic.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02463500
+Severity:
+  Critical
+Description: 
+  请协助分析GPS MNLD卡死的问题。
+  [[問題標題]]
+  mnld卡死，gps不能工作 
+  [[問題現象]]
+  mnld卡死，gps不能工作
+  [[問題影響]]
+  当download epo时，开关gps可能会mnld卡死，gps不能正常工作。
+  [[問題復現步驟]]
+  gps打开，此时epo download开始，关闭gps，mnl 已经s***，但hal 层started标志还没置0，hal通知mnl更新epo消息已下发。
+  [[建議驗證模塊]]
+  epo  gps qepo
+  [[Title for Customer]]
+  mnld hang，gps can't work
+  [[Problem Description]]
+  mnld hang，gps can't work
+  [[Impa***]]
+  when epo / qepo download, gps open/close, sometimes mnld hang, then gps can't work.
+  [[Reproduced Steps]]
+  conne*** wifi, open gps，then epo download. Immediately close gps, mnl s***，but epo upda***sg had been sent to mnld.  then mnld will call api in mnl,  mnld hang.
+  [[Modules to be verified after taking p***h]]
+  gps epo qepoN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/mnld/src/mnld.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02692224
+Severity:
+  
+Description: 
+  [M95][蓝牙]从设置清除蓝牙共享数据蓝牙重新启动超时
+  [[問題標題]] 
+  從設置清除藍牙共享數據藍牙重新啟動超時
+  
+  [[問題現象]] 
+  從設置清除藍牙共享數據藍牙重新啟動超時
+  
+  [[問題影響]] 
+  從設置清除藍牙共享數據藍牙重新啟動超時
+  
+  [[問題復現步驟]] 
+  開啟藍牙熱點分享 -> 設定 -> 應用 -> 藍牙共享 -> 清除資料
+  
+  [[建議驗證模塊]] 
+  開關BT壓力測試
+  
+  
+  [[Title for Customer]] 
+  BT restarting failed after clearing BT ***hering data
+  [[Problem Description]] 
+  BT restarting failed after clearing BT ***hering data
+  [[Impa***]] 
+  BT restarting failed after clearing BT ***hering data
+  [[Reproduced Steps]] 
+  Enabling BT ***hering -> Setting -> More -> APP -> Show sys*** -> Bluetooth ***hering -> clear data
+  [[Modules to be verified after taking p***h]] 
+  BT on/off pressure test.N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02626751
+Severity:
+  Major
+Description: 
+  [6632][D1][SQC1][Classic IOT][MS-ARC touch mouse][5/5]The Device paired,but can't use.
+  [[問題標題]] 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erva
+  [[問題現象]] 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erva
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erva
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1,Pair and conne*** Ar***ouch BT Mouse
+  2, use the mouse after conne***ed
+  [[建議驗證模塊]] 
+  HOGP
+  [[Title for Customer]] 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erval
+  [[Problem Description]] 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erval
+  [[Impa***]] 
+  Devices like Ar***ouch BT Mouse will not work no***ally if DUT reje*** its conne***ion update request with 7.5ms conne***ion ***erval
+  [[Reproduced Steps]] 
+  1,Pair and conne*** Ar***ouch BT Mouse
+  2, use the mouse after conne***ed
+  [[Modules to be verified after taking p***h]] 
+  HOGP
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/conf/bt_stack.conf
+  system/bt/include/stack_config.h
+  system/bt/main/stack_config.c
+  system/bt/osi/include/config.h
+  system/bt/stack/l2cap/l2c_ble.c
+

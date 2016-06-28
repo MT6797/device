@@ -705,20 +705,18 @@ sub get_modem_file_mapping
 			# C2K
 			my $path_of_fsm;
 			my $path_of_rom;
-			my $path_of_obj;
+			my $path_of_obj = $path_of_bin;
+			$path_of_obj =~ s/\/build\/.*$/\/obj\//i;
 			if ($type_of_load == 2)
 			{
 				$path_of_fsm = $path_of_bin . "fsm_files/images/";
 				$path_of_rom = $path_of_bin . "lib/";
 				$path_of_rom =~ s/\/build\//\/mtk_rel\//i;
-				$path_of_obj = $path_of_bin;
-				$path_of_obj =~ s/\/build\/.*$/\/obj\//i;
 			}
 			else
 			{
 				$path_of_fsm = $path_of_bin;
 				$path_of_rom = $path_of_bin;
-				$path_of_obj = $path_of_bin;
 			}
 			if (-e $path_of_rom . "boot.rom")
 			{
