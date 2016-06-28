@@ -1,0 +1,190 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729516
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M---NB6797_6C_M, SW Version: MOLY.LR11.W1539.MD.CMCC.MP.V19.2---MOLY.LR11.W1539.MD.MP.V27N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02669317
+Severity:
+  
+Description: 
+  从非VOLTE网络转移来电至VOLTE网络，终端不显示转移来电N/A
+
+Associated Files: 
+  packages/services/Telephony/src/com/mediatek/services/telephony/SuppMessageManager.java
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713074
+Severity:
+  
+Description: 
+  语音接听视频来电后双方无法切换到视频通话N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02671294
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [IMS][CMCC]vilte early-media and aSRVCC feature dev
+  [[問題標題]] 
+  CM***MS视频电话音频彩铃p***h 
+  
+  [[問題現象]] 
+  用开通视频电话彩铃的CMCC卡拨打视频电话，会出现绿屏现象
+  [[問題影響]] 
+  影响CMCC入库case中的vilte相关case
+  
+  [[問題復現步驟]] 
+  1.UE2中SIM卡开通了视频电话彩铃权限
+  2.UE1拨打视频电话给UE2
+  3.UE2在接通瞬间会闪绿屏
+  
+  [[建議驗證模塊]] 
+  volte语音电话彩铃
+  
+  [[Title for Customer]] 
+  p***h for CMCC vilte call early-media feature
+  [[Problem Description]] 
+  MT show green screen when accept a vilte call
+  [[Impa***]] 
+  CMCC lab entry vilte related testcases
+  [[Reproduced Steps]] 
+  1.UE2 had SIM card with vilte early-media
+  2.UE1 make a vilte call to UE2
+  [[Modules to be verified after taking p***h]] 
+  volte call with early-media
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02734871
+Severity:
+  
+Description: 
+  合并两路VOLTE通话时出现volte_ua NE，modem掉网
+  [[問題標題]] 
+  创建3方会议时合并通话后出现NE。
+  
+  [[問題現象]] 
+  创建3方会议时，合并通话后出现NE。
+  
+  [[問題影響]] 
+  NE，modem掉网。
+  
+  [[問題復現步驟]] 
+  用没有开通VOLTE conference call功能的卡测试，按照3方会议方式创建会议。
+  
+  [[建議驗證模塊]] 
+  VOLTE会议。
+  
+  [[Title for Customer]] 
+  NE happens when create a conference call.
+  
+  [[Problem Description]] 
+  NE happens when create a conference call.
+  
+  [[Impa***]] 
+  NE and modem reset.
+  
+  [[Reproduced Steps]] 
+  Make a  conference call with a SIM card NOT a***ivated VoLTE conference call service.
+  
+  [[Modules to be verified after taking p***h]] 
+  VoLTE conference call.
+  
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02710626
+Severity:
+  Critical
+Description: 
+  [MT6735_ViLTE_CMCC_Chiptest][NV-IOT]终端视频通话时出现绿屏现象N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libimsma/arm/libimsma.so
+  vendor/nb/libs/mt6797_64/libimsma/libimsma.so
+  vendor/nb/libs/mt6797_64/libmtk_vt_service/arm/libmtk_vt_service.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02579167
+Severity:
+  Major
+Description: 
+  [6755][Jade-M][CU][VoLTE][FT][ZZ][TC_6.2.2.3][LAT2]Voice call upgrade to Video call fail.N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02715683
+Severity:
+  
+Description: 
+  [CMCC VoLTE百日会战][江苏战区][辽宁]金立GN9010L：其他终端无应答和遇忙转移场景呼转至金立手机时，金立手机若正在进行通话，则不能收到本次呼叫……
+  [[問題標題]] 修正不能接收第二通来电的问题
+  
+  [[問題現象]] 
+  当前UE正在通话中，在某些网络环境下，可能会收不到第二通来电
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  当前UE正在通话中，在某些网络环境下，可能会收不到第二通来电
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  UE正在通话中，用另一终端拨打此UE
+  [[建議驗證模塊]] 
+  VoLTE UA
+  [[Title for Customer]] 
+  Fix issue of no 2nd incoming call.
+  [[Problem Description]] 
+  UE in a call can not receive another incoming call.
+  [[Impa***]] 
+  UE in a call can not receive another incoming call.
+  [[Reproduced Steps]] 
+  UE is in a call, and call it with another phone.
+  [[Modules to be verified after taking p***h]] 
+  VoLTE UA.
+  [[Notice: Please don't dele***his line and use "Secure Info" for ***ernal info***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
