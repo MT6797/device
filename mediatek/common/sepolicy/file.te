@@ -140,6 +140,8 @@ type msensord_daemon, fs_type,sysfs_type;
 type msensord_daemon2, fs_type,sysfs_type;
 type akmd8963_access_file1, file_type,data_file_type;
 type akmd8963_access_file2, file_type,data_file_type;
+type memsicd3416x_access_file1, file_type,data_file_type;
+type st480_access_file1, file_type,data_file_type;
 type gyroscope_mpud6050_chipinfo, fs_type,sysfs_type;
 type gyroscope_mpud6050_status, fs_type,sysfs_type;
 type gyroscope_mpud6050_use, fs_type,sysfs_type;

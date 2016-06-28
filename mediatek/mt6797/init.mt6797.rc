@@ -1469,9 +1469,8 @@ service memsicd /system/bin/memsicd
     group system
     class main
 
-service memsicd3416x /system/bin/memsicd3416x
-     disabled
-	 user system
+service memsicd3416x /system/bin/memsicd3416x     
+	user system
     group system
     class main
 service akmd8975 /system/bin/akmd8975

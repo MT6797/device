@@ -34,6 +34,7 @@
 /data/mediaserver(/.*)? u:object_r:mediaserver_data_file:s0
 /data/misc/acdapi(/.*)? u:object_r:acdapi_data_file:s0
 /data/misc/akmd_set.txt u:object_r:akmd8963_access_file1:s0
+/data/misc/magpara u:object_r:memsicd3416x_access_file1:s0
 /data/misc/mblog(/.*)? u:object_r:logmisc_data_file:s0
 /data/misc/xlog(/.*)? u:object_r:xlog_data_file:s0
 /data/misc/PDC.ini u:object_r:akmd8963_access_file2:s0
