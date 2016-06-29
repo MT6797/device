@@ -1,0 +1,31 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02773038
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M, SW Version: alps-mp-m0.mp9-V1.78.1N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02704144
+Severity:
+  
+Description: 
+  Phone crash after short press powerkey constantly when phone has start upN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/dramc/mt6797/mt_dramc.c
+
