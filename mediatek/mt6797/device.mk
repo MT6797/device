@@ -1458,4 +1458,3 @@ DONT_DEXPREOPT_PREBUILTS := false
 endif
 
 PRODUCT_PACKAGES += wechatproxy
-PRODUCT_PACKAGES += ApiDemos
