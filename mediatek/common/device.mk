@@ -2299,4 +2299,11 @@ PRODUCT_PACKAGES +=etsd \
   		   fingerprint.default
 endif
 
+#add for microarray fingerprint +
+ifeq ($(strip $(NB_FP_AFS_SUPPORT)),yes)
+PRODUCT_COPY_FILES += vendor/3rd_fp/fp_afs120/fingerprint.default.so:system/lib64/hw/fingerprint.afs.so
+PRODUCT_COPY_FILES += vendor/3rd_fp/fp_afs120/libfprint-x64.so:system/lib64/libfprint-x64.so
+PRODUCT_COPY_FILES += vendor/3rd_fp/fp_afs120/libfprint-d64.so:system/lib64/libfprint-d64.so
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += persist.radio.mtk_ps2_rat=$(strip $(MTK_PROTOCOL2_RAT_CONFIG))

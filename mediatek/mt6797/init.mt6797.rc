@@ -1777,6 +1777,7 @@ on property:service.mbim.enable=1
 service etsd /system/bin/etsd
     class late_start
     user system
+    
 service fingerprintd /system/bin/fingerprintd
     class late_start
     user system
