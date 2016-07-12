@@ -8,7 +8,7 @@
     <Param path="Ring_Alarm,HS5POLE" param_id="3"/>
     <Param path="Ring_Alarm,HS5POLE_ANC" param_id="3"/>
     <Param path="Others,RCV" param_id="2"/>
-    <Param path="Others,HS" param_id="3"/>
+    <Param path="Others,HS" param_id="5"/>
     <Param path="Others,SPK" param_id="4"/>
     <Param path="Others,HSSPK" param_id="1"/>
     <Param path="Others,HS5POLE" param_id="3"/>
@@ -48,6 +48,12 @@
     <ParamUnit param_id="4">
       <Param name="headset_pga" value="-1"/>
       <Param name="speaker_pga" value="10"/>
+      <Param name="receiver_pga" value="-1"/>
+      <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
+    </ParamUnit>
+    <ParamUnit param_id="5">
+      <Param name="headset_pga" value="9"/>
+      <Param name="speaker_pga" value="-1"/>
       <Param name="receiver_pga" value="-1"/>
       <Param name="amp" value="0,0,0,0,0,0,0,0,0,0"/>
     </ParamUnit>

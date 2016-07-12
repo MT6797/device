@@ -45,7 +45,7 @@
       <Param name="ul_gain" value="32"/>
     </ParamUnit>
     <ParamUnit param_id="3">
-      <Param name="ul_gain" value="26"/>
+      <Param name="ul_gain" value="34"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>

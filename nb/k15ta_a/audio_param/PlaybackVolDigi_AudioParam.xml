@@ -2,7 +2,7 @@
 <AudioParam version="1.0">
   <ParamTree>
     <Param path="System,RCV" param_id="0"/>
-    <Param path="System,HS" param_id="0"/>
+    <Param path="System,HS" param_id="2"/>
     <Param path="System,SPK" param_id="0"/>
     <Param path="System,HSSPK" param_id="0"/>
     <Param path="System,HS5POLE" param_id="0"/>
@@ -79,7 +79,10 @@
       <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
     <ParamUnit param_id="1">
-      <Param name="digital_gain" value="-64,-48,-44,-40,-36,-32,-28,-24,-20,-17,-14,-12,-10,-8,-6,-4"/>
+      <Param name="digital_gain" value="-64,-48,-44,-40,-36,-32,-28,-24,-20,-17,-15,-13,-11,-9,-7,-5"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="digital_gain" value="-64,-42,-39,-36,-33,-30,-27,-24,-21,-18,-15,-12,-9,-6,-3,0"/>
     </ParamUnit>
   </ParamUnitPool>
 </AudioParam>
