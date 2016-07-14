@@ -1,0 +1,3641 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02773286
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M, SW Version: alps-mp-m0.mp9-V1.78.1N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+  vendor/nb/libs/mt6797_64/BtTool/Android.mk
+  vendor/nb/libs/mt6797_64/BtTool/BtTool.apk
+  vendor/nb/libs/mt6797_64/epdg_wod/epdg_wod
+  vendor/nb/libs/mt6797_64/libwvdrmengine/arm/libwvdrmengine.so
+  vendor/nb/libs/mt6797_64/volte_imsm/arm/volte_imsm.so
+  vendor/nb/libs/mt6797_64/volte_imsm/volte_imsm.so
+
+Delete Files: 
+delete external/libpng/Makefile.in
+delete external/libpng/aclocal.m4
+delete external/libpng/compile
+delete external/libpng/config.guess
+delete external/libpng/config.h.in
+delete external/libpng/config.sub
+delete external/libpng/configure
+delete external/libpng/depcomp
+delete external/libpng/install-sh
+delete external/libpng/ltmain.sh
+delete external/libpng/missing
+delete external/libpng/scripts/def.dfn
+delete external/libpng/scripts/intprefix.dfn
+delete external/libpng/scripts/libtool.m4
+delete external/libpng/scripts/ltoptions.m4
+delete external/libpng/scripts/ltsugar.m4
+delete external/libpng/scripts/ltversion.m4
+delete external/libpng/scripts/lt~obsolete.m4
+delete external/libpng/scripts/makefile.elf
+delete external/libpng/scripts/prefix.dfn
+delete external/libpng/scripts/sym.dfn
+delete external/libpng/scripts/symbols.dfn
+delete external/libpng/scripts/vers.dfn
+delete external/libpng/test-driver
+delete external/libpng/test-pngtest.sh
+delete external/libpng/tests/pngstest-0g01
+delete external/libpng/tests/pngstest-0g02
+delete external/libpng/tests/pngstest-0g04
+delete external/libpng/tests/pngstest-0g08
+delete external/libpng/tests/pngstest-0g16
+delete external/libpng/tests/pngstest-2c08
+delete external/libpng/tests/pngstest-2c16
+delete external/libpng/tests/pngstest-3p01
+delete external/libpng/tests/pngstest-3p02
+delete external/libpng/tests/pngstest-3p04
+delete external/libpng/tests/pngstest-3p08
+delete external/libpng/tests/pngstest-4a08
+delete external/libpng/tests/pngstest-4a16
+delete external/libpng/tests/pngstest-6a08
+delete external/libpng/tests/pngstest-6a16
+delete external/libpng/tests/pngstest-error
+delete external/libpng/tests/pngvalid-progressive-interlace-size
+delete external/libpng/tests/pngvalid-progressive-interlace-transform
+delete external/libpng/updatenotes
+delete vendor/nb/libs/mt6797_64/libpng_filter/
+
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02523557
+Severity:
+  
+Description: 
+  【外接设备】【手环】卓棒UP2蓝牙手环与手机连接平均一分钟会自动断开4--5次，之后又自动连接成功N/A
+
+Associated Files: 
+  system/bt/conf/bt_stack.conf
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02723745
+Severity:
+  
+Description: 
+  [M95][蓝牙]部分蓝牙耳机不显示电池电量
+  [[問題標題]] 
+  
+  [[問題現象]] 
+  [M95][蓝牙]部分蓝牙耳机不显示电池电量
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  [M95][蓝牙]部分蓝牙耳机不显示电池电量
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  测试步骤：打开蓝牙-》 连接蓝牙耳机Q8
+  
+  实际结果：不显示蓝牙耳机Q8的电量。
+  [[建議驗證模塊]] 
+  HFP
+  [[Title for Customer]] 
+  Some hf doesn't display the battery i***o.
+  [[Problem Description]] 
+  Some hf doesn't display the battery i***o.
+  [[Impa***]] 
+  Some hf doesn't display the battery i***o.
+  [[Reproduced Steps]] 
+  enter settings;
+  conne*** device;
+  Che***he battery i***o.
+  
+  [[Modules to be verified after taking p***h]] 
+  HFP.
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/bta/ag/bta_ag_sdp.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02690212
+Severity:
+  
+Description: 
+  【P655F30】在2面环山，山沟里面测试，发现漂移有点大
+  [[問題標題]]
+  修正裝置沒有氣壓計時，造成山路GPS高度定位飄移
+  
+  [[問題現象]]
+  GPS誤以為裝置有氣壓計，並取到錯誤的氣壓計高度參考值
+  
+  [[問題影響]]
+  在高度變化明顯的路段，沒辦法即時反映正確的GPS高度
+  
+  [[問題復現步驟]]
+  裝置不含氣壓計，並在高度變化明顯的路段開啟GPS
+  
+  [[建議驗證模塊]]
+  裝置不含氣壓計，並在高度變化明顯的路段開啟GPS，高度不會鎖死，有固定的偏移
+  
+  [[Title for Customer]]
+  Fix hill driving GPS height inaccuracy for device without pressure sensor 
+  
+  [[Problem Description]]
+  GPS take reference to invalid pressure sensor data 
+  
+  [[Impa***]]
+  GPS unable ***rovide corre*** height especially on the road with apparent height variation 
+  
+  [[Reproduced Steps]]
+  Turn on GPS when driving on the road with apparent height variation, ***ng device without pressure sensor.
+  
+  [[Modules to be verified after taking p***h]]
+  GPS is able ***rovide corre*** height i***o when driving on the road with apparent height variatio***or the device without pressure sensorN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/mpe/lib/libDR.so
+  vendor/mediatek/proprietary/external/mpe/lib/libfusion.so
+  vendor/mediatek/proprietary/external/mpe/lib/libmpe.driver.so
+  vendor/mediatek/proprietary/external/mpe/lib/libmpe.sensorlistener.so
+  vendor/mediatek/proprietary/external/mpe/scr/mpe_main.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02772566
+Severity:
+  Critical
+Description: 
+  [联调][Jade][CT][VoLTE][IOT][Anite]7.26TC-VoLTE-02032被叫-被叫设备是SIP会话更新者，并且会话因为主叫设备超时N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02737273
+Severity:
+  
+Description: 
+  [End user]到家后无法搜到家里的wifi 列表是空的 搜了几分钟还是没有显示列表 关闭wifi重新打开也是一样 重启后正常
+  [[問題標題]] 
+  [End user]到家后无法搜到家里的wifi 列表是空的 搜了几分钟还是没有显示列表 关闭wifi重新打开也是一样 重启后正常
+  
+  [[問題現象]] 
+  wifi 突然搜不到AP 
+  
+  [[問題影響]] 
+  wifi 突然搜不到AP 
+  
+  [[問題復現步驟]] 
+  進入wifi scan 頁面
+  
+  [[建議驗證模塊]] 
+  wifi scan
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  wifi cannot search AP suddenly
+  
+  [[Problem Description]] 
+  wifi cannot search AP suddenly
+  
+  [[Impa***]] 
+  wifi cannot search AP
+  
+  [[Reproduced Steps]] 
+  get ***o scan page
+  
+  [[Modules to be verified after taking p***h]] 
+  wifi scan
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758985
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3762]Elevation of Privilege Vulnerability in Sockets
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3762]Elevation of Privilege Vulnerability in Sockets
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3762]Elevation of Privilege Vulnerability in Sockets
+  [[問題影響]]
+  Socket Security 相關問題
+  [[問題復現步驟]]
+  存取 socket 的資源限制改變
+  [[建議驗證模塊]]
+  SELinux Socket Policy
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3762]Elevation of Privilege Vulnerability in Sockets
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3762]Elevation of Privilege Vulnerability in Sockets
+  [[Impa***]]
+  Google has modified SELinux socket policy part
+  [[Reproduced Steps]]
+  Pe***ission change for socket policy
+  [[Modules to be verified after taking p***h]]
+  SELinux Socket PolicyN/A
+
+Associated Files: 
+  external/sepolicy/bluetooth.te
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02732883
+Severity:
+  
+Description: 
+  【CX88】【WIFI】【小米测试】扫描对吞吐量影响很大，和高通平台比较有明显差异N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/common/wlan_oid.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/ais_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/scan.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/scan_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_init.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_kal.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/include/gl_os.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02739561
+Severity:
+  
+Description: 
+  【CM885】【WIFI】WIFI  can't  connected with AP (Authentication: WPA; AES)
+  [[問題標題]] 
+  fragment 包被过滤掉
+  [[問題現象]] 
+  wifi 不能连线
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  不能连线
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  [Step]
+  1.Entry Settings & Wireless controls 
+  2.Conne*** wireless AP ""A""
+  [[建議驗證模塊]] 
+  wifi
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  fragment packet is dropped
+  [[Problem Description]] 
+  fragment packet is dropped
+  [[Impa***]] 
+  wfi can not conne***ed
+  [[Reproduced Steps]] 
+  [Step]
+  1.Entry Settings & Wireless controls 
+  2.Conne*** wireless AP ""A""
+  [[Modules to be verified after taking p***h]] 
+  wifi
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/privacy.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/que_mgt.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02684193
+Severity:
+  
+Description: 
+  追踪灵敏度太差N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/mnld/libs/libmnl.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02718743
+Severity:
+  
+Description: 
+  [Google CTS]android.net.cts.MultinetworkApiTest -- testNativeDatagramTransmission FailN/A
+
+Associated Files: 
+  frameworks/base/services/core/java/com/android/server/ConnectivityService.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02768148
+Severity:
+  
+Description: 
+  [AA027][NFC] 申请patch OPPO R5128 电信集团在NFC SWP2 不能测试
+  [[問題標題]] 
+  [***C MT6605] *** SWP2儀表測項補丁
+  
+  [[問題現象]] 
+  ***儀表無法測試***C SWP2
+  
+  [[問題影響]] 
+  ***儀表無法測試***C SWP2
+  
+  [[問題復現步驟]] 
+  1. 進入Enginee***ode
+  2. 選擇MT6605 DTA
+  3. 無SWP2可選
+  
+  [[建議驗證模塊]] 
+  ***C DTA儀表測試
+  
+  [[Title for Customer]] 
+  [***C MT6605] *** SWP2 p***h for test suite
+  
+  [[Problem Description]] 
+  *** test can not run ***C SWP2
+  
+  [[Impa***]] 
+  *** test can not run ***C SWP2
+  
+  [[Reproduced Steps]] 
+  1. Enginee***ode
+  2. MT6605 DTA
+  3. no SWP2 to use
+  
+  [[Modules to be verified after taking p***h]] 
+  ***C DTA test
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  packages/apps/Nfc/mtk-nfc/jni-mt6605/com_android_nfc_NativeNfcManager.cpp
+  vendor/mediatek/proprietary/packages/apps/DeviceTestApp/res/layout/swp_tset.xml
+  vendor/mediatek/proprietary/packages/apps/DeviceTestApp/res/values/strings.xml
+  vendor/mediatek/proprietary/packages/apps/DeviceTestApp/src/com/mediatek/nfc/dta/SWPTest.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02697698
+Severity:
+  
+Description: 
+  [Wi-Fi]Can not connect the hotspot AP which Hongmi MO createN/A
+
+Associated Files: 
+  frameworks/base/services/net/java/android/net/dhcp/DhcpPacket.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02736170
+Severity:
+  Critical
+Description: 
+  [Revert!][Google Security Patch][CVE-2016-2497]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題標題]]
+  [Revert][Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題影響]]
+  Please remove this change from your security update, as applying just the code change without a m***hing upda***o Google Play Services ***he sys*** partition results in a user experience regression
+  
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Revert][Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2497]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/core/java/android/content/IntentFilter.java
+  frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02678259
+Severity:
+  
+Description: 
+  [MT6797][M80] 跑 usb 插拔测试出现黑屏 hang detectN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/include/wmt_plat.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/linux/pri/Makefile
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/linux/pri/stp_dbg.c
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/firmware/WIFI_RAM_CODE_6797
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02759311
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3809]Information Disclosure Vulnerability in Networking Component (Device Specific)
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3809]I***o***ation Disclosure Vulnerability in Networking Component (Device Specific)
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3809]I***o***ation Disclosure Vulnerability in Networking Component (Device Specific)
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3809]I***o***ation Disclosure Vulnerability in Networking Component (Device Specific)
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3809]I***o***ation Disclosure Vulnerability in Networking Component (Device Specific)
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  kernel-3.18/net/netfilter/xt_qtaguid.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02687033
+Severity:
+  Critical
+Description: 
+  [MT6755][Jade][MTBF][HQ][TMO] Native (NE),7392,7398,99,/data/core/,1,SIGABRT,/system/bin/charonN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/strongswan/src/charon/charon.c
+  vendor/mediatek/proprietary/external/strongswan/src/libstrongswan/selectors/traffic_selector.c
+  vendor/mediatek/proprietary/external/strongswan/src/libstrongswan/selectors/traffic_selector.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02713683
+Severity:
+  
+Description: 
+  【MT6735】【WiFi】【WPS】升级到新基线V2.39后WPS功能不能与路由器成功连接N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen2/mgmt/p2p_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen2/mgmt/p2p_func.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen2/os/linux/gl_kal.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen2/os/linux/gl_p2p_kal.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen2/os/linux/include/gl_p2p_kal.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/p2p_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/p2p_func.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/p2p_role_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_kal.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_p2p_kal.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/include/gl_p2p_kal.h
+  kernel-3.18/include/net/cfg80211.h
+  kernel-3.18/net/wireless/core.h
+  kernel-3.18/net/wireless/sme.c
+  kernel-3.18/net/wireless/util.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02694521
+Severity:
+  
+Description: 
+  【评测】【WLAN】拨出SIM卡后无法搜索到WLAN（测试20次出现1次）
+  [[問題標題]] 
+  WIFI无法搜索AP
+  
+  [[問題現象]] 
+  WIFI无法搜索AP
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  WIFI无法搜索AP
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  no***al usage
+  
+  [[建議驗證模塊]] 
+  WIFI
+  
+  [[Title for Customer]] 
+  WIFI cannot scan
+  
+  [[Problem Description]] 
+  WIFI cannot scan
+  
+  [[Impa***]] 
+  WIFI cannot scan
+  
+  [[Reproduced Steps]] 
+  no***al usage
+  
+  [[Modules to be verified after taking p***h]] 
+  WIFI
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/wifi_hal/wifi_hal.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02787233
+Severity:
+  
+Description: 
+  [volte]用不支持多方通话的卡合并生成多方通话，volte_ua库崩溃
+  [[問題標題]] 
+  无法挂断多方会议问题
+  [[問題現象]] 
+  终端插入未开通多方会议服务的SIM卡，点击合并通话之后，20s左右的时间内无法通过界面挂断
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  终端插入未开通多方会议服务的SIM卡，点击合并通话之后，20s左右的时间内无法通过界面挂断
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  终端插入未开通多方会议服务的SIM卡，点击合并通话后点击挂断键
+  [[建議驗證模塊]] 
+  Call UA
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  cannot hangup co***erence call.
+  [[Problem Description]] 
+  cannot hangup co***erence call if SIM card does no***en co***erence call service.
+  [[Impa***]] 
+  cannot hangup co***erence call 
+  [[Reproduced Steps]] 
+  merge a co***erence call, then hangup
+  [[Modules to be verified after taking p***h]] 
+  Call UA
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02771026
+Severity:
+  
+Description: 
+  [MP Feature Patch Back]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758966
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3761]Elevation of Privilege Vulnerability in NFC
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3761]Elevation of Privilege Vulnerability in ***C
+  [[問題現象]]
+  ***cAdapter在呼叫enableForegroundNdefPush / enableReade***ode前，
+  先判斷此呼叫的APK是否存在於foreground a***ivity，若不是則return
+  [Google Security P***h][CVE-2016-3761]Elevation of Privilege Vulnerability in ***C
+  [[問題影響]]
+  避免惡意APK在background呼叫enableForegroundNdefPush / enableReade***ode，以獲取******ag資訊
+  N/A
+  [[問題復現步驟]]
+  APK在background呼叫enableForegroundNdefPush / enableReade***ode
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3761]Elevation of Privilege Vulnerability in ***C
+  [[Problem Description]]
+  We allow APK to invoke ***cAdapter.enableForegroundNdefPush() / enableReade***ode() when the APK stay i***oreground a***ivity.
+  [Google Security P***h][CVE-2016-3761]Elevation of Privilege Vulnerability in ***C
+  [[Impa***]]
+  Avoid malicious Application stay in background to retri***f***ag i***o***ation.
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  packages/apps/Nfc/src/com/android/nfc/NfcService.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02770294
+Severity:
+  
+Description: 
+  关闭蓝牙耳机时偶现蓝牙共享停止运行
+  [[問題標題]] 
+  关闭蓝牙耳机时偶现蓝牙共享停止运行
+  [[問題現象]] 
+  1.使用蓝牙耳机播放歌曲
+  2.长按蓝牙耳机call键，关闭蓝牙耳机
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  手机端弹出蓝牙共享停止运行，并产生NE
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1.使用蓝牙耳机播放歌曲
+  2.长按蓝牙耳机call键，关闭蓝牙耳机
+  [[建議驗證模塊]] 
+  AAC codec
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  NE occurs when close bt headset
+  [[Problem Description]] 
+  1.pair and conne*** with A2dp , and then play m***c
+  2.close bt headset
+  [[Impa***]] 
+  NE
+  [[Reproduced Steps]] 
+  1.pair and conne*** with A2dp , and then play m***c
+  2.close bt headset
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  system/bt/btif/src/btif_media_task.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02656997
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2438]Remote Code Execution Vulnerability in Kernel (Device Specific)
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2438]Remote Code Execution Vulnerability in Kernel (Device Specific)
+  [[問題現象]]
+  ALSA timer 異常
+  [[問題影響]]
+  Audio timer 異常
+  N/A
+  [[問題復現步驟]]
+  from google p***h
+  [[建議驗證模塊]]
+  ALSA driver
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2438]Remote Code Execution Vulnerability in Kernel (Device Specific)
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2438]Remote Code Execution Vulnerability in Kernel (Device Specific)
+  [[Impa***]]
+  ALSA timer abnomal
+  [[Reproduced Steps]]
+  from google p***h
+  [[Modules to be verified after taking p***h]]
+  ALSA driverN/A
+
+Associated Files: 
+  kernel-3.18/sound/core/timer.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02759045
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3766]Denial of Service Vulnerability in Mediaserver
+  [[問題標題]]
+  N/A
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3766]Denial of Service Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3766]Denial of Service Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3766]Denial of Service Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/av/media/libmedia/Android.mk
+  frameworks/av/media/libmedia/MediaUtils.cpp
+  frameworks/av/media/libmedia/MediaUtils.h
+  frameworks/av/media/libstagefright/MPEG4Extractor.cpp
+  frameworks/av/media/mediaserver/Android.mk
+  frameworks/av/media/mediaserver/main_mediaserver.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02665239
+Severity:
+  
+Description: 
+  [XSIX-6212][TOP1][九路解码]开启九路播放两次以上X6所有播放画面僵死
+  [[問題標題]] 
+  打开九路播放APK，单击480p 按钮，观测播放流畅度
+  重复两次上述步骤，九路播放画面卡死，有声音
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  N/A
+  [[Problem Description]] 
+  N/A
+  [[Impa***]] 
+  N/A
+  [[Reproduced Steps]] 
+  N/A
+  [[Modules to be verified after taking p***h]] 
+  N/A
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libClearMotionFW/arm/libClearMotionFW.so
+  vendor/nb/libs/mt6797_64/libMtkOmxVdecEx/arm/libMtkOmxVdecEx.so
+  vendor/nb/libs/mt6797_64/libh264dec_hw/arm/libh264dec_hw.a
+  vendor/nb/libs/mt6797_64/libmjc/arm/libmjc.so
+  vendor/nb/libs/mt6797_64/libvcodecdrv/arm/libvcodecdrv.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02695527
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] copy certificate files in strongswan, not common modulesN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/strongswan/Android.mk
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/GeoTrust_PCA_G3_Root.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/GeoTrust_Primary_CA.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/GeoTrust_Primary_CA_G2_ECC.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/VeriSignClass3G4.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/VeriSignClass3G5.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/VeriSignUniversalRootCertification.der
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/thawte.der
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02679278
+Severity:
+  
+Description: 
+  【MT6735】【Yulong Y803-8】【VoLTE现网】6方会议电话+拨出一通用户G电话挂断时掉网重新
+  [[問題標題]] 
+  电话会议无法挂断或添加成员
+  [[問題現象]] 
+  hold 电话会议后，无法挂断或者添加成员
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  hold 电话会议后，无法挂断或者添加成员
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  合并电话会议之后将其hold，然后点击添加或者删除会议成员
+  [[建議驗證模塊]] 
+  Call UA
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  Unable to add or remove participant of co***erence call
+  [[Problem Description]] 
+  when the co***erence call is hold, cannot add or remove a participant.
+  [[Impa***]] 
+  when the co***erence call is hold, cannot add or remove a participant.
+  [[Reproduced Steps]] 
+  merge a co***erence call and hold it, then add or remove a participant
+  [[Modules to be verified after taking p***h]] 
+  Call UA.
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758929
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3759]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3759]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3759]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3759]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3759]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/data/etc/platform.xml
+  frameworks/base/services/backup/java/com/android/server/backup/BackupManagerService.java
+  frameworks/base/services/core/java/com/android/server/SystemConfig.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02571018
+Severity:
+  
+Description: 
+  T卡拔出后，不能成功卸载
+  [[問題標題]]
+  內卡或外卡, 無法正確umount, 造成也無法再mount成功
+  
+  [[問題現象]]
+  內卡或外卡, 無法正確umount, 造成也無法再mount成功
+  
+  [[問題影響]]
+  內卡或外卡無法使用
+  
+  [[問題復現步驟]]
+  在ap去存取st***ge的資料, 在ipo關機再開機後, 會造成st***ge umount fail
+  
+  [[建議驗證模塊]]
+  st***ge
+  [[Title for Customer]]
+  Umount st***ge failed
+  
+  [[Problem Description]]
+  Umount st***ge failed
+  
+  [[Impa***]]
+  The user can not use the st***ge any more.
+  [[Reproduced Steps]]
+  Use app to access the st***ge, and then ipo shutdown. After that, ipo boot.
+  [[Modules to be verified after taking p***h]]
+  St***geN/A
+
+Associated Files: 
+  system/vold/Utils.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02443644
+Severity:
+  
+Description: 
+  [Android L][Pixi4-5 CT][Wifi direct] The group name displayed as messy code when device's name is in Chinese.N/A
+
+Associated Files: 
+  frameworks/opt/net/wifi/service/java/com/android/server/wifi/p2p/WifiP2pServiceImpl.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02738181
+Severity:
+  
+Description: 
+  [15128][ALPS02663295] [不识别VPP和Data短路的卡] 合入此Patch后NFC不能刷卡支付
+  [[問題標題]] 
+  ***C卡模擬讀寫失效
+  
+  [[問題現象]] 
+  ***C卡模擬時於POS執行讀寫失敗
+  
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  ***C卡模擬時於POS執行讀寫失敗
+  
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  手機於卡模擬狀態靠近POS機
+  
+  
+  [[建議驗證模塊]] 
+  手機於卡模擬狀態靠近POS機
+  
+  
+  [[Title for Customer]] 
+  ***C card mode fun***io***ail.
+  
+  [[Problem Description]] 
+  ***C card mode READ/WRITE fail with POS.
+  
+  [[Impa***]] 
+  ***C card mode READ/WRITE fail with POS.
+  
+  [[Reproduced Steps]] 
+  Make phone in Card Mode and close ***OS.
+  
+  [[Modules to be verified after taking p***h]] 
+  Make phone in Card Mode and close ***OS.
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/mtknfc/lib/libmtknfc.so
+  vendor/mediatek/proprietary/external/mtknfc/lib64/libmtknfc.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02735528
+Severity:
+  
+Description: 
+  [AA0027][GPS]北斗伪距计算中断N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/mnld/libs/libmnl.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02672994
+Severity:
+  Critical
+Description: 
+  [白皮书][Settings] 设置中没有4G/3G/2G的选项N/A
+
+Associated Files: 
+  packages/services/Telephony/res_ext/values-zh-rCN/strings.xml
+  packages/services/Telephony/res_ext/values-zh-rTW/strings.xml
+  packages/services/Telephony/res_ext/values/strings.xml
+  packages/services/Telephony/src/com/android/phone/MobileNetworkSettings.java
+  packages/services/Telephony/src/com/mediatek/settings/MobileNetworkSettingsOmEx.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02694584
+Severity:
+  
+Description: 
+  [BT]  [6797] [M80] 概率性出现蓝牙连接rfcom失败
+  [[問題標題]] 
+  conne*** RFCOMM fail possibility
+  [[問題現象]] 
+  conne*** RFCOMM fail
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  profile based on RFCOMM did not work.
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  transfer file through OPP
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  conne*** RFCOMM fail possibility
+  [[Problem Description]] 
+  conne*** RFCOMM fail
+  [[Impa***]] 
+  profile based on RFCOMM did not work.
+  [[Reproduced Steps]] 
+  transfer file through OPP
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/stack/btm/btm_sec.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02765355
+Severity:
+  
+Description: 
+  【MT6757】【Yulong A9S_9】NFC 写Mifare Classic类型tag 出现crash
+  [[問題標題]] 
+  [***C MT6605] 修正mifare classi***ag NDEF fo***at 問題
+  
+  [[問題現象]] 
+  執行mifare classi***ag寫入時，可能發生錯誤 
+  
+  [[問題影響]] 
+  執行mifare classi***ag寫入時，可能發生錯誤 
+  
+  [[問題復現步驟]] 
+  1. 使用mifare classi***a***. 以apk進行寫入要求
+  3. 寫入失敗
+  
+  [[建議驗證模塊]] 
+  ***C read/write
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  [***C MT6605] fix mifare classi***ag NDEF fo***at mechanism
+  
+  [[Problem Description]] 
+  maybe fail when writing mifare classi***ag
+  
+  [[Impa***]] 
+  maybe fail when writing mifare classi***ag
+  
+  [[Reproduced Steps]] 
+  1. mifare classi***a***. run apk to wri***ag
+  3. writing fail
+  
+  [[Modules to be verified after taking p***h]] 
+  ***C read/write
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/mtknfc/lib/libmtknfc.so
+  vendor/mediatek/proprietary/external/mtknfc/lib64/libmtknfc.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02693071
+Severity:
+  
+Description: 
+  [WIFI]手机suspend时，wifi断开不能回连
+  [[問題標題]] 
+  PNO有时不能正常工作，灭屏下连不上AP
+  [[問題現象]] 
+  PNO有时不能正常工作，灭屏下连不上AP
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  PNO有时不能正常工作，灭屏下连不上AP
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  手机灭屏，移动到已保存AP所在区域，观察能否自动连接上已保存的AP
+  [[建議驗證模塊]] 
+  WiFi
+  [[Title for Customer]] 
+  sometimes, pno is not work. device can't conne*** to any AP under suspend
+  [[Problem Description]] 
+  sometimes, pno is not work. device can't conne*** to any AP under suspend
+  [[Impa***]] 
+  sometimes, pno is not work. device can't conne*** to any AP under suspend
+  [[Reproduced Steps]] 
+  make the device screen off，move to the area where exists saved ap. check if device c***onne***s to the saved AP
+  [[Modules to be verified after taking p***h]] 
+  wifi
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  external/wpa_supplicant_8/src/drivers/driver_nl80211_scan.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758666
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3749]Elevation of Privilege Vulnerability in LockSettingsService
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3749]Elevation of Privilege Vulnerability in LockSettingsService
+  [[問題現象]]
+  使用恶意程式可以修改User设定的锁屏密码
+  [Google Security P***h][CVE-2016-3749]Elevation of Privilege Vulnerability in LockSettingsService
+  [[問題影響]]
+  导致用户无法解锁
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  Keyguard
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3749]Elevation of Privilege Vulnerability in LockSettingsService
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3749]Elevation of Privilege Vulnerability in LockSettingsService
+  [[Impa***]]
+  An elevation of privilege vulnerability ***he LockSettingsService could enable a malicious application to reset the screen lock password without authorizatio***rom the user
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  KeyguardN/A
+
+Associated Files: 
+  frameworks/base/services/core/java/com/android/server/LockSettingsService.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02752283
+Severity:
+  Critical
+Description: 
+  [MT6750][UMC][Jade Minus M6][MP3][MTBF][Lab][HQ][Ericsson]"System API Dump,28166,28172,99,/data/core/,1,,mtkrild:AT command pending too long, assert!!! AT cmd: EIMS, timer: 300000ms"during MTBF testN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758912
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3758]Elevation of Privilege Vulnerability in DexClassLoader
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3758]Elevation of Privilege Vulnerability in DexClassLoader
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3758]Elevation of Privilege Vulnerability in DexClassLoader
+  [[問題影響]]
+  App可經由此漏洞執行具有惡意的程式碼
+  [[問題復現步驟]]
+  需執行特定的App
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3758]Elevation of Privilege Vulnerability in DexClassLoader
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3758]Elevation of Privilege Vulnerability in DexClassLoader
+  [[Impa***]]
+  The app can execu***alicious code
+  [[Reproduced Steps]]
+  execute an app has malicious code
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  dalvik/libdex/OptInvocation.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02566201
+Severity:
+  
+Description: 
+  [pixi3-45-4g-vf][VF16393][1b - Critical][IT][VoLTE] DUT does not register to IMS architecture.
+  [[問題標題]]
+  
+  [[問題現象]]
+  
+  [[問題影響]]
+  
+  [[問題復現步驟]]
+  
+  [[建議驗證模塊]]
+  
+  [[Title for Customer]]
+  SIP socket send buffer increase
+  
+  [[Problem Description]]
+  Too small socket send buffer causes message delivery problems in some networks when TCP *** is very small
+  
+  [[Impa***]]
+  VoLTE
+  
+  [[Reproduced Steps]]
+  A***ivate and dea***ivate flight mode several times to trigger several SIP registrations
+  
+  [[Modules to be verified after taking p***h]]
+  VoLTE UAN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02743558
+Severity:
+  Critical
+Description: 
+  将时间的“自动设置”关闭后，将手机灭屏进入待机休眠一段时间，唤醒后手机系统时间会有明显偏差（平均每休眠1小时比真时的北京时间快约4秒）。例如休眠10小时会产生约40秒的误差。
+  [[問題標題]]
+  suspend后时间出现误差
+  
+  [[問題現象]]
+  关闭时间校准，suspend后时间出现误差
+  
+  [[問題影響]]
+  影响时间准确度
+  
+  [[問題復現步驟]]
+  关闭网络时间校准，suspend手机，1 小时后手机，并用基准时间比对，发现误差4s左右
+  
+  [[建議驗證模塊]]
+  timer 计时模块
+  
+  [[注意: 請勿刪除此行]]
+  
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English.
+  [[Title for Customer]]
+  time error when phone suspend
+  
+  [[Problem Description]]
+  close the network time sync, time error when phone suspend
+  
+  [[Impa***]]
+  impa*** the time accuracy
+  
+  [[Reproduced Steps]]
+  close the network time sync,make phone suspend, you will find time error 4 second after 1 hour.
+  
+  [[Modules to be verified after taking p***h]]
+  Timer
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/clocksource/arch_timer_mt6797.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02715302
+Severity:
+  
+Description: 
+  [mt6755][shine plus cn][BT]BT name display abnormal when BT name is Max Chinese characters
+  [[問題標題]] 
+  BT name display abno***al when BT name is Max Chinese chara***ers
+  [[問題現象]] 
+  MS bluetooth device name should display abno***ally when devices name as Max Chinese chara***ers
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  name display abno***ally
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  Send a file to another BT devices with long Chinese name.
+  [[建議驗證模塊]] 
+  .
+  [[Title for Customer]] 
+  BT name display abno***al when BT name is Max Chinese chara***ers
+  [[Problem Description]] 
+  MS bluetooth device name should display abno***ally when devices name as Max Chinese chara***ers
+  [[Impa***]] 
+  name display abno***ally
+  [[Reproduced Steps]] 
+  Send a file to another BT devices with long Chinese name.
+  [[Modules to be verified after taking p***h]] 
+  .
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/bta/dm/bta_dm_act.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02697802
+Severity:
+  
+Description: 
+  VDEC part of VRN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/frameworks/native/include/media/openmax/OMX_Index.h
+  vendor/nb/libs/mt6797_64/libClearMotionFW/arm/libClearMotionFW.so
+  vendor/nb/libs/mt6797_64/libMtkOmxVdecEx/arm/libMtkOmxVdecEx.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758875
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3757]Elevation of Privilege Vulnerability in lsof
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3757]Elevation of Privilege Vulnerability in lsof
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3757]Elevation of Privilege Vulnerability in lsof
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3757]Elevation of Privilege Vulnerability in lsof
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3757]Elevation of Privilege Vulnerability in lsof
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  system/core/toolbox/lsof.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758457
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2108]Remote Code Execution Vulnerability in OpenSSL & BoringSSL
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2108]Remote Code Execution Vulnerability in OpenSSL & BoringSSL
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2108]Remote Code Execution Vulnerability in OpenSSL & BoringSSL
+  [[問題影響]]
+  it isnot safe, maybe attacked by 3rd party and decrypted
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  浏览器上网，email登陆
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2108]Remote Code Execution Vulnerability in OpenSSL & BoringSSL
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2108]Remote Code Execution Vulnerability in OpenSSL & BoringSSL
+  [[Impa***]]
+  it isnot safe, maybe attacked by 3rd party and decrypted
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  browser、email login inN/A
+
+Associated Files: 
+  external/boringssl/src/crypto/asn1/a_int.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02776072
+Severity:
+  Blocker
+Description: 
+  [Sanity Fail][Delhi-Inhouse][India-Delhi][Jade][MT6755][RJIL][VILTE]Sim Not able to Register.N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmal_simmngr/arm/libmal_simmngr.so
+  vendor/nb/libs/mt6797_64/libmal_simmngr/libmal_simmngr.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02700239
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-0830]Update: Remote Denial of Service Vulnerability in Bluetooth
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-0830]Update: Remote Denial of Service Vulnerability in Bluetooth
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-0830]Update: Remote Denial of Service Vulnerability in Bluetooth
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-0830]Update: Remote Denial of Service Vulnerability in Bluetooth
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-0830]Update: Remote Denial of Service Vulnerability in Bluetooth
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  system/bt/btif/include/btif_storage.h
+  system/bt/btif/src/btif_config.c
+  system/bt/osi/include/config.h
+  system/bt/osi/src/config.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758997
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3763]Information Disclosure Vulnerability in Proxy Auto-Config
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3763]修正某些敏感資訊曝露在Proxy Auto-Co***ig
+  [[問題現象]]
+  當user使用PAC功能時, 有可能曝露一些敏感資訊給惡意PAC script
+  [[問題影響]]
+  曝露敏感資訊
+  [[問題復現步驟]]
+  1. turn on Wi-Fi
+  2. co***ig network and enable PAC Proxy
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3763]I***o***ation Disclosure Vulnerability in Proxy Auto-Co***ig
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3763]I***o***ation Disclosure Vulnerability in Proxy Auto-Co***ig
+  [[Impa***]]
+  Strip path and username/password from URI so it's not visible ***AC script. The
+  path often contains credentials the app does not want exposed to a potentially
+  malicious PAC script.
+  [[Reproduced Steps]]
+  1. turn on Wi-Fi
+  2. co***ig network and enable PAC Proxy
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/core/java/android/net/PacProxySelector.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02738722
+Severity:
+  
+Description: 
+  [BT]  [6755] [A02] jabra drive车载断开重连A2dp后，手机仍显示“无媒体“N/A
+
+Associated Files: 
+  system/bt/bta/av/bta_av_aact.c
+  system/bt/conf/bt_stack.conf
+  system/bt/include/stack_config.h
+  system/bt/main/stack_config.c
+  system/bt/osi/include/config.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02694585
+Severity:
+  
+Description: 
+  [M95][蓝牙]连接对方的蓝牙网络共享发送文件过程中播放在线音乐，出现音乐卡顿严重
+  [[問題標題]] 
+  
+  [[問題現象]] 
+  M***c is ***e***ittent over A2DP while PAN and OPP exists
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  M***c is ***e***ittent over A2DP
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1、进入B机-->其他连接方式-->便携式热点-->打开蓝牙网络共享-->A与B建立蓝牙配对-->A连接B的网络共享
+  2、A向B经蓝牙传输2MB文件，文件发送过程中，A机使用蓝牙播放在线音乐
+  实际结果：A机播放的在线音乐卡顿严重
+  预期结果：不会出现卡顿现象
+  [[建議驗證模塊]] 
+  .
+  [[Title for Customer]] 
+  M***c is ***e***ittent over A2DP while PAN and OPP exists
+  [[Problem Description]] 
+  M***c is ***e***ittent over A2DP while PAN and OPP exists
+  [[Impa***]] 
+  M***c is ***e***ittent over A2DP
+  [[Reproduced Steps]] 
+  1、进入B机-->其他连接方式-->便携式热点-->打开蓝牙网络共享-->A与B建立蓝牙配对-->A连接B的网络共享
+  2、A向B经蓝牙传输2MB文件，文件发送过程中，A机使用蓝牙播放在线音乐
+  实际结果：A机播放的在线音乐卡顿严重
+  预期结果：不会出现卡顿现象
+  [[Modules to be verified after taking p***h]] 
+  .
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/bta/dm/bta_dm_act.c
+  system/bt/bta/dm/bta_dm_cfg.c
+  system/bt/bta/include/bta_api.h
+  system/bt/bta/pan/bta_pan_act.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02622538
+Severity:
+  
+Description: 
+  [MP Feature Patch Back]
+  [[問題標題]] 
+  CMCC计划于7月30日将VoLTE自动开通功能加入移动定制终端入库要求
+  [[問題現象]] 
+  具体规范要求原文，可以参考《中国移动VoLTE终端技术规范》v2.0.0
+   5.7.1.2.初始注册  终端在初始注册过程中，若收到携带Retry-after字段的网络响应，终端应该在Retry-after字段规定的时间后再次发起初始注册。
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  如果不合入此p***h，无法支持CMCC自动开通volte功能
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  具体可以参考CMCC自动开通volte功能试点测试用例（可以联络CMCC终端公司产品部获取）
+  [[建議驗證模塊]] 
+  volte 注册
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  auto enable IMS feature for CMCC
+  [[Problem Description]] 
+  auto enable IMS feature for CMCC
+  [[Impa***]] 
+  auto enable IMS feature for CMCC
+  [[Reproduced Steps]] 
+  auto enable IMS feature for CMCC
+  [[Modules to be verified after taking p***h]] 
+  volte register
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02563262
+Severity:
+  
+Description: 
+  H3Zwifi不自动连接，手动可以连接，wifi自动连接是开着的N/A
+
+Associated Files: 
+  external/wpa_supplicant_8/wpa_supplicant/events.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/include/wlan_lib.h
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/ais_fsm.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/nic_rx.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/nic/que_mgt.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02675612
+Severity:
+  
+Description: 
+  CX880(H3C)开机首次切换不到sawfilterN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/core/wmt_ic_soc.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758690
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3750]Elevation of Privilege Vulnerability in Framework APIs
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3750]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3750]Elevation of Privilege Vulnerability i***ramework APIs
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  
+  
+  
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3750]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3750]Elevation of Privilege Vulnerability i***ramework APIs
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/native/libs/binder/Parcel.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699708
+Severity:
+  
+Description: 
+  WIFI出现wmt_rx_timeout并导致死锁N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_init.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758660
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[問題現象]]
+  Google 針對 SELinux Socket 相關 Policy 做修改
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[問題影響]]
+  Socket Security 相關問題
+  [[問題復現步驟]]
+  存取 socket 的資源限制改變
+  [[建議驗證模塊]]
+  SELinux Socket Policy Part
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[Impa***]]
+  Google has modified SELinux socket policy part
+  [[Reproduced Steps]]
+  Pe***ission change for socket policy
+  [[Modules to be verified after taking p***h]]
+  SELinux Socket Policy Part
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[問題現象]]
+  Google 針對 SELinux Socket 相關 Policy 做修改
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[問題影響]]
+  Socket Security 相關問題
+  [[問題復現步驟]]
+  存取 socket 的資源限制改變
+  [[建議驗證模塊]]
+  SELinux Socket Policy Part
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3748]Elevation of Privilege Vulnerability in Sockets
+  [[Impa***]]
+  Google has modified SELinux socket policy part
+  [[Reproduced Steps]]
+  Pe***ission change for socket policy
+  [[Modules to be verified after taking p***h]]
+  SELinux Socket Policy PartN/A
+
+Associated Files: 
+  external/sepolicy/domain.te
+  external/sepolicy/ioctl_macros
+  external/sepolicy/isolated_app.te
+  external/sepolicy/net.te
+  external/sepolicy/te_macros
+  external/sepolicy/untrusted_app.te
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02712504
+Severity:
+  
+Description: 
+  连接BMW525车载蓝牙听音乐声音没有从车载音箱出来
+  [[問題標題]] 
+  连接BMW525车载蓝牙听音乐声音没有从车载音箱出来
+  [[問題現象]] 
+  连接BMW525车载蓝牙听音乐声音没有从车载音箱出来
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  A2dp 无声
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1. DUT conne*** with carkit
+  2. ente***ediaplayer and play m***c
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  A2dp no voice
+  [[Problem Description]] 
+  
+  [[Impa***]] 
+  A2dp no voice
+  [[Reproduced Steps]] 
+  1. DUT conne*** with carkit
+  2. ente***ediaplayer and play m***c
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/conf/bt_stack.conf
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02743751
+Severity:
+  
+Description: 
+  [G90][low power]3G通话后，手机无法进入睡眠
+  [[問題標題]] 
+  3G通话后，手机无法进入睡眠
+  
+  [[問題現象]] 
+  關閉GPS 且手機鎖屏后，電流一直維持在五六十毫安
+  
+  [[問題影響]] 
+  手機開関GPS后會造成無法進入睡眠
+  
+  [[問題復現步驟]] 
+  通知欄關閉WIFI 數據連接GPS, 查看 4G待機之後切換成3G, 查看待機電流正常后外撥電話，對方接通后，通話十幾分鈡對方挂斷，按power key 鎖屏后檢查電流。
+   
+  [[建議驗證模塊]] 
+  關閉GPS后按power key鎖屏，然後檢查電流是否正常，重復此步驟以確保電流量是否正常
+  
+  [[Title for Customer]] 
+  Phone cannot enter sleeping mode afte***aking call ***ng 3G network
+  
+  [[Problem Description]] 
+  Phone remain current consumption of 50-60 milliAmpere after GPS is switched off and screen locked
+  
+  [[Impa***]] 
+  Phone unable to enter sleep mode after GPS had been turned off 
+  
+  [[Reproduced Steps]] 
+  Disable WIFI　conne***ion and turn on GPS, switch cell network from 4G to 3G.
+  Check for phone power consumption before making a phone call.
+  Hang up the call after 10 minutes.
+  Che***he phone power consumption after the screen is locked by pressing the power key
+  
+  
+  [[Modules to be verified after taking p***h]] 
+  Close GPS and press power key to lo***he screen.
+  Check if the power consumption is no***al.
+  Repeat above steps to make sure the consistency of the result.
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/mpe/inc/SensorListener.h
+  vendor/mediatek/proprietary/external/mpe/inc/SensorListenerImp.h
+  vendor/mediatek/proprietary/external/mpe/inc/mpe_sys_common.h
+  vendor/mediatek/proprietary/external/mpe/lib/libDR.so
+  vendor/mediatek/proprietary/external/mpe/lib/libfusion.so
+  vendor/mediatek/proprietary/external/mpe/lib/libmpe.driver.so
+  vendor/mediatek/proprietary/external/mpe/lib/libmpe.sensorlistener.so
+  vendor/mediatek/proprietary/external/mpe/scr/mpe_sys.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02671302
+Severity:
+  
+Description: 
+  【XSIX-6527】【TOP】【VIDEO】开启九路直播MTK6797 功耗1339mA,播放画面卡顿，高通S2（8976） 功耗660mA 播放流畅
+  [[問題標題]] 
+  1，安装附件中九路播放superLive-flavor_default-release_0420.apk
+  2，安装附件中九路播放启动APK LiveLauncher.apk
+  3，按照附件中录像操作，打开九路视频功能，观察有卡帧现象。
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  N/A
+  [[Problem Description]] 
+  N/A
+  [[Impa***]] 
+  N/A
+  [[Reproduced Steps]] 
+  N/A
+  [[Modules to be verified after taking p***h]] 
+  N/A
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/base/power/mt6797/mt_hotplug_strategy_core.c
+  vendor/nb/libs/mt6797_64/libClearMotionFW/arm/libClearMotionFW.so
+  vendor/nb/libs/mt6797_64/libMtkOmxVdecEx/arm/libMtkOmxVdecEx.so
+  vendor/nb/libs/mt6797_64/libvcodecdrv/arm/libvcodecdrv.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02772180
+Severity:
+  
+Description: 
+  [HCT][Reliance Jio][Volteproject][Official-test]NAT-keep-alive timer not enabledN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/strongswan/src/libcharon/sa/ike_sa.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02686537
+Severity:
+  
+Description: 
+  [BT]Where to get btlogger and Socket tester toolN/A
+
+Associated Files: 
+  device/mediatek/mt6797/device.mk
+  vendor/nb/libs/mt6797_64/MTKLogger/MTKLogger.apk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758840
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3754][CVE-2016-3755][CVE-2016-3756]Denial of Service Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3754][CVE-2016-3755][CVE-2016-3756]Denial of Service Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3754][CVE-2016-3755][CVE-2016-3756]Denial of Service Vulnerability in Mediaserver
+  [[問題影響]]
+  播放特定檔案可能導致 NE
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3754][CVE-2016-3755][CVE-2016-3756]Denial of Service Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3754][CVE-2016-3755][CVE-2016-3756]Denial of Service Vulnerability in Mediaserver
+  [[Impa***]]
+  A denial of service vulnerability in Mediaserver could enable an attacker to use a specially crafted file to cause a device hang or reboot.
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/libavc/decoder/ih264d_parse_pslice.c
+  external/tremolo/Tremolo/res012.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02703858
+Severity:
+  
+Description: 
+  [6735 MP] [DMS07723776]   [So]PT-IOT-Audio sound still in MUT speaker after reconnected MUT to BT devices Sony MDR-XB950BT from device side..
+  [[問題標題]] 
+  
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  PT-IOT-Audio sound still in MUT speaker after reconne***ed MUT to BT devices Sony MDR-XB950BT from device side
+  [[Problem Description]] 
+  PT-IOT-Audio sound still in MUT speaker after reconne***ed MUT to BT devices Sony MDR-XB950BT from device side
+  [[Impa***]] 
+  PT-IOT-Audio sound still in MUT speaker after reconne***ed MUT to BT devices Sony MDR-XB950BT from device side
+  [[Reproduced Steps]] 
+  1. DUT conne*** with carkit
+  2. ente***ediaplayer and play m***c
+  3. Power off/ on  headset
+  4. play m***c
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/bta/av/bta_av_ssm.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02738030
+Severity:
+  Blocker
+Description: 
+  [To verify on P15][Olympus][M] [4G]EE md1:(MCU_PCORE) [ASSERT] file:pcore/middleware/lte/rtp/src/rtcp.c line:148N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libvt_avsync/arm/libvt_avsync.so
+  vendor/nb/libs/mt6797_64/libvt_avsync/libvt_avsync.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02684928
+Severity:
+  
+Description: 
+  [MEIZU M95][WLAN] M95 连接WEP加密AP失败N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/auth.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02677969
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] tag log new requirement for tag CMCC caseN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/MTKLogger/MTKLogger.apk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02694870
+Severity:
+  
+Description: 
+  [XSIX-7561][TOP1][九路解码]开启九路播放两次以上X6所有播放画面僵死
+  [[問題標題]] 
+  打开九路播放APK，单击480p 按钮，观测播放流畅度
+  重复两次上述步骤，九路播放画面卡死，有声音
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  N/A
+  [[Problem Description]] 
+  N/A
+  [[Impa***]] 
+  N/A
+  [[Reproduced Steps]] 
+  N/A
+  [[Modules to be verified after taking p***h]] 
+  N/A
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/libgem/lib/GuiExtImpl.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758949
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3760]Elevation of Privilege Vulnerability in Bluetooth
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3760]Elevation of Privilege Vulnerability in Bluetooth
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3760]Elevation of Privilege Vulnerability in Bluetooth
+  [[問題影響]]
+  Google为BT加入Guest mode，
+  （1）在Guest mode下无法移除主user 的BT pair 信息
+  （2）在Guest mode下新增的pair信息，当退出guest mode之后就会清除
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3760]Elevation of Privilege Vulnerability in Bluetooth
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3760]Elevation of Privilege Vulnerability in Bluetooth
+  [[Impa***]]
+  In restri***ed mode, bonds that are created are marked as ***p***ry.
+  These bonds persist until we leave restri***ed mode, at
+  which po*** they will be deleted from the co***ig. Also
+  while in restri***ed mode, the user can access devices
+  that are already paired before entering restri***ed mode,
+  but they cannot remove any of these devices.
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  hardware/libhardware/include/hardware/bluetooth.h
+  packages/apps/Bluetooth/jni/com_android_bluetooth_btservice_AdapterService.cpp
+  packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterService.java
+  packages/apps/Bluetooth/src/com/android/bluetooth/btservice/AdapterState.java
+  system/bt/btif/include/btif_api.h
+  system/bt/btif/include/btif_storage.h
+  system/bt/btif/src/bluetooth.c
+  system/bt/btif/src/btif_config.c
+  system/bt/btif/src/btif_storage.c
+  system/bt/test/bluedroidtest/bluedroidtest.c
+  system/bt/test/suite/cases/adapter.c
+  system/bt/test/suite/main.c
+  system/bt/tools/bdtool/bdtool.c
+  vendor/mediatek/proprietary/hardware/connectivity/bluetooth/include/mtk_bluetooth.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758700
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3752]Elevation of Privilege Vulnerability in ChooserTarget Service
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3752]Elevation of Privilege Vulnerability in ChooserTarget Service
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3752]Elevation of Privilege Vulnerability in ChooserTarget Service
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3752]Elevation of Privilege Vulnerability in ChooserTarget Service
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3752]Elevation of Privilege Vulnerability in ChooserTarget Service
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/base/core/java/com/android/internal/app/ChooserActivity.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02740263
+Severity:
+  
+Description: 
+  [BT]  [6755] [A02] 配对bluedio耳机后，连接a2dp失败
+  [[問題標題]] 
+  配对bluedio耳机后，连接a2dp失败
+  
+  [[問題現象]] 
+  BT連接A2DP profile失敗
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  BT連線棧在以下兩種情形無法被清掉
+  
+  1. 快速關開藍牙.
+  2. 使用BLE always on mode, 背景有APP使用Hide API enableBLE, 關開藍牙.
+  
+  當連線棧沒有被清除,開藍牙後下一次的連線會失敗.
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1. 連線中快速關開藍牙,藍牙打開后會無法連線
+  2. 使用BLE always on mode, 背景有APP使用Hide API enableBLE, 連線中關開藍牙,開藍牙後會無法連線
+  
+  [[建議驗證模塊]] 
+  1. 加入此p***h後,連線中快速關開藍牙,開藍牙之後可以連線
+  2. 加入此p***h後,使用BLE always on mode, 背景有APP使用Hide API enableBLE, 連線中關開藍牙,開藍牙後會可以連線
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  A2DP conne***io***ail when conne*** bluedio earphone.
+  
+  [[Problem Description]] 
+  BT conne*** A2dp fail.
+  
+  [[Impa***]] 
+  BT conne***ion queue won'***ean up i***ollowing two situations:
+  1. BT fastly off/on
+  2. BT use BLE always on mode and call Hide API enableBLE, and turn off/on BT.
+  
+  when conne***ion queue didn'***ean, the next conne***ion will fail.
+  
+  [[Reproduced Steps]] 
+  1. When conne***ing, BT fastly off/on, the next conne***ion will fail.
+  2. When conne***ing, BT use BLE always on mode and call Hide API enableBLE, then BT off/on, the next conne***ion will fail.
+  
+  [[Modules to be verified after taking p***h]] 
+  1. After p***hed, BT fastly off/on when conne***ing, the next conneciton will success.
+  2. After p***hed, BT use BLE always on mode and call Hide API enableBLE, then BT off/on when conne***ing, the next conne***ion will success.
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  frameworks/base/services/core/java/com/android/server/BluetoothManagerService.java
+  system/bt/btif/src/btif_av.c
+  system/bt/btif/src/btif_hf.c
+  system/bt/btif/src/btif_hf_client.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758484
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3744]Remote Code Execution Vulnerability in Bluetooth
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3744]Remote Code Execution Vulnerability in Bluetooth
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3744]Remote Code Execution Vulnerability in Bluetooth
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3744]Remote Code Execution Vulnerability in Bluetooth
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3744]Remote Code Execution Vulnerability in Bluetooth
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  system/bt/btif/src/btif_hh.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02709354
+Severity:
+  
+Description: 
+  [M80] [WIFI]: 频繁scan，Look for MEIZU-5G apN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/ais_fsm.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02573254
+Severity:
+  
+Description: 
+  [Google Default Issue] 输入*#*#4636#*#*--点击wifi api--enableNetwork--输入ID号，点击OK，必现ANRN/A
+
+Associated Files: 
+  frameworks/opt/net/wifi/service/java/com/android/server/wifi/WifiStateMachine.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02586894
+Severity:
+  
+Description: 
+  Add Roaming tips to call settings for SS UT interface
+  [[問題標題]]
+  Add Roaming tips to call settings for SS UT ***erface
+  [[問題現象]]
+  当手机处于漫游状态下，设置补充服务，不会提示用户开启数据漫游开关
+  [[問題影響]]
+  会导致CMCC入库fail
+  
+  [[問題復現步驟]]
+  打开数据开关，手机处于漫游状态
+  从dialer菜单进入通话设置，设置呼叫转移
+  
+  [[建議驗證模塊]]
+  callsetting模块
+  [[Title for Customer]]
+  Add Roaming tips to call settings for SS UT ***erface
+  
+  [[Problem Description]]
+  When user set ss in roaming, we did not show tip for user to turn on the data roaming.
+  
+  [[Impa***]]
+  will cause cmc***est case fail
+  
+  [[Reproduced Steps]]
+  turn data usage, and sim is roaming
+  set call forward in call settings
+  
+  [[Modules to be verified after taking p***h]]
+  CallSettingsN/A
+
+Associated Files: 
+  packages/services/Telephony/ext/src/com/mediatek/phone/ext/DefaultSsRoamingServiceExt.java
+  packages/services/Telephony/ext/src/com/mediatek/phone/ext/ISsRoamingServiceExt.java
+  packages/services/Telephony/src/com/android/phone/PhoneGlobals.java
+  packages/services/Telephony/src/com/mediatek/phone/ext/ExtensionManager.java
+  vendor/mediatek/proprietary/operator/OP01/frameworks/packages/FwkPlugin/src/com/mediatek/op/telephony/SupplementaryServiceExtOP01.java
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/AndroidManifest.xml
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/res/values-zh-rCN/strings.xml
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/res/values-zh-rTW/strings.xml
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/res/values/strings.xml
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/src/com/mediatek/phone/callforward/CallForwardTipsActivity.java
+  vendor/mediatek/proprietary/operator/OP01/packages/apps/Plugins/src/com/mediatek/phone/plugin/Op01SsRoamingServiceExt.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02783043
+Severity:
+  Critical
+Description: 
+  [MT6797][Everest][M][MD][MTBF][Lab][HQ][Ericsson]"Externel (EE),0,0,99,/data/core/,1,modem,md1:(MCU_PCORE) [ASSERT] file:pcore/middleware/lte/rtp/src/rtcp.c line:148"during MTBF test.N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libvt_avsync/arm/libvt_avsync.so
+  vendor/nb/libs/mt6797_64/libvt_avsync/libvt_avsync.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02584873
+Severity:
+  Critical
+Description: 
+  [联调][Jade][CU][VoLTE][NS-IOT][RS]LTE-IMS-0009 failN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02681778
+Severity:
+  
+Description: 
+  [CMCC VoLTE百日会战][浙江战区][上海]金立GN9010L打包时长不规范导致VOBB用户拨打不通
+  [[問題標題]] 
+  VoBB拨打语音电话，被叫端使用Volte语音电话，电话无法接通
+  
+  [[問題現象]] 
+  使用VoBB拨打语音电话，被叫端使用Volte语音电话，电话无法接通
+  
+  [[問題影響]] 
+  使用VoBB拨打语音电话，被叫端使用Volte语音电话，电话无法接通 
+  
+  [[問題復現步驟]] 
+  1. 被叫端注册IMS网络成功
+  2. 使用VOBB作为主叫，拨打语音电话到被叫端
+  
+  [[建議驗證模塊]] 
+  1. 普通MO/MT volte语音通话
+  2. VOBB与终端MO/MT volte语音通话 
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  Make a VOBB call to volte UE，call setup fail
+  
+  [[Problem Description]] 
+  Make a VOBB call to volte UE，call setup fail
+  
+  [[Impa***]] 
+  Make a VOBB call to volte UE，call setup fail
+  
+  [[Reproduced Steps]] 
+  1. MT UE register on IMS network successfully
+  2. Make a VOBB call to volte UE
+  
+  [[Modules to be verified after taking p***h]] 
+  1. no***al MO/MT volte audio call
+  2. make a VOBB MO/MT volte audio call
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02558168
+Severity:
+  
+Description: 
+  [MUST][G4M][stability]DUT happened reboot when other device try to connect it via Wi-Fi display
+  [[問題標題]]
+  
+  [[問題現象]]
+  
+  [[問題影響]]
+  
+  [[問題復現步驟]]
+  
+  [[建議驗證模塊]]
+  
+  [[Title for Customer]]
+  
+  [[Problem Description]]
+  
+  [[Impa***]]
+  
+  [[Reproduced Steps]]
+  
+  [[Modules to be verified after taking p***h]]N/A
+
+Associated Files: 
+  frameworks/base/services/core/java/com/android/server/display/WifiDisplayController.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02702817
+Severity:
+  
+Description: 
+  [AA0027][GPS]北斗静态搜星异常
+  [[問題標題]] 
+  [AA0027][GPS]北斗静态搜星异常
+  
+  [[問題現象]] 
+  在cold start下，GPS收星正常，但BeiDou只有幾顆
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  有機會造成BeiDou搜不到星
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  下cold start，GPS收星正常，但BeiDou只有幾顆
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  Beidou satellite search is abno***al
+  
+  [[Problem Description]] 
+  Beidou satellite search is abno***al
+  
+  [[Impa***]] 
+  Few BeiDou.
+  
+  [[Reproduced Steps]] 
+  In cold start，the number of GPS is well，but BeiDou only few.
+  
+  [[Modules to be verified after taking p***h]] 
+  In cold start，the numbers of BeiDou has more.
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/inc/mtk_gps.h
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/inc/mtk_gps_auto_debug.h
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/inc/mtk_gps_type.h
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/mnld/libs/libmnl.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02762334
+Severity:
+  Major
+Description: 
+  [WWFT][Denali M][MT6735][US][OM_DS][TMO][ATT] [VCC_008] after aSRVCC+1A failed, UI stuck on incoming call screen can't get out, or hangup call
+  [[問題標題]] 
+  手機螢幕卡住
+  [[問題現象]] 
+  手機螢幕卡住不能做操作
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  手機螢幕卡住不能做操作
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  一通電話通話中，一通電話hold，再來一通incoming電話，此時觸發SRVCC
+  [[建議驗證模塊]] 
+  依問題復現步驟操作，手機螢幕能夠操作即可
+  [[Title for Customer]] 
+  Screen stuck and cannot do any operation
+  [[Problem Description]] 
+  Screen stuck and cannot do any operation
+  [[Impa***]] 
+  Screen stuck and cannot do any operation
+  [[Reproduced Steps]] 
+  Make a a***ive and a hold call, then *** call incoming, trigger SRVCC
+  [[Modules to be verified after taking p***h]] 
+  VoLTE, follows Reproduced Steps, and screen does not stuck.
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02726874
+Severity:
+  
+Description: 
+  [CMCC_Official 第一轮入库][GreenOrange_D5183][Volte外场测试][杭州][ 传统多方通话_多方通话业务成功率不达标]
+  [[問題標題]] 
+  合同通话后，手机没有显示多方通话界面
+  
+  [[問題現象]] 
+  合同通话后，界面没有显示多方通话界面
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  可能会造成入库fail
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  拨打2通电话后，然后合并多方通话
+  
+  [[建議驗證模塊]] 
+  多方通话相关case
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  UE doesn't show Co***erence after calls are merged successfully.
+  
+  [[Problem Description]] 
+  UE doesn't show Co***erence after calls are merged successfully.
+  
+  [[Impa***]] 
+  CMCC certification test maybe fail
+  
+  [[Reproduced Steps]] 
+  Dial two calls, then merge them to co***erence.
+  
+  [[Modules to be verified after taking p***h]] 
+  Cases related to co***erence
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/services/Ims/src/com/mediatek/ims/ImsCallSessionProxy.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02693138
+Severity:
+  
+Description: 
+  [BT]  [6797] [M80] 在线听歌出现蓝牙/WIFI hang住问题
+  [[問題標題]] 
+  壓力測試出現藍牙重啟問題
+  
+  [[問題現象]] 
+  BT on/off 壓力測試出現藍牙重啟問題
+  
+  [[問題影響]] 
+  低機率出現藍牙重啟問題
+  
+  [[問題復現步驟]] 
+  先與耳機建立連線，連續開關BT進行壓力測試
+  
+  [[建議驗證模塊]] 
+  連線/斷線壓力測試
+  
+  
+  [[Title for Customer]] 
+  BT reset during pressure testing.
+  
+  [[Problem Description]] 
+  BT reset during pressure testing.
+  [[Impa***]] 
+  BT reset during pressure testing.
+  [[Reproduced Steps]] 
+  DUT conne***s to a device, continuously repeat switching on/off BT.
+  [[Modules to be verified after taking p***h]] 
+  Page/disconne***ion pressure test.
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/core/btm_core.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/common/conn_soc/linux/pri/stp_dbg.c
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02767308
+Severity:
+  Minor
+Description: 
+  [IMS Interface][version#0x50][AP] Align WWOP_ID for MovistarN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02692958
+Severity:
+  Critical
+Description: 
+  [Patch back][白皮书][CMCC Open market][Settings] 设置中没有4G/3G/2G的选项[only for string translate part]N/A
+
+Associated Files: 
+  packages/services/Telephony/res_ext/values-ar/strings.xml
+  packages/services/Telephony/res_ext/values-bg/strings.xml
+  packages/services/Telephony/res_ext/values-bn/strings.xml
+  packages/services/Telephony/res_ext/values-ca/strings.xml
+  packages/services/Telephony/res_ext/values-cs/strings.xml
+  packages/services/Telephony/res_ext/values-da/strings.xml
+  packages/services/Telephony/res_ext/values-de-rAT/strings.xml
+  packages/services/Telephony/res_ext/values-de/strings.xml
+  packages/services/Telephony/res_ext/values-el/strings.xml
+  packages/services/Telephony/res_ext/values-en-rGB/strings.xml
+  packages/services/Telephony/res_ext/values-en-rUS/strings.xml
+  packages/services/Telephony/res_ext/values-es-rUS/strings.xml
+  packages/services/Telephony/res_ext/values-es/strings.xml
+  packages/services/Telephony/res_ext/values-et-rEE/strings.xml
+  packages/services/Telephony/res_ext/values-fa/strings.xml
+  packages/services/Telephony/res_ext/values-fi/strings.xml
+  packages/services/Telephony/res_ext/values-fr/strings.xml
+  packages/services/Telephony/res_ext/values-hi/strings.xml
+  packages/services/Telephony/res_ext/values-hr/strings.xml
+  packages/services/Telephony/res_ext/values-hu/strings.xml
+  packages/services/Telephony/res_ext/values-hy-rAM/strings.xml
+  packages/services/Telephony/res_ext/values-in/strings.xml
+  packages/services/Telephony/res_ext/values-it/strings.xml
+  packages/services/Telephony/res_ext/values-iw/strings.xml
+  packages/services/Telephony/res_ext/values-ja/strings.xml
+  packages/services/Telephony/res_ext/values-kk/strings.xml
+  packages/services/Telephony/res_ext/values-km-rKH/strings.xml
+  packages/services/Telephony/res_ext/values-ko/strings.xml
+  packages/services/Telephony/res_ext/values-lt/strings.xml
+  packages/services/Telephony/res_ext/values-lv/strings.xml
+  packages/services/Telephony/res_ext/values-ms/strings.xml
+  packages/services/Telephony/res_ext/values-my-rMM/strings.xml
+  packages/services/Telephony/res_ext/values-my-rZG/strings.xml
+  packages/services/Telephony/res_ext/values-nb/strings.xml
+  packages/services/Telephony/res_ext/values-nl/strings.xml
+  packages/services/Telephony/res_ext/values-pl/strings.xml
+  packages/services/Telephony/res_ext/values-pt-rPT/strings.xml
+  packages/services/Telephony/res_ext/values-pt/strings.xml
+  packages/services/Telephony/res_ext/values-ro/strings.xml
+  packages/services/Telephony/res_ext/values-ru/strings.xml
+  packages/services/Telephony/res_ext/values-sk/strings.xml
+  packages/services/Telephony/res_ext/values-sl/strings.xml
+  packages/services/Telephony/res_ext/values-sr/strings.xml
+  packages/services/Telephony/res_ext/values-sv/strings.xml
+  packages/services/Telephony/res_ext/values-th/strings.xml
+  packages/services/Telephony/res_ext/values-tl/strings.xml
+  packages/services/Telephony/res_ext/values-tr/strings.xml
+  packages/services/Telephony/res_ext/values-uk/strings.xml
+  packages/services/Telephony/res_ext/values-ur/strings.xml
+  packages/services/Telephony/res_ext/values-vi/strings.xml
+  packages/services/Telephony/res_ext/values-zh-rHK/strings.xml
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02768800
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][ANDROID-28912173]Change Security Patch Level in Settings
+  [[問題標題]]
+  [Google Security P***h][AN***D-28912173]Change Security P***h Level in Settings
+  [[問題現象]]
+  [Google Security P***h][AN***D-28912173]Change Security P***h Level in Settings
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][AN***D-28912173]Change Security P***h Level in Settings
+  [[Problem Description]]
+  [Google Security P***h][AN***D-28912173]Change Security P***h Level in Settings
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  build/core/version_defaults.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02759010
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3764][CVE-2016-3765]Information Disclosure Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3764][CVE-2016-3765]I***o***ation Disclosure Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3764][CVE-2016-3765]I***o***ation Disclosure Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3764][CVE-2016-3765]I***o***ation Disclosure Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3764][CVE-2016-3765]I***o***ation Disclosure Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  frameworks/av/media/libmediaplayerservice/MetadataRetrieverClient.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758419
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-2506][CVE-2016-2505][CVE-2016-2507][CVE-2016-2508][CVE-2016-3741][CVE-2016-3742][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-2506][CVE-2016-2505][CVE-2016-2507][CVE-2016-2508][CVE-2016-3741][CVE-2016-3742][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-2506][CVE-2016-2505][CVE-2016-2507][CVE-2016-2508][CVE-2016-3741][CVE-2016-3742][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[問題影響]]
+  N/A
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-2506][CVE-2016-2505][CVE-2016-2507][CVE-2016-2508][CVE-2016-3741][CVE-2016-3742][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-2506][CVE-2016-2505][CVE-2016-2507][CVE-2016-2508][CVE-2016-3741][CVE-2016-3742][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[Impa***]]
+  N/A
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/libavc/decoder/ih264d_api.c
+  external/libavc/decoder/ih264d_parse_pslice.c
+  external/libavc/decoder/ih264d_parse_slice.c
+  external/libavc/decoder/ih264d_process_intra_mb.c
+  external/libavc/decoder/ih264d_utils.c
+  frameworks/av/media/libmediaplayerservice/nuplayer/GenericSource.cpp
+  frameworks/av/media/libstagefright/DRMExtractor.cpp
+  frameworks/av/media/libstagefright/MPEG4Extractor.cpp
+  frameworks/av/media/libstagefright/SampleIterator.cpp
+  frameworks/av/media/libstagefright/codecs/on2/h264dec/source/h264bsd_storage.c
+  frameworks/av/media/libstagefright/mpeg2ts/ATSParser.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02718199
+Severity:
+  
+Description: 
+  [M95][蓝牙]播放微信语音过程中出现蓝牙chip重启和连接超时
+  [[問題標題]] 
+  播放微信語音過程中出現藍牙chip重啟和連接超時
+  
+  [[問題現象]] 
+  播放微信語音過程中出現藍牙chip重啟和連接超時
+  
+  [[問題影響]] 
+  低機率造成藍牙chip重啟
+  
+  [[問題復現步驟]] 
+  關閉藍牙 -> 進入微信聊天界面 -> 開啟藍牙 -> 藍牙耳機自動連接後播放語音消息
+  
+  [[建議驗證模塊]] 
+  播放音樂及電話語音壓力測試
+  
+  
+  [[Title for Customer]] 
+  BT reset & conne***ion setup overdue when playing weChat voice message.
+  
+  [[Problem Description]] 
+  BT reset & conne***ion setup overdue when playing weChat voice message.
+  [[Impa***]] 
+  BT might reset with a very low probability.
+  [[Reproduced Steps]] 
+  BT is off -> enter weChat -> enable BT -> BT headset auto-conne***ed and play voice message.
+  
+  [[Modules to be verified after taking p***h]] 
+  A2DP & HFP pressure test.N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02558972
+Severity:
+  
+Description: 
+  [MP Feature Patch Back]
+  [[問題標題]] 
+  增加移动外场自动化测试Volte case support 
+  
+  [[問題現象]] 
+  增加支持自动外场自动化测试volte case
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  不check in无法支持移动外场自动化测试Volte case
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  启动自动化测试之后，无法正确运行volte case
+  
+  [[建議驗證模塊]] 
+  移动自动化外场测试volte case部分
+  [[Title for Customer]] 
+  add CMCC FT auto test tool volte case support 
+  [[Problem Description]] 
+  add CMCC FT auto test tool volte case support 
+  [[Impa***]] 
+  If not check in, the CMCC FT auto test case volte part cann't run no***ally
+  [[Reproduced Steps]] 
+  start FT auto test case, volte case can't run no***ally
+  [[Modules to be verified after taking p***h]] 
+  start FT auto test case, run volte case
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/res/layout/layout_main.xml
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/src/com/mediatek/mdmlsample/AppApplication.java
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/src/com/mediatek/mdmlsample/CommandProxy.java
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/src/com/mediatek/mdmlsample/DecoderSample.java
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/src/com/mediatek/mdmlsample/MainActivity.java
+  vendor/mediatek/proprietary/packages/apps/MdmlSample/src/com/mediatek/mdmlsample/TrapReceiverService.java
+  vendor/nb/libs/mt6797_64/com.mediatek.mdml/javalib.jar
+  vendor/nb/libs/mt6797_64/libmdmonitor/libmdmonitor.a
+  vendor/nb/libs/mt6797_64/md_monitor/md_monitor
+  vendor/nb/libs/mt6797_64/md_monitor_ctrl/md_monitor_ctrl
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02748651
+Severity:
+  
+Description: 
+  [BT]  [6755] [A02] PLT_edge耳机一直处于连接中，长达8分钟
+  [[問題標題]] 
+  PLT_edge耳机一直处于连接中，长达8分钟
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  PLT_edge耳机一直处于连接中，长达8分钟
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  1. 已配对plt_edge
+  2. 开关了一次蓝牙
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  While conne***  PLT_edge, keep conne***ing for 8 minutes
+  [[Problem Description]] 
+  While conne***  PLT_edge, keep conne***ing for 8 minutes
+  [[Impa***]] 
+  While conne***  PLT_edge, keep conne***ing for 8 minutes
+  [[Reproduced Steps]] 
+  1. pair with PLT_edge headset
+  2. BT off/on 
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/bta/av/bta_av_aact.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02786964
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3743] Remote Code Execution Vulnerability in Mediaserver
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[問題現象]]
+  [Google Security P***h][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[問題影響]]
+  ***S fail
+  [[問題復現步驟]]
+  Run ***S
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3743]Remote Code Execution Vulnerability in Mediaserver
+  [[Impa***]]
+  ***S fail
+  [[Reproduced Steps]]
+  Run ***S
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/libavc/decoder/ih264d_utils.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02758516
+Severity:
+  Critical
+Description: 
+  [Google Security Patch][CVE-2016-3751]Elevation of Privilege Vulnerability in libpng
+  [[問題標題]]
+  [Google Security P***h][CVE-2016-3751]Elevation of Privilege Vulnerability in libpng
+  [[問題現象]]
+  低版本的libpng会有执行恶意代码的风险。
+  [Google Security P***h][CVE-2016-3751]Elevation of Privilege Vulnerability in libpng
+  [[問題影響]]
+  低版本的libpng有可能执行恶意代码。
+  [[問題復現步驟]]
+  N/A
+  [[建議驗證模塊]]
+  N/A
+  [[Title for Customer]]
+  [Google Security P***h][CVE-2016-3751]Elevation of Privilege Vulnerability in libpng
+  [[Problem Description]]
+  [Google Security P***h][CVE-2016-3751]Elevation of Privilege Vulnerability in libpng
+  [[Impa***]]
+  vulnerability in libpng could enable a local malicious application to execute
+  arbitrary code with***he context of an elevated sys*** application.This issue
+  is rated as High because it could be used to gain local access to elevated
+  capabilities, such as Signature or SignatureOrSys*** pe***issions
+  privileges, which are not accessible to a third-party application.
+  [[Reproduced Steps]]
+  N/A
+  [[Modules to be verified after taking p***h]]
+  N/AN/A
+
+Associated Files: 
+  external/libpng/ANNOUNCE
+  external/libpng/Android.mk
+  external/libpng/CHANGES
+  external/libpng/CMakeLists.txt
+  external/libpng/INSTALL
+  external/libpng/LICENSE
+  external/libpng/Makefile.am
+  external/libpng/NOTICE
+  external/libpng/README
+  external/libpng/README.android
+  external/libpng/README.version
+  external/libpng/TODO
+  external/libpng/arm/arm_init.c
+  external/libpng/arm/filter_neon.S
+  external/libpng/arm/filter_neon_intrinsics.c
+  external/libpng/autogen.sh
+  external/libpng/configure.ac
+  external/libpng/contrib/README.txt
+  external/libpng/contrib/arm-neon/README
+  external/libpng/contrib/arm-neon/linux-auxv.c
+  external/libpng/contrib/arm-neon/linux.c
+  external/libpng/contrib/examples/iccfrompng.c
+  external/libpng/contrib/examples/pngpixel.c
+  external/libpng/contrib/examples/pngtopng.c
+  external/libpng/contrib/examples/simpleover.c
+  external/libpng/contrib/gregbook/Makefile.unx
+  external/libpng/contrib/gregbook/readpng.c
+  external/libpng/contrib/gregbook/readpng2.c
+  external/libpng/contrib/gregbook/readppm.c
+  external/libpng/contrib/gregbook/rpng-x.c
+  external/libpng/contrib/gregbook/rpng2-win.c
+  external/libpng/contrib/gregbook/rpng2-x.c
+  external/libpng/contrib/gregbook/writepng.c
+  external/libpng/contrib/libtests/fakepng.c
+  external/libpng/contrib/libtests/makepng.c
+  external/libpng/contrib/libtests/pngimage.c
+  external/libpng/contrib/libtests/pngstest-errors.h
+  external/libpng/contrib/libtests/pngstest.c
+  external/libpng/contrib/libtests/pngunknown.c
+  external/libpng/contrib/libtests/pngvalid.c
+  external/libpng/contrib/libtests/readpng.c
+  external/libpng/contrib/libtests/tarith.c
+  external/libpng/contrib/pngminus/png2pnm.c
+  external/libpng/contrib/pngminus/pnm2png.c
+  external/libpng/contrib/pngsuite/README
+  external/libpng/contrib/tools/genpng.c
+  external/libpng/contrib/tools/png-fix-itxt.c
+  external/libpng/contrib/tools/pngfix.c
+  external/libpng/example.c
+  external/libpng/libpng-manual.txt
+  external/libpng/libpng.3
+  external/libpng/libpngpf.3
+  external/libpng/png.5
+  external/libpng/png.c
+  external/libpng/png.h
+  external/libpng/pngconf.h
+  external/libpng/pngdebug.h
+  external/libpng/pngerror.c
+  external/libpng/pngget.c
+  external/libpng/pnginfo.h
+  external/libpng/pnglibconf.h
+  external/libpng/pngmem.c
+  external/libpng/pngpread.c
+  external/libpng/pngpriv.h
+  external/libpng/pngread.c
+  external/libpng/pngrio.c
+  external/libpng/pngrtran.c
+  external/libpng/pngrutil.c
+  external/libpng/pngset.c
+  external/libpng/pngstruct.h
+  external/libpng/pngtest.c
+  external/libpng/pngtrans.c
+  external/libpng/pngusr.dfa
+  external/libpng/pngwio.c
+  external/libpng/pngwrite.c
+  external/libpng/pngwtran.c
+  external/libpng/pngwutil.c
+  external/libpng/projects/vstudio/readme.txt
+  external/libpng/projects/vstudio/zlib.props
+  external/libpng/scripts/README.txt
+  external/libpng/scripts/def.c
+  external/libpng/scripts/dfn.awk
+  external/libpng/scripts/intprefix.c
+  external/libpng/scripts/libpng-config-head.in
+  external/libpng/scripts/libpng.pc.in
+  external/libpng/scripts/makefile.32sunu
+  external/libpng/scripts/makefile.64sunu
+  external/libpng/scripts/makefile.amiga
+  external/libpng/scripts/makefile.atari
+  external/libpng/scripts/makefile.bc32
+  external/libpng/scripts/makefile.beos
+  external/libpng/scripts/makefile.bor
+  external/libpng/scripts/makefile.cegcc
+  external/libpng/scripts/makefile.darwin
+  external/libpng/scripts/makefile.dec
+  external/libpng/scripts/makefile.dj2
+  external/libpng/scripts/makefile.freebsd
+  external/libpng/scripts/makefile.gcc
+  external/libpng/scripts/makefile.hp64
+  external/libpng/scripts/makefile.hpgcc
+  external/libpng/scripts/makefile.hpux
+  external/libpng/scripts/makefile.ibmc
+  external/libpng/scripts/makefile.intel
+  external/libpng/scripts/makefile.knr
+  external/libpng/scripts/makefile.linux
+  external/libpng/scripts/makefile.mips
+  external/libpng/scripts/makefile.msc
+  external/libpng/scripts/makefile.msys
+  external/libpng/scripts/makefile.ne12bsd
+  external/libpng/scripts/makefile.netbsd
+  external/libpng/scripts/makefile.openbsd
+  external/libpng/scripts/makefile.sco
+  external/libpng/scripts/makefile.sggcc
+  external/libpng/scripts/makefile.sgi
+  external/libpng/scripts/makefile.so9
+  external/libpng/scripts/makefile.solaris
+  external/libpng/scripts/makefile.solaris-x86
+  external/libpng/scripts/makefile.std
+  external/libpng/scripts/makefile.sunos
+  external/libpng/scripts/makefile.tc3
+  external/libpng/scripts/makefile.vcwin32
+  external/libpng/scripts/options.awk
+  external/libpng/scripts/pnglibconf.dfa
+  external/libpng/scripts/pnglibconf.h.prebuilt
+  external/libpng/scripts/pnglibconf.mak
+  external/libpng/scripts/prefix.c
+  external/libpng/scripts/sym.c
+  external/libpng/scripts/symbols.c
+  external/libpng/scripts/symbols.def
+  external/libpng/scripts/vers.c
+  external/libpng/tests/pngimage-full
+  external/libpng/tests/pngimage-quick
+  external/libpng/tests/pngstest
+  external/libpng/tests/pngstest-1.8
+  external/libpng/tests/pngstest-1.8-alpha
+  external/libpng/tests/pngstest-linear
+  external/libpng/tests/pngstest-linear-alpha
+  external/libpng/tests/pngstest-none
+  external/libpng/tests/pngstest-none-alpha
+  external/libpng/tests/pngstest-sRGB
+  external/libpng/tests/pngstest-sRGB-alpha
+  external/libpng/tests/pngunknown-IDAT
+  external/libpng/tests/pngunknown-discard
+  external/libpng/tests/pngunknown-if-safe
+  external/libpng/tests/pngunknown-sAPI
+  external/libpng/tests/pngunknown-sTER
+  external/libpng/tests/pngunknown-save
+  external/libpng/tests/pngunknown-vpAg
+  external/libpng/tests/pngvalid-gamma-16-to-8
+  external/libpng/tests/pngvalid-gamma-alpha-mode
+  external/libpng/tests/pngvalid-gamma-background
+  external/libpng/tests/pngvalid-gamma-expand16-alpha-mode
+  external/libpng/tests/pngvalid-gamma-expand16-background
+  external/libpng/tests/pngvalid-gamma-expand16-transform
+  external/libpng/tests/pngvalid-gamma-sbit
+  external/libpng/tests/pngvalid-gamma-threshold
+  external/libpng/tests/pngvalid-gamma-transform
+  external/libpng/tests/pngvalid-progressive-interlace-standard
+  external/libpng/tests/pngvalid-progressive-size
+  external/libpng/tests/pngvalid-progressive-standard
+  external/libpng/tests/pngvalid-standard
+  external/libpng/tests/pngvalid-transform
+  external/skia/src/images/SkImageDecoder_libpng.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02723159
+Severity:
+  
+Description: 
+  [AA027][NFC] 电信集团--“翼销售”无法读取身份证
+  [[問題標題]] 
+  [***C MT6605] 新增相容性: 翼銷售APK二代身份證功能
+  
+  [[問題現象]] 
+  可辨識二代身份證，但無法利用翼銷售APK讀出內容
+  
+  [[問題影響]] 
+  可辨識二代身份證，但無法利用翼銷售APK讀出內容
+  
+  [[問題復現步驟]] 
+  1. 開啟***C
+  2. 執行翼銷售APK
+  3. 讀取身份證
+  
+  [[建議驗證模塊]] 
+  ***C reade***ode
+  
+  [[Title for Customer]] 
+  [***C MT6605] Support 翼銷售APK reading China ID card
+  
+  [[Problem Description]] 
+  Can not use 翼銷售APK to read ID card
+  
+  [[Impa***]] 
+  Can not use 翼銷售APK to read ID card
+  
+  [[Reproduced Steps]] 
+  1. ***C enable
+  2. Run 翼銷售APK
+  3. Read ID card
+  
+  [[Modules to be verified after taking p***h]] 
+  ***C reade***ode
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/mtknfc/lib/libmtknfc.so
+  vendor/mediatek/proprietary/external/mtknfc/lib64/libmtknfc.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696670
+Severity:
+  
+Description: 
+  [M80] [WIFI] KE at nicpmSetDriverOwn+0x104/0x268N/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/gl_rst.c
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/os/linux/include/gl_rst.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02704893
+Severity:
+  Critical
+Description: 
+  [E1][Everest][M][NE]Native (NE),2259,2274,99,/data/core/,1,SIGABRT,/system/bin/volte_stack,Mon May  9 07:27:08 CST 2016,1
+  [[問題標題]] 
+  IMS小機率性重啟
+  [[問題現象]] 
+  IMS小機率性重啟
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  無法打ims call
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  無明確複制步驟
+  [[建議驗證模塊]] 
+  執行一般ims注冊及打ims call
+  [[Title for Customer]] 
+  small possibility ims reset happens
+  [[Problem Description]] 
+  small possibility ims reset happens
+  [[Impa***]] 
+  can't make ims call
+  [[Reproduced Steps]] 
+  not exa*** reproduced steps
+  [[Modules to be verified after taking p***h]] 
+  check if ims registration and ims call works fine
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02733582
+Severity:
+  
+Description: 
+  [Bluetooth][IOT]Cannot pair with Parriot CK3100 carkit  successfully.
+  [[問題標題]] 
+  無法與Parriot CK3100車機成功配對
+  [[問題現象]] 
+  無法與Parriot CK3100車機成功配對
+  [[問題影響]] 
+  特定車機Parriot CK3100成功配對
+  [[問題復現步驟]] 
+  使用手機與車機Parriot CK3100進行配對
+  [[建議驗證模塊]] 
+  使用不同裝置進行配對
+  
+  [[Title for Customer]] 
+  Cannot pair with Parriot CK3100 carkit  successfully.
+  [[Problem Description]] 
+  Cannot pair with Parriot CK3100 carkit  successfully.
+  [[Impa***]] 
+  Cannot pair with Parriot CK3100 carkit  successfully.
+  [[Reproduced Steps]] 
+  Paring Parriot CK3100
+  [[Modules to be verified after taking p***h]] 
+  Paring with different devices.
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02516622
+Severity:
+  
+Description: 
+  [AC0031] [WIFI] 连接慢：连接某个SSID时，从scan results里select了某个bss，但driver很久才search到此候选者
+  [[問題標題]]
+  解决连不上AP的问题
+  
+  [[問題現象]]
+  连不上AP
+  
+  [[問題影響]]
+  连不上AP
+  
+  [[問題復現步驟]]
+  在有很多AP（大于64个）的环境下，连AP，有时会出现连不上AP的情况
+  
+  [[建議驗證模塊]]
+  在复杂环境下去连AP
+  
+  [[Title for Customer]]
+  Solve the issue of can't conne*** AP
+  
+  [[Problem Description]]
+  Can't conne*** AP
+  
+  [[Impa***]]
+  Can't conne*** AP
+  
+  [[Reproduced Steps]]
+  ***he environment of having lots of APs(more than 64), sometimes can't conne*** AP
+  
+  [[Modules to be verified after taking p***h]]
+  In bad environment, conne*** APN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/connectivity/wlan/gen3/mgmt/scan.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02671469
+Severity:
+  
+Description: 
+  连接车载蓝牙后，车载上的网络信号和测试机上对比偏弱N/A
+
+Associated Files: 
+  packages/apps/Bluetooth/src/com/android/bluetooth/hfp/HeadsetPhoneState.java
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02720166
+Severity:
+  
+Description: 
+  [M80] [WIFI] 连接AP系统已休眠后，待机电流仍持续100mA左右，时长1s多，WIFI多次唤醒都有同样现象N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/firmware/WIFI_RAM_CODE_6797
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02661022
+Severity:
+  Critical
+Description: 
+  [72 TK][M0][CTS 6.0_r4]android.bluetooth.cts.BluetoothLeScanTest-Fail
+  [[問題標題]] 
+  修正b***h scan error
+  [[問題現象]] 
+  解析b***h scan report时出现error
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  解析b***h scan report时出现error
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  使用***s测试b***h scan
+  [[建議驗證模塊]] 
+  b***h scan
+  [[Title for Customer]] 
+  fix b***h scan error
+  [[Problem Description]] 
+   java layer got wrong b***h scan report
+  [[Impa***]] 
+   java layer got wrong b***h scan report
+  [[Reproduced Steps]] 
+  ***s test b***h scan
+  [[Modules to be verified after taking p***h]] 
+  b***h scan
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/btif/src/btif_gatt_client.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02746333
+Severity:
+  Minor
+Description: 
+  [MP Feature Patch Back]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/firmware/WIFI_RAM_CODE_6797
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02736310
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] Add setting for E///N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/external/strongswan/epdg_cert/Root_CA_1003.crt
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02748819
+Severity:
+  
+Description: 
+  [M95][GPS场测]电信卡3G/4G网络冷启动定位比M80定位时间偏长，平均速率在20秒以上
+  [[問題標題]] 
+  冷啟動定位過慢
+  
+  [[問題現象]] 
+  冷啟動定位過慢
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  冷啟動定位過慢
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  在相同的SUPL環境下測試冷啟動
+  
+  [[建議驗證模塊]] 
+  在相同的SUPL環境下測試冷啟動
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  ***TFF too slow
+  
+  [[Problem Description]] 
+  ***TFF too slow
+  
+  [[Impa***]] 
+  ***TFF too slow
+  
+  [[Reproduced Steps]] 
+  ***ng the same SUPL server do TTFF test
+  
+  [[Modules to be verified after taking p***h]] 
+  ***ng the same SUPL server do TTFF test
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/gps/mnl/mnl_aosp/mnld/libs/libmnl.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02679720
+Severity:
+  
+Description: 
+  M80相机-QQ扫一扫卡死
+  [[問題標題]] 
+  1.登入QQ账号，点击头像-进入我的二维码
+  2.选择“扫一扫”选项-开始扫描
+  3.冻屏在扫一扫界面，退出到主界面，清除数据，重新进入扫一扫提示“打开摄像头失败，请稍后再试”
+  4.从主界面上打开相机，提示“相机发生错误，无法连接到相机”
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  N/A
+  [[Problem Description]] 
+  N/A
+  [[Impa***]] 
+  N/A
+  [[Reproduced Steps]] 
+  N/A
+  [[Modules to be verified after taking p***h]] 
+  N/A
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr/aaa_state_af.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02750588
+Severity:
+  
+Description: 
+  [Pre-text][美图 M500][MT6755][厦门][测试用例] 移动volte通话主叫modem重启(OnlyOne)
+  [[問題標題]] 
+  在移动VOLTE弱信号（-110dbm到-120dbm）环境下反复拨打电话，遇到modem重启
+  
+  [[問題現象]] 
+  在移动VOLTE弱信号（-110dbm到-120dbm）环境下反复拨打电话，遇到modem重启
+  
+  [[問題影響]] 
+  modem重启
+  
+  [[問題復現步驟]] 
+  在移动VOLTE弱信号（-110dbm到-120dbm）环境下反复拨打电话
+  
+  [[建議驗證模塊]] 
+  SRVCC相关的IMS call和CS call相关module
+  
+  [[Title for Customer]] 
+  Modem reset when make calls times and times in VoLTE weak signal environment
+  
+  [[Problem Description]] 
+  Modem reset when make calls times and times in VoLTE weak signal environment
+  
+  [[Impa***]] 
+  modem reset
+  
+  [[Reproduced Steps]] 
+  make calls times and times in VoLTE weak signal environment
+  
+  
+  [[Modules to be verified after taking p***h]] 
+  IMS call and CS call related modules
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02782670
+Severity:
+  
+Description: 
+  [PTS][A2DP]DUT failed to execute these A2DP test cases.
+  [[問題標題]] 
+  
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  
+  [[Problem Description]] 
+  
+  [[Impa***]] 
+  
+  [[Reproduced Steps]] 
+  
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  system/bt/btif/co/bta_av_co.c
+  system/bt/btif/src/btif_media_task.c
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02762578
+Severity:
+  
+Description: 
+  [MP Feature Patch Back]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/volte_core/arm/volte_core.a
+  vendor/nb/libs/mt6797_64/volte_imcb/volte_imcb
+  vendor/nb/libs/mt6797_64/volte_stack/volte_stack
+  vendor/nb/libs/mt6797_64/volte_ua/volte_ua
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02768187
+Severity:
+  
+Description: 
+  [MEIZU M95][WLAN] M95 WIFI扫描异常问题
+  [[問題標題]] 
+  BT 聽音樂的時候, WiFi scan 異常
+  
+  [[問題現象]] 
+  wifi scan 頻繁出現 scan timeout，只sc***hannel 1
+  
+  [[問題影響]] 
+  scan no AP
+  
+  [[問題復現步驟]] 
+  BT 連耳機聽音樂
+  wifi 連上5G AP
+  WiFi 做scan
+  
+  [[建議驗證模塊]] 
+  wifi scan
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  WiFi can not scan when BT in A2DP
+  
+  [[Problem Description]] 
+  wifi scan apper scan timeout ***t
+  
+  [[Impa***]] 
+  scan no AP
+  
+  [[Reproduced Steps]] 
+  BT conne*** and listen m***c
+  WiFi conne*** 5G and doing scan
+  
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_0_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/combo_tool/patch_folder/ROMv3_patch_1_1_hdr.bin
+  vendor/mediatek/proprietary/hardware/connectivity/wlan/firmware/WIFI_RAM_CODE_6797
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02591851
+Severity:
+  
+Description: 
+  [VF17330]['2 - Serious][CTC]['Bluetooth]'BT- DUT doesnot reconnect to carkit in SAP/rSAP mode.
+  [[問題標題]] 
+  'BT- DUT doesnot reconne*** to carkit in SAP/rSAP mode
+  [[問題現象]] 
+  When the DUT conne***ed to carkit in SAP mode is out of coverage area and returns ba***o coverage area, DUT doesnot reconne*** to carkit. Carkit is completely unpaired from the bluetooth menu.
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  reconne*** Carkit fail
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  When the DUT conne***ed to carkit in SAP mode is out of coverage area and returns ba***o coverage area, DUT doesnot reconne*** to carkit. Carkit is completely unpaired from the bluetooth menu.
+  [[建議驗證模塊]] 
+  
+  [[Title for Customer]] 
+  SAP on carkit seems not to regenerat*** key and ***oordinate with it and let it go.
+  [[Problem Description]] 
+  'BT- DUT doesnot reconne*** to carkit in SAP/rSAP mode
+  [[Impa***]] 
+  ***an not reconne*** to carkit
+  [[Reproduced Steps]] 
+  When the DUT conne***ed to carkit in SAP mode is out of coverage area and returns ba***o coverage area, DUT doesnot reconne*** to carkit. Carkit is completely unpaired from the bluetooth menu.
+  [[Modules to be verified after taking p***h]] 
+  
+  [[Notice: Please don't dele***his line and use "Secure I***o" for ***ernal i***o***ation sharing]]N/A
+
+Associated Files: 
+  system/bt/stack/btm/btm_sec.c
+

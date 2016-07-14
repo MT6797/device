@@ -705,6 +705,7 @@ endif
 
 ifeq ($(strip $(MTK_MTKLOGGER_SUPPORT)), yes)
   PRODUCT_PACKAGES += MTKLogger
+  PRODUCT_PACKAGES += BtTool
 endif
 
 ifeq ($(strip $(MTK_SPECIFIC_SM_CAUSE)), yes)
