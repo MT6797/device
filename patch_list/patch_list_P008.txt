@@ -1,0 +1,671 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02767011
+Severity:
+  
+Description: 
+  【camera dual flashlight】flash calibration时卡死在STATE_AE_POST阶段，mtkcam报错AE timeout导致stopPreviewN/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729968
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - Legacy pipe (MW)N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderBase.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderCapture.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderFeatureCapture.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderFeaturePreview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderPreview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/mfc/PipelineBuilderMFC.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/hwutils/HwInfoHelper.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/LegacyPipeline/LegacyPipelineBuilder.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/hwutils/HwInfoHelper.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02739788
+Severity:
+  
+Description: 
+  A9双色温闪光灯无法进行参数矫正N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/flashlight/flash_custom.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/flashlight/flash_tuning_2ndPart_main2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/flashlight/flash_tuning_2ndPart_sub2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/flashlight/flash_tuning_custom.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/flashlight/flash_tuning_custom_sub.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/flash_tuning_custom.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ThreadRawImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/flash_mgr/flash_cct.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/flash_mgr/flash_cct_quick2.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/isp_mgr/isp_mgr_awb_stat.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/isp_mgr/isp_mgr_awb_stat.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr/aaa_state_precapture.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/feature/FeatureFlowControl.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02603008
+Severity:
+  
+Description: 
+  [M80]Camera: pdaf与caf秀框参数调试N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02730843
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - algoN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/pd_param.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/lens/ak7371af/lens_para_AK7371AF.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/lib3a/pd_algo_if.h
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02720655
+Severity:
+  Critical
+Description: 
+  [alps-mp-m0.mp9-V1.93 Regression Test][Everest][M][CTS 6.0_r6]In class android.hardware.camera2.cts.StillCaptureTest has 4TCs - Fail.(3/3)N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Default/v3/DefaultAdapter.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729965
+Severity:
+  
+Description: 
+  [MP Feature Patch Back][alps-mp-m0.mp9] Dual PDAF Feature Patch Back - Sensor tuning files and feature table (custom)N/A
+
+Associated Files: 
+  device/mediatek/common/kernel-headers/kd_imgsensor.h
+  device/mediatek/common/kernel-headers/kd_imgsensor_define.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_AE_PLineTable_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_feature_para_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_flash_awb_para_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_flicker_para_s5k2l7mipiraw.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_info_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_isp_lsc_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_isp_pca_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_isp_regs_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_tsf_data_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_tsf_para_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/s5k2l7_mipi_raw/camera_tuning_para_s5k2l7mipiraw.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor_src/sensorlist.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/common/include/IHalSensor.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensor.control.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696685
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: BWDN algo headerN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libbwdn/MTKBWDN.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libbwdn/MTKBWDNErrCode.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libbwdn/MTKBWDNType.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libbwdn/cltk_api.h
+  vendor/nb/libs/mt6797_64/libbwdn/Android.mk
+  vendor/nb/libs/mt6797_64/libbwdn/arm/libbwdn.a
+  vendor/nb/libs/mt6797_64/libbwdn/libbwdn.a
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02697901
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: dpframework: new color formatN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libGLES_mali/arm/libGLES_mali.so
+  vendor/nb/libs/mt6797_64/libGLES_mali/libGLES_mali.so
+  vendor/nb/libs/mt6797_64/libdpframework/include/DpDataType.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02689414
+Severity:
+  Minor
+Description: 
+  3A AAO should be ready before startN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Thread3AImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/aaa_hal_if.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02742386
+Severity:
+  
+Description: 
+  Mt6797Touch AF的时候先将PD推出去solutionN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/af_param.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/lib3a/af_algo_if.h
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libispfeature/arm/libispfeature.a
+  vendor/nb/libs/mt6797_64/libispfeature/libispfeature.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729979
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - P1Node (MW)N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/v3/hwnode/P1Node.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/P1Node.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/ScenarioControl.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696682
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: 3A algo headerN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Sync3A.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/lib3a/af_algo_if.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/lib3a/isp_algo_common.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libgma/MTKGma.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/liblce/MTKLce.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/liblsctrans/ShadingTblTransform.h
+  vendor/mediatek/proprietary/hardware/mtkcam/include/algorithm/mt6797/libsync3a/MTKSyncAe.h
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libgma/arm/libgma.a
+  vendor/nb/libs/mt6797_64/libgma/libgma.a
+  vendor/nb/libs/mt6797_64/liblce/arm/liblce.a
+  vendor/nb/libs/mt6797_64/liblce/liblce.a
+  vendor/nb/libs/mt6797_64/liblsctrans/arm/liblsctrans.a
+  vendor/nb/libs/mt6797_64/liblsctrans/liblsctrans.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696671
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: libcameraN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libbwdn/Android.mk
+  vendor/nb/libs/mt6797_64/libbwdn/arm/libbwdn.a
+  vendor/nb/libs/mt6797_64/libbwdn/libbwdn.a
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libgma/arm/libgma.a
+  vendor/nb/libs/mt6797_64/libgma/libgma.a
+  vendor/nb/libs/mt6797_64/libispfeature/arm/libispfeature.a
+  vendor/nb/libs/mt6797_64/libispfeature/libispfeature.a
+  vendor/nb/libs/mt6797_64/liblce/arm/liblce.a
+  vendor/nb/libs/mt6797_64/liblce/liblce.a
+  vendor/nb/libs/mt6797_64/liblsctrans/arm/liblsctrans.a
+  vendor/nb/libs/mt6797_64/liblsctrans/liblsctrans.a
+  vendor/nb/libs/mt6797_64/libocc/arm/libocc.a
+  vendor/nb/libs/mt6797_64/libocc/libocc.a
+  vendor/nb/libs/mt6797_64/libstereocam/arm/libstereocam.a
+  vendor/nb/libs/mt6797_64/libstereocam/libstereocam.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696717
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: Middleware - CommonN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/common/include/ImageFormat.h
+  vendor/mediatek/proprietary/hardware/mtkcam/ext/MtkCameraParameters.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/ext/include/camera/MtkCamera.h
+  vendor/mediatek/proprietary/hardware/mtkcam/ext/include/camera/MtkCameraParameters.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/include/v1/camutils/FrameworkCBThread.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/include/v3/pipeline/IScenarioControl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/v1/device/Cam1DeviceBase.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/stereo/ContextBuilder/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/stereo/ContextBuilder/NodeConfigDataManager.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/devicemgr/CamDeviceManagerImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/LegacyPipeline/NodeId.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/LegacyPipeline/StreamId.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/Shot/IShot.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Default/v3/DefaultAdapter.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/common/camutils/FrameworkCBThread.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/device/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/ScenarioControl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/utils/Format.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/utils/ImageBuffer/BaseImageBuffer.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696663
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: gpu_extN/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libOpenCL/Android.mk
+  vendor/nb/libs/mt6797_64/libOpenCL/README
+  vendor/nb/libs/mt6797_64/libOpenCL/arm/libOpenCL.so
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl.hpp
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl_egl.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl_ext.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl_gl.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl_gl_ext.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/cl_platform.h
+  vendor/nb/libs/mt6797_64/libOpenCL/include/CL/opencl.h
+  vendor/nb/libs/mt6797_64/libOpenCL/libOpenCL.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02731496
+Severity:
+  
+Description: 
+  M80AE收敛速度问题修复N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/ae_tuning_custom_main.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/ae_tuning_custom_main2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/ae_tuning_custom_sub.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/ae_tuning_custom_sub2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/ae_param.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ae_mgr/ae_mgr.cpp
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libispfeature/arm/libispfeature.a
+  vendor/nb/libs/mt6797_64/libispfeature/libispfeature.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02691602
+Severity:
+  Major
+Description: 
+  Flash 整个过程耗时长N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/include/IPv1.1/Hal3/aaa_hal_common.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/include/v3/pipeline/IPipelineNode.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/include/v3/pipeline/PipelineContext.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/v3/pipeline/PipelineContext.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/v3/pipeline/PipelineContextImpl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/common/v3/pipeline/PipelineContextImpl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/LegacyPipelinePreview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderFeaturePreview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/PipelineBuilderPreview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/processor/ResultProcessor.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/processor/StreamingProcessor.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/request/RequestControllerImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/LegacyPipeline/request/RequestControllerImp.request.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/LegacyPipeline/processor/ResultProcessor.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/include/LegacyPipeline/processor/StreamingProcessor.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/Shot/ZsdShot/ZsdShot.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/default/DefaultFlowControl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/default/DefaultFlowControl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/feature/FeatureFlowControl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/adapter/Scenario/flowControl/feature/FeatureFlowControl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v1/camshot/MultiShot/MShotDispatcher.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/BaseNode.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/BaseNode.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/DummyNode.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/P1Node.cpp
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libnr/arm/libnr.a
+  vendor/nb/libs/mt6797_64/libnr/libnr.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02622590
+Severity:
+  Major
+Description: 
+  [MP Feature Patch Back] Performance optimization: Pre-frame deque timeout setting developmentN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/include/IPv1.1/Hal3/aaa_hal_common.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AAdapter3.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl_SMVR.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr/aaa_state_camera_preview.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/wrapper/Hal3ARawImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/imageio/ispio_stddef.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/iopipe/CamIO/IHalCamIO.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/drv/cam/cam_path_pass1.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/drv/cam/isp_function_cam.buf_ctrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/drv/cam/isp_function_cam.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/inc/cam_path_cam.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/inc/isp_function_cam.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/pipe/CamIOPipe/CamIOPipe.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/CamIO/NormalPipe.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/CamIO/NormalPipe.h
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/P1Node.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696681
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: 3A: AEN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ae_mgr/ae_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ae_mgr/ae_mgr.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ae_mgr/ae_mgr_if.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/ae_mgr/ae_mgr_if.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr_if.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr_if.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/sensor_mgr/aaa_sensor_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/sensor_mgr/aaa_sensor_mgr.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696678
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: 3A common fileN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/include/IPv1.1/Hal3/ISync3A.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AAdapter3.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl_SMVR.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Sync3A.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/aaa_hal_sttCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/debug/DebugUtil.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/dngInfo/dngInfoImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr/aaa_state_precapture.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr_af/af_state_caf.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr_af/af_state_taf.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr_n3d/aaa_state_af_n3d.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr_n3d/aaa_state_camera_preview_n3d.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/state_mgr_n3d/aaa_state_precapture_n3d.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/wrapper/Hal3ARawImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/wrapper/Hal3ARawSMVRImp.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02699196
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: device/mediatek: OpenCLN/A
+
+Associated Files: 
+  device/mediatek/mt6797/device.mk
+  device/mediatek/mt6797/mtk32.icd
+  device/mediatek/mt6797/mtk64.icd
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729951
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - Pd buffer manager(custom)N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/pd_buf_common.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/pd_buf_mgr/pd_buf_mgr.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/pd_buf_mgr/pd_ov16880mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/pd_buf_mgr/pd_s5k2l7mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/lens/ak7371af/lens_para_AK7371AF.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/lens/src/lenslist.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/ov16880_mipi_raw/bpci_tbl_ov16880.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/ov16880_mipi_raw/pd_ov16880mipiraw.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/s5k2l7_mipi_raw/pd_s5k2l7mipiraw.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/s5k2l7_mipi_raw/pd_s5k2l7setting.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/src/pd_buf_list.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/pd_buf_mgr/src/pd_buf_mgr.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/sendepfeature/s5k2l7_mipi_raw/config.ftbl.s5k2l7_mipi_raw.h
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02707107
+Severity:
+  Major
+Description: 
+  [MT6797_alps-mp-m0.mp9-V1.88 Regression Test][Case Fail][MTK-MTBF] NE occurs when run mtbf caseN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/Hal3AFlowCtrl_SMVR.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/middleware/v1.4/v3/hwnode/P1Node.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729958
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - 3A HAL (aaa)N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/include/IPv1.1/Hal3/aaa_hal_common.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/aaa_hal_sttCtrl.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr_if.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/af_mgr/af_mgr_if.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/buf_mgr/PDOBufMgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/isp_mgr/isp_mgr_pdo.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/isp_mgr/isp_mgr_pdo.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/pd_mgr/pd_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/pd_mgr/pd_mgr.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/pd_mgr/pd_mgr_if.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/pd_mgr/pd_mgr_if.h
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/pd_mgr/pd_mgr_pdomerge.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/wrapper/Hal3ARawImp.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/aaa/source/IPv1.1/wrapper/Hal3ARawSMVRImp.cpp
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696700
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: mtkcam: DriverN/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/hardware/mtkcam/acdk/mt6797/src/acdk/AcdkMain.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/common/include/IHalSensor.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/drv/tuning_mgr.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/imageio/ispio_pipe_scenario.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/imageio/ispio_utility.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/iopipe/CamIO/IHalCamIO.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/include/mt6797/iopipe/PostProc/INormalStream.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/drv/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/drv/mdp/mdp_mgr.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/pipe/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/pipe/PostProcPipe/PostProcPipe.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/imageio/test/DIP_pics/P2A_FG/imgi_4208_3120_rgb48.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/CamIO/NormalPipe.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/PostProc/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/PostProc/HalPipeEnqueNode.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/test/Android.mk
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/test/main_iopipe.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/iopipe/test/pic/imgi_4208x3120_bayer10.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/isp/mt6797/tuning/drv/tuning_drv.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensor.control.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensor.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensorList.buildStaticInfo.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensorList.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensorList.enumList.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensorList.getInfo.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/HalSensorList.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/hwsync_drv.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/hwsync_drv.init.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/imgsensor_drv.cpp
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/imgsensor_drv.h
+  vendor/mediatek/proprietary/hardware/mtkcam/drv/src/sensor/mt6797/sensor_drv.h
+  vendor/mediatek/proprietary/hardware/mtkcam/mtkcam.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02696634
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] TCL Flash 3 feature patch back: custom: MT6797N/A
+
+Associated Files: 
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/Android.mk
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/ae_tuning_custom_sub2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/awb_tuning_custom_sub2.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/isp_tuning_custom.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/isp_tuning_idx.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/camera_3a/n3d_sync2a_tuning_param.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/imx214_mipi_mono/camera_isp_regs_imx214mipimono.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/imgsensor/imx214_mipi_raw/camera_isp_regs_imx214mipiraw.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/ae_param.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/aaa/af_param.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/isp_tuning/isp_tuning.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/isp_tuning/isp_tuning_cam_info.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/isp_tuning/isp_tuning_custom.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/isp_tuning/isp_tuning_custom_instance.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/inc/n3d_sync2a_tuning_param.h
+  vendor/mediatek/proprietary/custom/mt6797/hal/lens/lc898212xdaf/lens_para_LC898212XDAF_BAYER.cpp
+  vendor/mediatek/proprietary/custom/mt6797/hal/lens/lc898212xdaf/lens_para_LC898212XDAF_MONO.cpp
+  vendor/nb/libs/mt6797_64/lib3a/arm/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a/lib3a.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/arm/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/lib3a_sample/lib3a_sample.so
+  vendor/nb/libs/mt6797_64/libcamalgo/Android.mk
+  vendor/nb/libs/mt6797_64/libcamalgo/arm/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libcamalgo/libcamalgo.so
+  vendor/nb/libs/mt6797_64/libispfeature/arm/libispfeature.a
+  vendor/nb/libs/mt6797_64/libispfeature/libispfeature.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02729961
+Severity:
+  
+Description: 
+  [MP Feature Patch Back] [alps-mp-m0.mp9] Dual PDAF Feature Patch Back - Image sensor kernel driver (Kernel3.18)N/A
+
+Associated Files: 
+  device/mediatek/common/kernel-headers/kd_imgsensor.h
+  kernel-3.18/drivers/misc/mediatek/imgsensor/inc/kd_imgsensor.h
+  kernel-3.18/drivers/misc/mediatek/imgsensor/inc/kd_imgsensor_define.h
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/camera_hw/kd_camera_hw.c
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/kd_sensorlist.h
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/s5k2l7_mipi_raw/Makefile
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/s5k2l7_mipi_raw/s5k2l7_pdaf_cal.c
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/s5k2l7_mipi_raw/s5k2l7mipiraw_Sensor.c
+  kernel-3.18/drivers/misc/mediatek/imgsensor/src/mt6797/s5k2l7_mipi_raw/s5k2l7mipiraw_Sensor.h
+

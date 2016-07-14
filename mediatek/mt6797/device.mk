@@ -1087,6 +1087,7 @@ ifeq ($(strip $(MTK_GPU_SUPPORT)), yes)
     PRODUCT_PACKAGES += rs2spir
     PRODUCT_PACKAGES += spir2cl
     PRODUCT_PACKAGES += libopencl_icd
+    PRODUCT_PACKAGES += libOpenCL
   endif
 endif
 
@@ -1356,6 +1357,8 @@ PRODUCT_COPY_FILES += device/mediatek/mt6797/meta_init.rc:root/meta_init.rc
 PRODUCT_COPY_FILES += device/mediatek/mt6797/init.mt6797.usb.rc:root/init.mt6797.usb.rc
 PRODUCT_COPY_FILES += device/mediatek/mt6797/init.recovery.mt6797.rc:root/init.recovery.mt6797.rc
 PRODUCT_COPY_FILES += device/mediatek/mt6797/egl.cfg:system/lib/egl/egl.cfg
+PRODUCT_COPY_FILES += device/mediatek/mt6797/mtk32.icd:system/vendor/Khronos/OpenCL/vendors/mtk32.icd
+PRODUCT_COPY_FILES += device/mediatek/mt6797/mtk64.icd:system/vendor/Khronos/OpenCL/vendors/mtk64.icd
 ifneq ($(strip $(MTK_EMMC_SUPPORT)), yes)
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/fstab.mt6797.nand:root/fstab.mt6797
 endif
