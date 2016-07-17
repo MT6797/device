@@ -58,19 +58,19 @@
     <Param path="WB,HAC,4,GSM" param_id="15"/>
     <Param path="WB,HAC,5,GSM" param_id="15"/>
     <Param path="WB,HAC,6,GSM" param_id="15"/>
-    <Param path="NB,Handsfree,0,GSM" param_id="228"/>
-    <Param path="NB,Handsfree,1,GSM" param_id="228"/>
-    <Param path="NB,Handsfree,2,GSM" param_id="228"/>
-    <Param path="NB,Handsfree,4,GSM" param_id="228"/>
-    <Param path="NB,Handsfree,5,GSM" param_id="228"/>
-    <Param path="NB,Handsfree,6,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,0,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,1,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,2,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,3,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,4,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,5,GSM" param_id="228"/>
-    <Param path="NB,MagiConference,6,GSM" param_id="228"/>
+    <Param path="NB,Handsfree,0,GSM" param_id="11"/>
+    <Param path="NB,Handsfree,1,GSM" param_id="11"/>
+    <Param path="NB,Handsfree,2,GSM" param_id="11"/>
+    <Param path="NB,Handsfree,4,GSM" param_id="11"/>
+    <Param path="NB,Handsfree,5,GSM" param_id="11"/>
+    <Param path="NB,Handsfree,6,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,0,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,1,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,2,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,3,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,4,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,5,GSM" param_id="11"/>
+    <Param path="NB,MagiConference,6,GSM" param_id="11"/>
     <Param path="WB,Handsfree,0,GSM" param_id="227"/>
     <Param path="WB,Handsfree,1,GSM" param_id="227"/>
     <Param path="WB,Handsfree,2,GSM" param_id="227"/>
@@ -84,7 +84,7 @@
     <Param path="WB,MagiConference,4,GSM" param_id="227"/>
     <Param path="WB,MagiConference,5,GSM" param_id="227"/>
     <Param path="WB,MagiConference,6,GSM" param_id="227"/>
-    <Param path="NB,Handsfree,3,GSM" param_id="228"/>
+    <Param path="NB,Handsfree,3,GSM" param_id="11"/>
     <Param path="WB,Handsfree,3,GSM" param_id="227"/>
   </ParamTree>
   <ParamUnitPool>
@@ -205,8 +205,8 @@
       <Param name="sph_in_fir_eq_mag" value="1.000000,1.000000,4.000000,4.000000,5.000000,3.000000,2.000000,4.000000,8.000000,12.000000"/>
       <Param name="sph_out_fir_eq_mag" value="0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000,0.000000"/>
     </ParamUnit>
-    <ParamUnit param_id="228">
-      <Param name="speech_mode_para" value="0x8060,0xE0,0x1488,0x1F,0xA007,0x241F,0x190,0x40,0x54,0x10E5,0x263,0x0,0x5008,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0"/>
+    <ParamUnit param_id="11">
+      <Param name="speech_mode_para" value="0x8060,0xE0,0x1488,0x1F,0xA007,0x241F,0x190,0x20,0x54,0x10E5,0x263,0x0,0x5008,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0"/>
       <Param name="sph_in_fir" value="0x7FFF,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0"/>
       <Param name="sph_out_fir" value="0x7FFF,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0"/>
       <Param name="sph_in_fir_eq_freq" value="100.000000,400.000000,800.000000,1200.000000,1600.000000,2000.000000,2400.000000,2800.000000,3200.000000,3800.000000"/>
