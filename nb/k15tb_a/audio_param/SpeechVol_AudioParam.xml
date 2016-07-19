@@ -23,7 +23,7 @@
       <Param name="stf_gain" value="0"/>
     </ParamUnit>
     <ParamUnit param_id="3">
-      <Param name="dl_gain" value="23,21,19,17,15,13,11"/>
+      <Param name="dl_gain" value="23,21,19,17,15,13,12"/>
       <Param name="ul_gain" value="27"/>
       <Param name="stf_gain" value="0"/>
     </ParamUnit>
@@ -43,7 +43,7 @@
       <Param name="stf_gain" value="0"/>
     </ParamUnit>
     <ParamUnit param_id="1">
-      <Param name="dl_gain" value="23,21,19,17,15,13,11"/>
+      <Param name="dl_gain" value="23,21,19,17,15,13,12"/>
       <Param name="ul_gain" value="27"/>
       <Param name="stf_gain" value="0"/>
     </ParamUnit>
