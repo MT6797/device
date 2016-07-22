@@ -1,0 +1,207 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02795011
+Severity:
+  
+Description: 
+  [Patch Request] [PMS] NB, Project: NB6797_6C_M, SW Version: alps-mp-m0.mp9-V1.78.1N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02761003
+Severity:
+  
+Description: 
+  【KUNGFUM-513】运行“3D终极车神2”提示停止运行
+  [[問題標題]] 
+  运行“3D终极车神2”提示停止运行
+  [[問題現象]] 
+  
+  [[問題影響]] 
+  (請填寫於此行下方，並描述如果沒有合入這個p***h會造成的影響) 
+  
+  [[問題復現步驟]] 
+  (請填寫於此行下方，並清楚填寫) 
+  
+  [[建議驗證模塊]] 
+  
+  [[注意: 請勿刪除此行]] 
+  
+  Notice: Following i***o***ation added by you will be provided to customer dire***ly. Please input in English. 
+  [[Title for Customer]] 
+  N/A
+  [[Problem Description]] 
+  N/A
+  [[Impa***]] 
+  N/A
+  [[Reproduced Steps]] 
+  N/A
+  [[Modules to be verified after taking p***h]] 
+  N/A
+  [[Notice: Please don't dele***his line]]N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/arm/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/host/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/x86/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/arm/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/host/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/x86/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art/arm/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/host/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/x86/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/arm/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/host/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/x86/libmtk-artd.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02769675
+Severity:
+  
+Description: 
+  Runtastic  force close after OTA updateN/A
+
+Associated Files: 
+  art/build/Android.common_build.mk
+  art/compiler/dex/gvn_dead_code_elimination.cc
+  art/compiler/dex/gvn_dead_code_elimination_test.cc
+  art/compiler/dex/mir_optimization.cc
+  art/compiler/dex/quick/x86/target_x86.cc
+  art/compiler/oat_test.cc
+  art/compiler/optimizing/bounds_check_elimination.cc
+  art/compiler/optimizing/bounds_check_elimination.h
+  art/compiler/optimizing/code_generator.cc
+  art/compiler/optimizing/code_generator.h
+  art/compiler/optimizing/code_generator_arm.cc
+  art/compiler/optimizing/code_generator_arm64.cc
+  art/compiler/optimizing/code_generator_arm64.h
+  art/compiler/optimizing/code_generator_mips64.cc
+  art/compiler/optimizing/code_generator_x86.cc
+  art/compiler/optimizing/code_generator_x86_64.cc
+  art/compiler/optimizing/common_arm64.h
+  art/compiler/optimizing/graph_visualizer.cc
+  art/compiler/optimizing/gvn.h
+  art/compiler/optimizing/inliner.cc
+  art/compiler/optimizing/intrinsics_x86.cc
+  art/compiler/optimizing/intrinsics_x86_64.cc
+  art/compiler/optimizing/nodes.h
+  art/compiler/optimizing/optimization.cc
+  art/compiler/optimizing/optimization.h
+  art/compiler/optimizing/optimizing_compiler.cc
+  art/compiler/optimizing/optimizing_compiler_stats.h
+  art/compiler/optimizing/register_allocator.cc
+  art/compiler/optimizing/ssa_liveness_analysis.cc
+  art/dex2oat/dex2oat.cc
+  art/runtime/Android.mk
+  art/runtime/arch/arm/instruction_set_features_arm.cc
+  art/runtime/check_jni.cc
+  art/runtime/debugger.cc
+  art/runtime/dex_file.cc
+  art/runtime/dex_file.h
+  art/runtime/dex_file_verifier.cc
+  art/runtime/entrypoints/quick/quick_trampoline_entrypoints.cc
+  art/runtime/gc/heap.cc
+  art/runtime/gc/heap.h
+  art/runtime/interpreter/unstarted_runtime.cc
+  art/runtime/java_vm_ext.cc
+  art/runtime/mt_aee_helper.h
+  art/runtime/native/java_lang_reflect_Field.cc
+  art/runtime/oat_file_assistant.cc
+  art/runtime/primitive.cc
+  art/runtime/primitive.h
+  art/runtime/thread_list.cc
+  art/runtime/thread_list.h
+  art/runtime/zip_archive.cc
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/arm/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/host/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/x86/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/arm/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/host/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/x86/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art/arm/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/host/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/x86/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/arm/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/host/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/x86/libmtk-artd.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02765174
+Severity:
+  
+Description: 
+  AAMISC：使用豌豆荚下载安装1.4版本的Runtastic Results，打开后应用报错（对比6P正常）N/A
+
+Associated Files: 
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/arm/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/host/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/x86/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/arm/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/host/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/x86/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art/arm/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/host/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/x86/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/arm/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/host/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/x86/libmtk-artd.a
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02725041
+Severity:
+  
+Description: 
+  【CX880】【应用兼容性】中国建设银行APK在eng版本OK，user，userdebug停止运行N/A
+
+Associated Files: 
+  art/build/Android.common_build.mk
+  art/runtime/art_method.cc
+  art/runtime/art_method.h
+  art/runtime/runtime.h
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/arm/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/host/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtime/x86/libmtk-art-runtime.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/arm/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/host/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art-runtimed/x86/libmtk-art-runtimed.a
+  vendor/nb/libs/mt6797_64/libmtk-art/arm/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/host/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-art/x86/libmtk-art.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/arm/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/host/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/libmtk-artd.a
+  vendor/nb/libs/mt6797_64/libmtk-artd/x86/libmtk-artd.a
+
