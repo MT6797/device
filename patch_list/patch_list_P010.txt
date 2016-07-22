@@ -1,0 +1,35 @@
+#==============================================================================
+# CR list from customer request
+# ------------------------
+# The release maybe include
+#   1. The patch request from customer
+#   2. The dependency patch of item 1
+#==============================================================================
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02794111
+Severity:
+  
+Description: 
+  概率性开机过程卡住，然后发生KE重启N/A
+
+Associated Files: 
+  device/nb/nb6797_6c_m/ProjectConfig.mk
+  kernel-3.18/arch/arm64/configs/nb6797_6c_m_debug_defconfig
+  kernel-3.18/arch/arm64/configs/nb6797_6c_m_defconfig
+  vendor/nb/libs/mt6797_64/libvcodecdrv/README
+
+Patch Type:
+  Customer Request
+CR ID:
+  ALPS02747713
+Severity:
+  Critical
+Description: 
+  MT6797: HPS: disable 5sec timeoutN/A
+
+Associated Files: 
+  kernel-3.18/drivers/misc/mediatek/base/power/mt6797/mt_hotplug_strategy_core.c
+  kernel-3.18/drivers/misc/mediatek/base/power/mt6797/mt_hotplug_strategy_internal.h
+
