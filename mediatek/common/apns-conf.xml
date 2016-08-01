@@ -573,7 +573,13 @@
       protocol="IPV4"
       roaming_protocol="IPV4"
   />
-
+  <apn carrier="Free MMS"
+     mcc="208"
+     mnc="15"
+     mmsc="http://mms.free.fr"
+     apn="mmsfree"
+     type="mms"
+  />
   <apn carrier="Bouygues Telecom"
       mcc="208"
       mnc="20"
