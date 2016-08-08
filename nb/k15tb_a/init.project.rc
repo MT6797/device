@@ -57,6 +57,7 @@ on post-fs-data
 
     chmod 0660 /dev/DW9714AF
     chown system camera /dev/DW9714AF
+	
     chmod 0660 /dev/DW9810AF
     chown system camera /dev/DW9810AF
 
@@ -65,6 +66,9 @@ on post-fs-data
 
     chmod 0660 /dev/BU64745GWZAF
     chown system camera /dev/BU64745GWZAF
+	
+	chmod 0660 /dev/BU6424AF
+    chown system camera /dev/BU6424AF
 
 #SMB
     chown system system /proc/smb/ScreenComm
