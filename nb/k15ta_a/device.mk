@@ -229,3 +229,6 @@ WITH_DEXPREOPT := true
 DONT_DEXPREOPT_PREBUILTS := false
 endif
 
+ifeq ($(NB_FP_AFS_SUPPORT),yes)
+	PRODUCT_PACKAGES += FprintMACal
+endif
