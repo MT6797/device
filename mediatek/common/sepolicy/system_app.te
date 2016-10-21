@@ -210,3 +210,6 @@ allow system_app sysfs:file write;
 allow system_app nvram_data_file:lnk_file read;
 allow system_app nvdata_file:dir search;
 allow system_app nvdata_file:file {read getattr open};
+#add by blestech
+allow system_app bl229x_device:chr_file rw_file_perms;
+

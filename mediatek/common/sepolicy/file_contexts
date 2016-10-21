@@ -361,7 +361,7 @@
 /dev/emmcrpmb0 u:object_r:teei_rpmb_device:s0
 /dev/teei_fp u:object_r:teei_fp_device:s0
 /dev/mbim u:object_r:mbim_device:s0
-
+/dev/bl229x u:object_r:bl229x_device:s0
 #############################
 # sysfs files
 #

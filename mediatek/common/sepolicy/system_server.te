@@ -292,3 +292,5 @@ allow system_server mtkFlpDaemon_data_file:dir create_file_perms;
 allow system_server mtkFlpDaemon_data_file:dir rw_dir_perms;
 binder_call(system_server, etsd)
 allow system_server etsd_service:service_manager find;
+#add by manhongjie
+allow system_server  bl229x_device:chr_file rw_file_perms;

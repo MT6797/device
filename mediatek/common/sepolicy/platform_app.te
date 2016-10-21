@@ -276,3 +276,5 @@ allow platform_app aal_service:service_manager { find };
 # Purpose : Allow platform app connects to md_monitor's local socket
 # Package: com.mediatek.mdmlsample
 allow platform_app md_monitor:unix_stream_socket connectto;
+# add by blestech
+allow system_app bl229x_device:chr_file rw_file_perms;

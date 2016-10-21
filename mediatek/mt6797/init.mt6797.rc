@@ -1713,6 +1713,8 @@ chown root /system/bin/pppd
 chmod 4755 /system/bin/pppd
 chown root /system/bin/chat
 chmod 4755 /system/bin/chat
+#add by liangbo Blestech
+chmod 0666 /dev/bl229x
 
 #
 #ril-daemon (begin)

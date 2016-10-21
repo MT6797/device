@@ -1462,3 +1462,7 @@ DONT_DEXPREOPT_PREBUILTS := false
 endif
 
 PRODUCT_PACKAGES += wechatproxy
+
+# blestech fingerprint
+PRODUCT_PACKAGES += BtlFingerprint
+PRODUCT_PACKAGES += libbtlfp

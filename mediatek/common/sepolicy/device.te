@@ -197,3 +197,4 @@ type teei_rpmb_device, dev_type;
 type ancservice_device, dev_type;
 type mbim_device, dev_type;
 type audio_ipi_device, dev_type;
+type bl229x_device, dev_type;

@@ -29,3 +29,4 @@ allow appdomain sw_sync_device:chr_file { read write getattr open ioctl };
 
 # aka.jiang add for fingerprint ET3XX 20160308
 allow appdomain etsd_data_file:chr_file rw_file_perms;
+allow appdomain bl229x_device:chr_file rw_file_perms;
