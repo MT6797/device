@@ -1464,9 +1464,11 @@ endif
 PRODUCT_PACKAGES += wechatproxy
 
 # blestech fingerprint
+ifeq ($(NB_FP_BLT_SUPPORT),yes)
 PRODUCT_PACKAGES += BtlFingerprint
 PRODUCT_PACKAGES += libbtlfp
 PRODUCT_PACKAGES += fingerprint.btl
 PRODUCT_PACKAGES += libBtlAlgo
 PRODUCT_PACKAGES += libBtlFpHal
+endif
 
