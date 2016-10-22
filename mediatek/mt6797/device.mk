@@ -1466,3 +1466,7 @@ PRODUCT_PACKAGES += wechatproxy
 # blestech fingerprint
 PRODUCT_PACKAGES += BtlFingerprint
 PRODUCT_PACKAGES += libbtlfp
+PRODUCT_PACKAGES += fingerprint.btl
+PRODUCT_PACKAGES += libBtlAlgo
+PRODUCT_PACKAGES += libBtlFpHal
+
